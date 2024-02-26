@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://slimessid.github.io/research//sitemap.xml
+Sitemap: https://slimessid.github.io/sitemap.xml
