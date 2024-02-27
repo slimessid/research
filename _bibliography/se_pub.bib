@@ -1,0 +1,1866 @@
+
+@inproceedings{quelennec:hal-04360221,
+  TITLE = {{On the Choice of the Optimal Temporal Support for Audio Classification with Pre-trained Embeddings}},
+  AUTHOR = {Quelennec, Aurian and Olvera, Michel and Peeters, Geoffroy and Essid, Slim},
+  URL = {https://hal.science/hal-04360221},
+  BOOKTITLE = {{IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2024)}},
+  YEAR = {2024},
+  NOTE = {Accepted},
+  MONTH = Apr,
+  KEYWORDS = {audio embeddings ; acoustic scene classification ; instrument recognition ; temporal support ; transformers ; Representation Model},
+  PDF = {https://hal.science/hal-04360221/file/Pre_print_ICASSP_Paper.pdf},
+  HAL_ID = {hal-04360221},
+  HAL_VERSION = {v1},
+  abstract = {
+    Current state-of-the-art audio analysis systems rely on pre-trained embedding models, often used off-the-shelf as (frozen) feature extractors. Choosing the best one for a set of tasks is the subject of many recent publications. However, one aspect often overlooked in these works is the influence of the duration of audio input considered to extract an embedding, which we refer to as Temporal Support (TS). In this work, we study the influence of the TS for well-established or emerging pre-trained embeddings, chosen to represent different types of architectures and learning paradigms. We conduct this evaluation using both musical instrument and environmental sound datasets, namely OpenMIC, TAU Urban Acoustic Scenes 2020 Mobile, and ESC-50. We especially highlight that Audio Spectrogram Transformer-based systems (PaSST and BEATs) remain effective with smaller TS, which therefore allows for a drastic reduction in memory and computational cost. Moreover, we show that by choosing the optimal TS we reach competitive results across all tasks. In particular, we improve the state-of-the-art results on OpenMIC, using BEATs and PaSST without any fine-tuning.
+  }
+}
+
+@inproceedings{gruttadauria:hal-04419041,
+  TITLE = {{Online Speaker Diarization of Meetings Guided by Speech Separation}},
+  AUTHOR = {Gruttadauria, Elio and Fontaine, Mathieu and Essid, Slim},
+  URL = {https://hal.science/hal-04419041},
+  NOTE = {Accepted},
+  BOOKTITLE = {{IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2024)}},
+  ADDRESS = {Seoul (Korea), South Korea},
+  YEAR = {2024},
+  MONTH = Apr,
+  KEYWORDS = {Speaker Diarization ; Source separation ; Online inference ; Overlapped speech ; AMI dataset ; Speaker embedding},
+  PDF = {https://hal.science/hal-04419041/file/ICASSP_2024_ELIO_GRUTTADAURIA-final.pdf},
+  HAL_ID = {hal-04419041},
+  HAL_VERSION = {v1},
+  ABSTRACT={
+    Overlapped speech is notoriously problematic for speaker diarization systems. Consequently, the use of speech separation has recently been proposed to improve their performance. Although promising, speech separation models struggle with realistic data because they are trained on simulated mixtures with a fixed number of speakers. In this work, we introduce a new speech separation-guided diarization scheme suitable for the online speaker diarization of long meeting recordings with a variable number of speakers, as present in the AMI corpus. We envisage ConvTasNet and DPRNN as alternatives for the separation networks, with two or three output sources. To obtain the speaker diarization result, voice activity detection is applied on each estimated source. The final model is fine-tuned end-to-end, after first adapting the separation to real data using AMI. The system operates on short segments, and inference is performed by stitching the local predictions using speaker embeddings and incremental clustering. The results show that our system improves the state-of-the-art on the AMI headset mix, using no oracle information and under full evaluation (no collar and including overlapped speech). Finally, we show the strength of our system particularly on overlapped speech sections.
+  }
+}
+
+@inproceedings{buisson:ismir23,
+  TITLE = {A Repetition-based Triplet Mining Approach for Music Segmentation},
+  AUTHOR = {Buisson, Morgan and McFee, Brian and Essid, Slim and Crayencour, Hélène C.},
+  BOOKTITLE = {International Society for Music Information Retrieval (ISMIR)},
+  ADDRESS = {Milano, Italy},
+  YEAR = {2023},
+  MONTH = nov,
+  PDF = {https://hal.science/hal-04202766/file/A%20Repetition-Based%20Triplet%20Mining%20Approach%20for%20Music%20Segmentation.pdf},
+  ABSTRACT = {
+    Contrastive learning has recently appeared as a well-suited method to find representations of music audio signals that are suitable for structural segmentation. However, most existing unsupervised training strategies omit the notion of repetition and therefore fail at encompassing this essential aspect of music structure. This work introduces a triplet mining method which explicitly considers repeating sequences occurring inside a music track by leveraging common audio descriptors. We study its impact on the learned representations through downstream music segmentation. Because musical repetitions can be of different natures, we give further insight on the role of the audio descriptors employed at the triplet mining stage as well as the trade-off existing between the quality of the triplets mined and the quantity of unlabelled data used for training. We observe that our method requires less non-annotated data while remaining competitive against other unsupervised methods trained on a larger corpus.
+  }
+}
+
+
+@inproceedings{letzelter:hal-04216055,
+  TITLE = {Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis},
+  AUTHOR = {Letzelter, Victor and Fontaine, Mathieu and Perez, Patrick and Richard, Gael and Essid, Slim and Chen, Mickael},
+  URL = {https://hal.science/hal-04216055},
+  BOOKTITLE = {Thirty-seventh Conference on Neural Information Processing Systems (NeurIPS 2023)},
+  ADDRESS = {New Orleans, United States},
+  YEAR = {2023},
+  MONTH = Dec,
+  HAL_ID = {hal-04216055},
+  HAL_VERSION = {v1},
+  selected = {true},
+  ABSTRACT = {
+    We introduce Resilient Multiple Choice Learning (rMCL), an extension of the MCL approach for conditional distribution estimation in regression settings where multiple targets may be sampled for each training input. Multiple Choice Learning is a simple framework to tackle multimodal density estimation, using the Winner-Takes-All (WTA) loss for a set of hypotheses. In regression settings, the existing MCL variants focus on merging the hypotheses, thereby eventually sacrificing the diversity of the predictions. In contrast, our method relies on a novel learned scoring scheme underpinned by a mathematical framework based on Voronoi tessellations of the output space, from which we can derive a probabilistic interpretation. After empirically validating rMCL with experiments on synthetic data, we further assess its merits on the sound source localization problem, demonstrating its practical usefulness and the relevance of its interpretation.
+  },
+  PDF = {https://hal.science/hal-04216055/file/neurips_2023.pdf}
+}
+
+@inproceedings{zaiem:interspeech23,
+  TITLE = {Speech Self-Supervised Representation Benchmarking: Are We Doing it Right?},
+  AUTHOR = {Zaiem, Salah and Parcollet, Titouan and Essid, Slim},
+  BOOKTITLE = {Interspeech},
+  ADDRESS = {Dublin, Ireland},
+  YEAR = {2023},
+  MONTH = aug,
+  PDF = {https://hal.science/hal-04216175/file/zaiem23b_interspeech.pdf}
+}
+
+@inproceedings{zaiem:interspeech23b,
+  TITLE = {Automatic Data Augmentation for Domain Adapted Fine-Tuning of Self-Supervised Speech Representations},
+  AUTHOR = {Zaiem, Salah and Parcollet, Titouan and Essid, Slim},
+  BOOKTITLE = {Interspeech},
+  ADDRESS = {Dublin, Ireland},
+  YEAR = {2023},
+  MONTH = aug,
+  PDF = {https://hal.science/hal-04216177/file/zaiem23_interspeech.pdf},
+  ABSTRACT= {
+    Self-Supervised Learning (SSL) has allowed leveraging large amounts of unlabeled speech data to improve the performance of speech recognition models even with small annotated datasets. Despite this, speech SSL representations may fail while facing an acoustic mismatch between the pretraining and target datasets. To address this issue, we propose a novel supervised domain adaptation method, designed for cases exhibiting such a mismatch in acoustic domains. It consists in applying properly calibrated data augmentations on a large clean dataset, bringing it closer to the target domain, and using it as part of an initial fine-tuning stage. Augmentations are automatically selected through the minimization of a conditional-dependence estimator, based on the target dataset. The approach is validated during an oracle experiment with controlled distortions and on two amateur-collected low-resource domains, reaching better performances compared to the baselines in both cases.
+  }
+}
+
+@InProceedings{Benigmim_2023_CVPR,
+    author    = {Benigmim, Yasser and Roy, Subhankar and Essid, Slim and Kalogeiton, Vicky and Lathuiliere, Stephane},
+    title     = {One-Shot Unsupervised Domain Adaptation With Personalized Diffusion Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {jun},
+    year      = {2023},
+    pages     = {698-708},
+    abstract = {
+      Adapting a segmentation model from a labeled source domain to a target domain, where a single unlabeled datum is available, is one the most challenging problems in domain adaptation and is otherwise known as one-shot unsupervised domain adaptation (OSUDA). Most of the prior works have addressed the problem by relying on style transfer techniques, where the source images are stylized to have the appearance of the target domain. Departing from the common notion of transferring only the target ``texture'' information, we leverage text-to-image diffusion models (e.g., Stable Diffusion) to generate a synthetic target dataset with photo-realistic images that not only faithfully depict the style of the target domain, but are also characterized by novel scenes in diverse contexts. The text interface in our method Data AugmenTation with diffUsion Models (DATUM) endows us with the possibility of guiding the generation of images towards desired semantic concepts while respecting the original spatial context of a single training image, which is not possible in existing OSUDA methods. Extensive experiments on standard benchmarks show that our DATUM surpasses the state-of-the-art OSUDA methods by up to +7.1%. The implementation is available at https://github.com/yasserben/DATUM
+    }
+}
+
+@INPROCEEDINGS{10095833,
+  author={Angulo, Florian and Essid, Slim and Peeters, Geoffroy and Mietlicki, Christophe},
+  booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title={Cosmopolite Sound Monitoring (CoSMo): A Study of Urban Sound Event Detection Systems Generalizing to Multiple Cities},
+  year={2023},
+  pages={1-5},
+  doi={10.1109/ICASSP49357.2023.10095833},
+  abstrat={
+    Measuring noise in cities and automatically identifying the corresponding sound sources are a crucial challenge for policymakers. Indeed, such information helps addressing noise pollution and improving the well-being of urban dwellers. In recent years, researchers have provided annotated datasets recorded in two major cities to foster the development of urban sound event detection (SED) systems. This paper presents an in-depth study of the behaviour of state-of-the-art SED systems well suited to our problem, combining three far-field real recordings datasets which can be used jointly during training. In our evaluation, we highlight the performance gaps existing between simple and hard recording examples based on the salience of sound events and the polyphony of the recordings. We provide new proximity annotations for this analysis. We evaluate the ability of urban SED systems to generalize across cities with varying degrees of training supervision. We show that such generalization is hindered mostly by the difficulties current urban SED systems have to detect sound events with low salience along with sound events in highly polyphonic soundscapes.}
+  }
+
+
+@inproceedings{zaiem:hal-04076307,
+  TITLE = {Fine-tuning strategies for faster inference using speech self-supervised models: a comparative study},
+  AUTHOR = {Zaiem, Salah and Algayres, Robin and Parcollet, Titouan and Essid, Slim and Ravanelli, Mirco},
+  URL = {https://hal.science/hal-04076307},
+  BOOKTITLE = {ICASSP 2023 - International Conference on Acoustics, Speech, and Signal Processing},
+  ADDRESS = {Rhodes, Greece},
+  YEAR = {2023},
+  MONTH = Jun,
+  KEYWORDS = {Speech recognition ; Self-supervised learning},
+  PDF = {https://hal.science/hal-04076307/file/2303.06740.pdf},
+  HAL_ID = {hal-04076307},
+  HAL_VERSION = {v1},
+  ABSTRACT = {
+    Self-supervised learning (SSL) has allowed substantial progress in Automatic Speech Recognition (ASR) performance in low-resource settings. In this context, it has been demonstrated that larger selfsupervised feature extractors are crucial for achieving lower downstream ASR error rates. Thus, better performance might be sanctioned with longer inferences. This article explores different approaches that may be deployed during the fine-tuning to reduce the computations needed in the SSL encoder, leading to faster inferences. We adapt a number of existing techniques to common ASR settings and benchmark them, displaying performance drops and gains in inference times. Interestingly, we found that given enough downstream data, a simple downsampling of the input sequences outperforms the other methods with both low performance drops and high computational savings, reducing computations by 61.3% with an WER increase of only 0.81. Finally, we analyze the robustness of the comparison to changes in dataset conditions, revealing sensitivity to dataset size.
+  },
+  PDF = {https://hal.science/hal-04076307/file/2303.06740.pdf}
+}
+
+@inproceedings{perera:hal-03782827,
+  TITLE = {{Latent and Adversarial Data Augmentation for Sound Event Detection and Classification}},
+  AUTHOR = {Perera, David and Essid, Slim and Richard, Ga{\"e}l},
+  URL = {https://hal.science/hal-03782827},
+  BOOKTITLE = {{International workshop on Detection and Classiffication of Acoustic Scenes and Events (DCASE)}},
+  ADDRESS = {Nancy, France},
+  YEAR = {2022},
+  MONTH = Nov,
+  KEYWORDS = {sound event detection ; data augmentation ; adversarial learning},
+  PDF = {https://hal.science/hal-03782827/file/dcase.pdf},
+  HAL_ID = {hal-03782827},
+  HAL_VERSION = {v1},
+  ABSTRACT = {
+    Invariance-based learning is a promising approach in deep learning. Among other benefits, it can mitigate the lack of diversity of available datasets and increase the interpretability of trained models. To this end, practitioners often use a consistency cost penalizing the sensitivity of a model to a set of carefully selected data augmentations. However, there is no consensus about how these augmentations should be selected. In this paper, we study the behavior of several augmentation strategies. We consider the task of sound event detection and classification for our experiments. In particular, we show that transformations operating on the internal layers of a deep neural network are beneficial for this task.
+  }
+}
+
+@inproceedings{perera:hal-03759651,
+  TITLE = {Impact de perturbations internes sur l entrainement de reseaux profonds pour la detection d evenements sonores},
+  AUTHOR = {Perera, David and Essid, Slim and Richard, Gael},
+  URL = {https://hal.telecom-paris.fr/hal-03759651},
+  BOOKTITLE = {Colloque Francophone de Traitement du Signal et des Images (GRETSI)},
+  ADDRESS = {Nancy, France},
+  YEAR = {2022},
+  MONTH = Sep,
+  PDF = {https://hal.telecom-paris.fr/hal-03759651/file/perera927.pdf},
+  HAL_ID = {hal-03759651},
+  HAL_VERSION = {v1},
+}
+
+@ARTICLE{9846981,
+  author={Zaiem, Salah and Parcollet, Titouan and Essid, Slim and Heba, Abdelwahab},
+  journal={IEEE Journal of Selected Topics in Signal Processing},
+  title={Pretext Tasks Selection for Multitask Self-Supervised Audio Representation Learning},
+  year={2022},
+  volume={16},
+  number={6},
+  pages={1439-1453},
+  doi={10.1109/JSTSP.2022.3195430},
+  selected={true},
+  abstract = {
+    Through solving pretext tasks, self-supervised learning leverages unlabeled data to extract useful latent representations replacing traditional input features in the downstream task. In audio/speech signal processing, a wide range of features where engineered through decades of research efforts. As it turns out, learning to predict such features (a.k.a pseudo-labels) has proven to be a particularly relevant pretext task, leading to useful self-supervised representations which prove to be effective for downstream tasks. However, methods and common practices for combining such pretext tasks for better performance on the downstream task have not been explored and understood properly. In fact, the process relies almost exclusively on a computationally heavy experimental procedure, which becomes intractable with the increase of the number of pretext tasks. This paper introduces a method to select a group of pretext tasks among a set of candidates. The method we propose estimates calibrated weights for the partial losses corresponding to the considered pretext tasks during the self-supervised training process. The experiments conducted on automatic speech recognition, speaker and emotion recognition validate our approach, as the groups selected and weighted with our method perform better than classic baselines, thus facilitating the selection and combination of relevant pseudo-labels for self-supervised representation learning.
+  },
+  PDF = {https://hal.science/hal-03601330/file/2107.00594.pdf}
+}
+
+
+@inproceedings{zaiem22_interspeech,
+  author={Salah Zaiem and Titouan Parcollet and Slim Essid},
+  title={Automatic Data Augmentation Selection and Parametrization in Contrastive Self-Supervised Speech Representation Learning},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={669--673},
+  doi={10.21437/Interspeech.2022-10191}
+}
+
+@inproceedings{buisson:hal-03780032,
+  address = {Bengaluru, India},
+  author = {Buisson, Morgan and McFee, Brian and Essid, Slim and Crayencour, Hélène C.},
+  booktitle = {International Society for Music Information Retrieval (ISMIR)},
+  hal_id = {hal-03780032},
+  hal_version = {v1},
+  month = dec,
+  title = {Learning Multi-Level Representations for Hierarchical Music Structure Analysis},
+  url = {https://hal.archives-ouvertes.fr/hal-03780032},
+  year = {2022},
+  ABSTRACT = {
+    Recent work in music structure analysis has shown the potential of deep features to highlight the underlying structure of music audio signals. Despite promising results achieved by such representations, dealing with the inherent hierarchical aspect of music structure remains a challenging problem. Because different levels of segmentation can be considered as equally valid, specifically designed representations should be optimized to improve hierarchical structure analysis. In this work, unsupervised learning of such representations using a contrastive approach operating at different timescales is explored. The proposed system is evaluated on flat and multi-level music segmentation. By leveraging both time and the hierarchical organization of music structure, we show that the obtained deep embeddings can encode meaningful patterns and improve segmentation at various levels of granularity.
+  },
+  PDF = {https://hal.science/hal-03780032/file/Morgan_Buisson_ismir.pdf}
+}
+
+@article{SE:patent16,
+  author = {Slim Essid and Raphael Blouet},
+  title = {Dispositif a Casque Audio Perfectionne},
+  year = 2016,
+  month = nov,
+  journal = {Patent Application},
+  PDF = {./papers/FR3059191A1.pdf},
+  number = {1661324}
+}
+
+@article{SE:patent18,
+  author = {Raphael Blouet and Slim Essid},
+  title = {Procede et Systeme de Diffusion d un Flux Audio Multicanal a des terminaux de spectateurs assistant a un evenement sportif},
+  year = 2018,
+  month = mar,
+  journal = {Patent Application},
+  PDF = {./papers/FR3079706B1.pdf},
+  number = {1852774}
+}
+
+@article{SE:patent20,
+  author = {Raphael Blouet and Slim Essid},
+  title = {Method and System for Broadcasting a Multichannel Audio Stream to Terminals of Spectators Attending a Sports Event},
+  year = 2020,
+  month = sep,
+  journal = {Patent Application},
+  PDF = {./papers/US20210014627A1.pdf},
+  number = {US 2021/0014627 A1}
+}
+
+@inproceedings{barriere:hal-04276012,
+  TITLE = {{Opinions in Interactions : New Annotations of the SEMAINE Database}},
+  AUTHOR = {Barri{\`e}re, Valentin and Clavel, Chlo{\'e} and Essid, Slim},
+  URL = {https://hal.science/hal-04276012},
+  BOOKTITLE = {{LREC}},
+  ADDRESS = {Marseille, France},
+  YEAR = {2022},
+  MONTH = Jun,
+  KEYWORDS = {Opinion Multimodal Machine Learning Interactions ; Opinion ; Multimodal Machine Learning ; Interactions},
+  PDF = {https://hal.science/hal-04276012/file/2022.lrec-1.762.pdf},
+  HAL_ID = {hal-04276012},
+  HAL_VERSION = {v1},
+}
+
+@article{furnon:hal-02985867,
+  TITLE = {DNN-based mask estimation for distributed speech enhancement in spatially unconstrained microphone arrays},
+  AUTHOR = {Furnon, Nicolas and Serizel, Romain and Essid, Slim and Illina, Irina},
+  URL = {https://hal.archives-ouvertes.fr/hal-02985867},
+  JOURNAL = {IEEE/ACM Transactions on Audio, Speech and Language Processing},
+   VOLUME = {29},
+  PAGES = {2310 - 2323},
+  YEAR = {2021},
+  DOI = {10.1109/TASLP.2021.3092838},
+  PDF = {https://hal.archives-ouvertes.fr/hal-02985867v3/file/furnon.pdf},
+  HAL_ID = {hal-02985867},
+  HAL_VERSION = {v3},
+}
+
+@inproceedings{cantisani:hal-03219350,
+  TITLE = {User-guided one-shot deep model adaptation for music source separation},
+  AUTHOR = {Cantisani, giorgia and Ozerov, Alexey and Essid, Slim and Richard, Gael},
+  URL = {https://hal.telecom-paris.fr/hal-03219350},
+  booktitle = {2021 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+
+  YEAR = {2021},
+  MONTH = oct,
+	address = {New Paltz, USA},
+  KEYWORDS = {Music Source Separation ; User-guided Source Separation ; One-shot Domain Adaptation},
+  PDF = {https://hal.telecom-paris.fr/hal-03219350v3/file/UGOSA_Hal.pdf},
+  HAL_ID = {hal-03219350},
+  HAL_VERSION = {v3},
+}
+
+@inproceedings{furnon:hal-03259801,
+  TITLE = {Attention-based distributed speech enhancement for unconstrained microphone arrays with varying number of nodes},
+  AUTHOR = {Furnon, Nicolas and Serizel, Romain and Essid, Slim and Illina, Irina},
+  URL = {https://hal.archives-ouvertes.fr/hal-03259801},
+  BOOKTITLE = {European Signal Processing Conference (EUSIPCO)},
+  ADDRESS = {Dublin/ Virtual, Ireland},
+  ORGANIZATION = {IEEE},
+  YEAR = {2021},
+  MONTH = Aug,
+  KEYWORDS = {Speech enhancement ; distributed processing ; attention mechanisms ; ad-hoc microphone arrays},
+  PDF = {https://hal.archives-ouvertes.fr/hal-03259801/file/eusipco2021.pdf},
+  HAL_ID = {hal-03259801},
+  HAL_VERSION = {v1},
+}
+
+@inproceedings{furnon:hal-02985794,
+  title = {Distributed speech separation in spatially unconstrained microphone arrays},
+  author = {Furnon, Nicolas and Serizel, Romain and Illina, Irina and Essid, Slim},
+  url = {https://hal.archives-ouvertes.fr/hal-02985794},
+  booktitle = {ICASSP 2021 - 46th International Conference on Acoustics, Speech, and Signal Processing},
+  address = {Toronto, Canada},
+  year = {2021},
+  month = jun,
+  keywords = {Speech separation ; Microphone arrays ; Distributed processing ; Speech separation},
+  pdf = {https://hal.archives-ouvertes.fr/hal-02985794v2/file/icassp2021.pdf},
+  hal_id = {hal-02985794},
+  hal_version = {v2}
+}
+
+@inproceedings{cantisani:hal-02978978,
+  title = {NEURO-STEERED MUSIC SOURCE SEPARATION WITH EEG-BASED AUDITORY ATTENTION DECODING AND CONTRASTIVE-NMF},
+  author = {Cantisani, Giorgia and Essid, Slim and Richard, Gael},
+  url = {https://hal.telecom-paris.fr/hal-02978978},
+  booktitle = {ICASSP 2021 - 46th International Conference on Acoustics, Speech, and Signal Processing},
+  address = {Toronto, Canada},
+  year = {2021},
+  month = jun,
+  keywords = {Index Terms-Audio source separation ; Auditory attention decoding ; Polyphonic music ; EEG ; Audio source separation},
+  pdf = {https://hal.telecom-paris.fr/hal-02978978v4/file/C-NMF-Hal.pdf},
+  hal_id = {hal-02978978},
+  hal_version = {v4},
+  abstract = {
+    We propose a novel informed music source separation paradigm, which can be referred to as neuro-steered music source separation. More precisely, the source separation process is guided by the user's selective auditory attention decoded from his/her EEG response to the stimulus. This high-level prior information is used to select the desired instrument to isolate and to adapt the generic source separation model to the observed signal. To this aim, we leverage the fact that the attended instrument's neural encoding is substantially stronger than the one of the unattended sources left in the mixture. This "contrast" is extracted using an attention decoder and used to inform a source separation model based on non-negative matrix fac-torization named Contrastive-NMF. The results are promising and show that the EEG information can automatically select the desired source to enhance and improve the separation quality.
+  }
+}
+
+@inproceedings{zaiem21_interspeech,
+  author = {Zaiem, Salah and Parcollet, Titouan and Essid, Slim},
+  title = {Conditional Independence for Pretext Task Selection in Self-Supervised Speech Representation Learning},
+  year = {2021},
+  month = aug,
+  booktitle = {Interspeech},
+  pages = {2851--2855},
+  doi = {10.21437/Interspeech.2021-1027},
+  pdf = {https://www.isca-speech.org/archive/pdfs/interspeech_2021/zaiem21_interspeech.pdf}
+}
+
+@ARTICLE{8926380,
+	  author={S. Parekh and S. Essid and A. Ozerov and N. Q. K. Duong and P. Pérez and G. Richard},
+	  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+	  title={Weakly Supervised Representation Learning for Audio-Visual Scene Analysis},
+	  year={2019},
+	  volume={28},
+	  number={},
+	  pages={416-428},}
+
+@inproceedings{furnon:hal-02389159,
+	TITLE = {DNN-Based Distributed Multichannel Mask Estimation for Speech Enhancement in Microphone Arrays},
+	AUTHOR = {Furnon, Nicolas and Serizel, Romain and Illina, Irina and Essid, Slim},
+	URL = {https://hal.archives-ouvertes.fr/hal-02389159},
+	BOOKTITLE = {ICASSP 2020 - 45th International Conference on Acoustics, Speech, and Signal Processing},
+	ADDRESS = {Barcelona, Spain},
+	YEAR = {2020},
+	MONTH = May,
+	KEYWORDS = {Index Terms-Speech enhancement ; dis- tributed processing ; microphone arrays ; Distributed processing ; Speech enhancement},
+	PDF = {https://hal.archives-ouvertes.fr/hal-02389159/file/icassp2020.pdf},
+	HAL_ID = {hal-02389159},
+	HAL_VERSION = {v3},
+}
+
+@article{benyoussef:hal-02288044,
+	TITLE = {On-the-fly Detection of User Engagement Decrease in Spontaneous Human-Robot Interaction},
+	AUTHOR = {Ben Youssef, Atef and Varni, Giovanna and Essid, Slim and Clavel, Chloe},
+	URL = {https://hal.telecom-paris.fr/hal-02288044},
+	JOURNAL = {International Journal of Social Robotics},
+	HAL_LOCAL_REFERENCE = {ABY:IJSR-2019},
+	YEAR = {2019},
+	MONTH = Jan,
+	KEYWORDS = {User engagement decrease ; Socially assistive robot ; HRI in public space ; Real-time detection},
+	HAL_ID = {hal-02288044},
+	HAL_VERSION = {v1},
+}
+
+@misc{lostanlen_vincent_2018_1344103,
+	author       = {Lostanlen, Vincent and
+	Cella, Carmine-Emanuele and
+	Bittner, Rachel and
+	Essid, Slim},
+	title        = {Medley-solos-DB: a cross-collection dataset for
+	musical instrument recognition},
+	month        = sep,
+	year         = {2018},
+	doi          = {10.5281/zenodo.1344103},
+	url          = {https://doi.org/10.5281/zenodo.1344103}
+}
+
+@techreport{DBLP:journals/corr/abs-1902-10102,
+	author    = {Alexandre Garcia and
+	Slim Essid and
+	Florence DAlche-Buc and
+	Chloe Clavel},
+	title     = {A multimodal movie review corpus for fine-grained opinion mining},
+	volume    = {abs/1902.10102},
+	year      = {2019},
+	url       = {http://arxiv.org/abs/1902.10102},
+	archivePrefix = {arXiv},
+	eprint    = {1902.10102},
+	timestamp = {Fri, 24 May 2019 10:20:38 +0200},
+	biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1902-10102},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Garcia2019,
+	author = {Garcia, Alexandre and Colombo, Pierre and DAlche-Buc, Florence and Essid, Slim and Clavel, Chloe},
+	booktitle = {2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing},
+	title = {From the Token to the Review: A Hierarchical Multimodal approach to Opinion Mining},
+	year = {2019},
+	month = nov,
+	address = {Hong Kong, China}
+}
+
+@inproceedings{Cantisani2019b,
+	author = {Cantisani, Giorgia and Tregoat, Gabriel and Essid, Slim and Richard, Gael},
+	booktitle = {Speech, Music and Mind (SMM19), Satellite workshop of Interspeech 2019},
+	title = {MAD-EEG: an EEG dataset for decoding auditory attention to a target	instrument in polyphonic music},
+	year = {2019},
+	address = {Vienna, Austria}
+}
+
+@inproceedings{Parekh2019,
+	author = {Parekh, Sanjeel and Ozerov, Alexey and Essid, Slim and Duong, Ngoc Q. K. and Perez, Patrick and Richard, Gael},
+	booktitle = {2019 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+	title = {Identify, Locate and Separate: Audio-visual Object Extraction in Large Video Collections Using Weak Supervision},
+	year = {2019},
+	month = oct,
+	address = {New Paltz, USA}
+}
+
+@inproceedings{Cantisani2019,
+	author = {Cantisani, Giorgia and Essid, Slim and Richard, Gael},
+	booktitle = {2019 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+	title = {EEG-based Decoding of Auditory Attention to a Target Instrument in Polyphonic Music},
+	year = {2019},
+	address = {New Paltz, USA},
+	month = oct
+}
+
+@inproceedings{Maia2019,
+	author = {Maia, Lucas S. and Fuentes, Magdalena and Biscainho, Luiz W. P. and Rocamora, Martin and Essid, Slim},
+	booktitle = {The 20th International Society for Music Information Retrieval Conference},
+	title = {SAMBASET: A Dataset of Historical Samba de Enredo Recordings for Computational Music Analysis},
+	month = nov,
+	address = {Delft, The Netherlands},
+	year = {2019}
+}
+
+@inproceedings{Fuentes2019b,
+	author = {Fuentes, Magdalena and Maia, Lucas S. and Rocamora, Martin and Biscainho, Luiz W. P. and Crayencour, Helene C. and Essid, Slim and Bello, Juan Pablo},
+	booktitle = {The 20th International Society for Music Information Retrieval Conference},
+	title = {Tracking Beats And Microtiming In Afro-latin American
+	music Using Conditional Random Fields and Deep Learning},
+	month = nov,
+	address = {Delft, The Netherlands},
+	year = {2019}
+}
+
+@inproceedings{Fuentes2019,
+	author = {Fuentes, Magdalena and McFee, Brian and Crayencour, Helene and Essid, Slim and Bello, Juan Pablo},
+	booktitle = {IEEE International Conference on Acoustics, Speech and Signal processing},
+	title = {A Music Structure Informed Downbeat Tracking System Using Skip-Chain Conditional Random Fields and Deep Learning},
+	month = may,
+	address = {Brighton, UK},
+	year = {2019}
+}
+
+@ARTICLE{Duan2019,
+	author={Z. Duan and S. Essid and C. C. S. Liem and G. Richard and G. Sharma},
+	journal={IEEE Signal Processing Magazine},
+	title={Audiovisual Analysis of Music Performances: Overview of an Emerging Field},
+	year={2019},
+	volume={36},
+	number={1},
+	pages={63-73},
+	keywords={audio signal processing;music;audiovisual analysis;audio modality;music recordings;audio-only media;automated music analysis;audio signals;acoustic music rendering;Music;Visualization;Task analysis;Instruments;Multiple signal classification;Signal processing;Cameras;Acoustics},
+	doi={10.1109/MSP.2018.2875511},
+	ISSN={1053-5888},
+	month=jan,}
+
+
+@article{Hajlaoui2018,
+	archivePrefix = {arXiv},
+	arxivId = {1809.08273},
+	author = {Hajlaoui, Ayoub and Chetouani, Mohamed and Essid, Slim},
+	eprint = {1809.08273},
+	month = sep,
+	title = {EEG-based Inter-Subject Correlation Schemes in a Stimuli-Shared Framework: Interplay with Valence and Arousal},
+	url = {https://arxiv.org/abs/1809.08273},
+	year = {2018}
+}
+@inproceedings{Fuentes2018,
+	address = {Paris, France},
+	author = {Fuentes, Magdalena and McFee, Brian and Crayencour, Helene C and Essid, Slim and Bello, Juan Pablo},
+	booktitle = {Proceedings of the 19th International Society for Music Information Retrieval Conference},
+	doi = {10.5281/zenodo.1492355},
+	month = sep,
+	pages = {106--112},
+	publisher = {ISMIR},
+	title = {Analysis of Common Design Choices in Deep Learning Systems for Downbeat Tracking},
+	url = {https://doi.org/10.5281/zenodo.1492355},
+	year = {2018}
+}
+@article{BenYoussef2019,
+	author = {Ben Youssef, A and Clavel, C and Essid, S},
+	doi = {10.1109/TAFFC.2019.2898399},
+	issn = {1949-3045},
+	journal = {IEEE Transactions on Affective Computing},
+	keywords = {Robots;Electric breakdown;Feature extraction;Predi},
+	pages = {1},
+	title = {Early Detection of User Engagement Breakdown in Spontaneous Human-Humanoid Interaction},
+	year = {2019}
+}
+@inproceedings{Basaran2018,
+	address = {Paris, France},
+	author = {Basaran, Dogac and Essid, Slim and Peeters, Geoffroy},
+	booktitle = {Proceedings of the 19th International Society for Music Information Retrieval Conference},
+	doi = {10.5281/zenodo.1492349},
+	month = sep,
+	pages = {82--89},
+	publisher = {ISMIR},
+	title = {Main Melody Estimation with Source-Filter NMF and CRNN},
+	url = {https://doi.org/10.5281/zenodo.1492349},
+	year = {2018}
+}
+
+@article{Hong2018,
+	abstract = {In this paper we present a robust audio classification system to efficiently detect pulmonary edema. The system uses a feature learning technique based on (NMF), then classified with logistic regression. A study was done to compare feature engineering approaches with feature selection techniques against NMF. Different NMF schemes were investigated and also compared with Principal Component Analysis. NMF scored 95{\%} F1 score, which was superior to feature engineering techniques that had scores from 83{\%} to 93{\%}. Background noise collected from hospitals and speech from a speech corpus database was used to simulate noisy data. The system was then tested using noisy data. The best NMF scheme scored 74{\%}, while other feature engineering techniques scored lower; from 66{\%} to 71{\%}. NMF was also used as a signal enhancement tool. It improved the F1 score to 77{\%}. Lastly, only inhalations from breath sounds were considered and this further improved classification results to 86{\%}. The proposed robust classification system using NMF thus proved to be an effective method for audio-based detection of pulmonary edema. If implemented in real-time, the proposed system can be used as a screening tool.},
+	author = {Hong, K. J. and Essid, S. and Ser, W. and Foo, D. C.G.},
+	doi = {10.1016/j.bspc.2018.07.004},
+	issn = {17468108},
+	journal = {Biomedical Signal Processing and Control},
+	keywords = {Biomedical signal processing,Feature learning,Non-negative matrix factorization,Pulmonary edema,Robust testing},
+	title = {A robust audio classification system for detecting pulmonary edema},
+	year = {2018}
+}
+
+
+@inproceedings{Hajlaoui2018,
+  address = {Rome, Italy},
+  author = {Hajlaoui, Ayoub and Chetouani, Mohamed and Essid, Slim},
+  booktitle = {The European Signal Processing Conference (EUSIPCO)},
+  title = {Multi-task Feature Learning for EEG-based Emotion Recognition Using Group Nonnegative Matrix Factorization},
+  month = sep,
+  year = 2018,
+}
+
+@inproceedings{Garcia2018b,
+abstract = {Motivated by Supervised Opinion Analysis, we propose a novel framework devoted to Structured Output Learning with Abstention (SOLA). The structure prediction model is able to abstain from predicting some labels in the structured output at a cost chosen by the user in a flexible way. For that purpose, we decompose the problem into the learning of a pair of predictors, one devoted to structured abstention and the other, to structured output prediction. To compare fully labeled training data with predictions potentially containing abstentions, we define a wide class of asymmetric abstention-aware losses. Learning is achieved by surrogate regression in an appropriate feature space while prediction with abstention is performed by solving a new pre-image problem. Thus, SOLA extends recent ideas about Structured Output Prediction via surrogate problems and calibration theory and enjoys statistical guarantees on the resulting excess risk. Instantiated on a hierarchical abstention-aware loss, SOLA is shown to be relevant for fine-grained opinion mining and gives state-of-the-art results on this task. Moreover, the abstention-aware representations can be used to competitively predict user-review ratings based on a sentence-level opinion predictor.},
+author = {Garcia, Alexandre and Essid, Slim and Clavel, Chloe and DAlche-Buc, Florence},
+month = jul,
+title = {Structured Output Learning with Abstention: Application to Accurate Opinion Prediction},
+booktitle = {International Conference on Machine Learning (ICML)},
+year = 2018,
+address = {Stockholm, Sweeden},
+}
+
+@inproceedings{Parekh2018b,
+author = {Parekh, Sanjeel and Essid, Slim and Ozerov, Alexey and Duong, Quang-Khanh-Ngoc and Perez, Patrick and Richard, Gael},
+booktitle = {CVPR Workshop on Sight and Sound (WSS)},
+month = jun,
+title = {Weakly Supervised Representation Learning for Unsynchronized Audio-Visual Events},
+year = 2018,
+address = {Salt Lake City, USA},
+annote = {
+  { @inproceedings{Parekh2018b,
+    author = {Parekh, Sanjeel and Essid, Slim and Ozerov, Alexey and Duong, Quang-Khanh-Ngoc and Perez, Patrick and Richard, Gael},
+    booktitle = {CVPR Workshop on Sight and Sound (WSS)},
+    month = jun,
+    title = {Weakly Supervised Representation Learning for Unsynchronized Audio-Visual Events},
+    year = 2018,
+    address = {Salt Lake City, USA}
+  }}
+}}
+
+
+@techreport{Parekh2018,
+abstract = {Audio-visual representation learning is an important task from the perspective of designing machines with the ability to understand complex events. To this end, we propose a novel multimodal framework that instantiates multiple instance learning. We show that the learnt representations are useful for classifying events and localizing their characteristic audio-visual elements. The system is trained using only video-level event labels without any timing information. An important feature of our method is its capacity to learn from unsynchronized audio-visual events. We achieve state-of-the-art results on a large-scale dataset of weakly-labeled audio event videos. Visualizations of localized visual regions and audio segments substantiate our system s efficacy, especially when dealing with noisy situations where modality-specific cues appear asynchronously.},
+archivePrefix = {arXiv},
+arxivId = {1804.07345},
+number = {arXiv:1804.07345},
+author = {Parekh, Sanjeel and Essid, Slim and Ozerov, Alexey and Duong, Quang-Khanh-Ngoc and Perez, Patrick and Richard, Gael},
+eprint = {1804.07345},
+month = apr,
+title = {Weakly Supervised Representation Learning for Unsynchronized Audio-Visual Events},
+url = {http://arxiv.org/abs/1804.07345},
+year = 2018
+}
+
+
+
+@techreport{Garcia2018,
+abstract = {Motivated by Supervised Opinion Analysis, we propose a novel framework devoted to Structured Output Learning with Abstention (SOLA). The structure prediction model is able to abstain from predicting some labels in the structured output at a cost chosen by the user in a flexible way. For that purpose, we decompose the problem into the learning of a pair of predictors, one devoted to structured abstention and the other, to structured output prediction. To compare fully labeled training data with predictions potentially containing abstentions, we define a wide class of asymmetric abstention-aware losses. Learning is achieved by surrogate regression in an appropriate feature space while prediction with abstention is performed by solving a new pre-image problem. Thus, SOLA extends recent ideas about Structured Output Prediction via surrogate problems and calibration theory and enjoys statistical guarantees on the resulting excess risk. Instantiated on a hierarchical abstention-aware loss, SOLA is shown to be relevant for fine-grained opinion mining and gives state-of-the-art results on this task. Moreover, the abstention-aware representations can be used to competitively predict user-review ratings based on a sentence-level opinion predictor.},
+archivePrefix = {arXiv},
+arxivId = {1803.08355},
+number = {arXiv:1803.08355},
+author = {Garcia, Alexandre and Essid, Slim and Clavel, Chloe and DAlche-Buc, Florence},
+eprint = {1803.08355},
+month = mar,
+title = {Structured Output Learning with Abstention: Application to Accurate Opinion Prediction},
+url = {http://arxiv.org/abs/1803.08355},
+year = 2018
+}
+
+
+@inproceedings{schiratti:hal-01724272,
+  TITLE = {An Ensemble Learning Approach to Detect Epileptic Seizures from Long Intracranial EEG Recordings},
+  AUTHOR = {Schiratti, Jean-Baptiste and Le Douget, Jean-Eudes and Le Van Quyen, Michel and Essid, Slim and Gramfort, Alexandre},
+  URL = {https://hal.archives-ouvertes.fr/hal-01724272},
+  BOOKTITLE = {International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  ADDRESS = {Calgary, Canada},
+  YEAR = 2018,
+  MONTH = apr,
+  KEYWORDS = {Intracranial EEG ; Epilepsy and seizures ; Machine learning},
+  PDF = {https://hal.archives-ouvertes.fr/hal-01724272/file/ICASSP.pdf}
+}
+
+@inproceedings{BARRIERE-18,
+  author = {Valentin Barriere and Chloe Clavel and Slim Essid},
+  title = {Attitude Classification in Adjacency Pairs of a Human-Agent Interaction with Hidden Conditional Random Fields},
+  booktitle = {International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  ADDRESS = {Calgary, Canada},
+  year = 2018,
+  month = apr,
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=ids group=s2a id=17744}
+}
+
+@inproceedings{SE:ICML17,
+  author = {Slim Essid},
+  title = {Matrix Co-Factorisation and Applications to Music Analysis},
+  booktitle = {Machine Learning for Music Discovery Workshop, International Conference on Machine Learning (ICML) 2017},
+  address = {Sydney, Australia},
+  year = 2017,
+  month = aug,
+  annote = {category=invite language=en audience=1 state=published dept=ids group=s2a id=18054},
+  pdf = {./papers/SE_ICML-17.pdf}
+
+}
+
+@article{SP:brevet18,
+  author = {Sanjeel  Parekh and Slim Essid and Alexey Ozerov and Quang-Khanh-Ngoc Duong and Patrick Perez and Gael Richard},
+  title = {Method for audio-visual events classification and localization, and corresponding apparatus, computer readable program, product and computer readable storage medium},
+  year = 2018,
+  month = apr,
+  journal = {Patent Application},
+  number = {180049},
+  annote = {category=brevet language=en state=published dept=ids group=s2a id=18015}
+}
+
+
+@inproceedings{bisot:hal-01636627,
+  author = {Victor Bisot and Romain Serizel and Slim Essid and Gael Richard},
+  title = {Nonnegative Feature Learning Methods for Acoustic Scene Classification},
+  booktitle = {DCASE 2017 - Workshop on Detection and Classification of Acoustic Scenes and Events},
+  address = {Munich, Germany},
+  year = 2017,
+  month = nov,
+  keywords = {Feature learning;Nonnegative Matrix Factorization;Deep Neural Networks},
+  annote = {category=inproceedings language=en audience=2 state=published dept=ids group=s2a documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=17481 id=17481},
+  pdf = {./papers/VB_DCASE-17.pdf}
+}
+
+@article{SP:brevet17a,
+  author = {Sanjeel Parekh and Slim Essid and Alexey Ozerov and Quang-Khanh-Ngoc Duong and Patrick Perez and Gael Richard},
+  title = {Method for Processing an input audio signal and corresponding electronic device},
+  year = 2017,
+  journal = {Patent Application},
+  number = {170054},
+  annote = {category=article language=en state=published dept=ids group=s2a id=18014}
+}
+
+
+@INBOOK{Serizel2017,
+	author =	{Serizel, Romain and Bisot, Victor and Essid, Slim and Richard, Gael},
+	chapter =	{Acoustic Features for Environmental Sound Analysis},
+	title =	{Computational Analysis of Sound Scenes and Events},
+	year =	{2017},
+	editor =	{Virtanen, Tuomas and Ellis, Dan and Plumbley, Mark},
+	publisher =	{Springer International Publishing AG}
+}
+
+@INBOOK{Essid2017,
+	author =	{Essid, Slim and Parekh, Sanjeel and Duong, Quang-Khanh-Ngoc and Ozerov, Alexey and Serizel, Romain},
+	chapter =	{Multiview Approaches to Event Detection and Scene Analysis},
+	title =	{Computational Analysis of Sound Scenes and Events},
+	year =	{2017},
+	editor =	{Virtanen, Tuomas and Ellis, Dan and Plumbley, Mark},
+	publisher =	{Springer International Publishing AG}
+}
+
+@inproceedings{Benyoussef2017,
+	author = {Ben Youssef, Atef and Clavel, Chloe and Essid, Slim and Bilac, Miriam and Chamoux, Marine and Lim, Angelica},
+	booktitle = {ACM International Conference on Multimodal Interaction},
+	title = {UE-HRI: A New Dataset for the Study of User Engagement in Spontaneous Human-Robot Interactions},
+	year = 2017,
+	month = nov,
+	address = {Glasgow, Scotland},
+  pdf = {./papers/AB_ICMI-17.pdf}
+}
+
+@inproceedings{Bisot2017c,
+	author = {Bisot, Victor and Serizel, Romain and Essid, Slim and Richard, Gael},
+	booktitle = {IEEE International Workshop on	Machine Learning for Signal Processing (MLSP)},
+	title = {Leveraging Deep Neural Networks with Nonnegative Representations for Improved Environmental Sound Classification},
+	year = 2017,
+	month = sep,
+	address = {Tokyo, Japan},
+  pdf = {./papers/VB_MLSP-17.pdf}
+}
+
+@inproceedings{Parekh2017b,
+	address = {New Orleans, USA},
+	author = {Parekh, Sanjeel and Essid, Slim and Ozerov, Alexey and Duong, Quang-Khanh-Ngoc and Perez, Patrick and Richard, Gael},
+	booktitle = {IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+	address = {New Paltz, New York, U.S.A},
+	month = oct,
+	title = {Guiding Audio Source Separation by Video Object Information},
+  pdf = {./papers/SP_WASPAA-17.pdf},
+	year = 2017
+}
+
+@inproceedings{Conneau2017,
+	address = {Kos island, Greece},
+	author = {Conneau, Anne-Claire and Hajlaoui, Ayoub and Chetouani, Mohamed and Essid, Slim},
+	booktitle = {The European Signal Processing Conference (EUSIPCO)},
+	title = {EMOEEG: a New Multimodal Dataset for Dynamic EEG-based Emotion Recognition with Audiovisual Elicitation},
+  pdf = {./papers/AC_EUSIPCO-17.pdf},
+	year = {2017}
+}
+
+@inproceedings{Barriere2017,
+	address = {Stockholm, Sweeden},
+	author = {Barriere, Valentin and Clavel, Chloe and Essid, Slim},
+	booktitle = {Interspeech},
+	title = {Opinion Dynamics Modeling for Movie Review Transcripts},
+	year = {2017},
+  pdf = {./papers/VB_INTERSPEECH-17.pdf}
+}
+
+
+@inproceedings{Bisot2017b,
+address = {New Orleans, USA},
+author = {Bisot, Victor and Essid, Slim and Richard, Gael},
+booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+title = {Overlapping Sound Event Detection with Supervised Nonnegative Matrix Factorization},
+year = {2017},
+pdf = {./papers/VB_ICASSP-17.pdf}
+}
+
+@article{Bisot2017,
+author = {Bisot, Victor and Serizel, Romain and Essid, Slim and Richard, Gael},
+journal = {IEEE Transactions on Audio, Speech, and Language Processing (TASLP)},
+title = {Feature Learning with Matrix Factorization Applied to Acoustic Scene Classification},
+year = {2017},
+pdf = {./papers/VB_TASLP-17.pdf}
+}
+
+
+
+@inproceedings{Bisot2016b,
+author = {Bisot, Victor and Serizel, Romain and Essid, Slim and Richard, Gael},
+keywords = {Acoustic Scene Classification ; Feature learning ;},
+booktitle = {IEEE international evaluation campaign on detection and classification of acousitc scenes and events (DCASE 2016)},
+month = {sep},
+title = {Supervised nonnegative matrix factorization for acoustic scene classification},
+year = {2016},
+pdf = {./papers/VB_DCASE-16.pdf}
+}
+
+@inproceedings{Serizel2017,
+address = {New Orleans, USA},
+author = {Serizel, Romain and Bisot, Victor and Essid, Slim and Richard, Gael},
+booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+title = {Supervised Group Nonnegative Matrix Factorisation with Similarity Constraints and Applications to Speaker Identification},
+year = {2017},
+pdf = {./papers/RS_ICASSP-17.pdf}
+}
+@inproceedings{Parekh2017,
+address = {New Orleans, USA},
+author = {Parekh, Sanjeel and Essid, Slim and Ozerov, Alexey and Duong, Quang-Khanh-Ngoc and Perez, Patrick and Richard, Gael},
+booktitle = {IEEE International Conference on Acoustics Speech and Signal Processing (ICASSP)},
+title = {Motion Informed Audio Source Separation},
+year = {2017},
+pdf = {./papers/SP_ICASSP-17.pdf}
+}
+
+
+@inproceedings{SD:ISMIR-16,
+  title={Downbeat Detection with Conditional Random Fields and Deep Learned Features},
+  author={Durand, Simon and Essid, Slim},
+  booktitle = {The 17th International Society for Music Information Retrieval Conference (ISMIR)},
+  month = aug,
+  year = 2016,
+  address = {New York City, USA},
+ pdf = {./papers/SD_ISMIR-16.pdf}
+
+}
+
+@inproceedings{RS:MLSP-2016,
+  author = {Serizel, Romain and Essid, Slim and Richard, Gael},
+  title = {Mini-batch stochastic approaches for accelerated multiplicative updates in nonnegative matrix factorisation with beta-divergence},
+  booktitle = {IEEE International Workshop on Machine Learning for Signal Processing (MLSP)},
+  year = 2016,
+  month = sep,
+  keywords = {Nonnegative matrix factorisation, GPGPU, multiplicative rules, online learning},
+  annote = {category=inproceedings language=en audience=2 state=submitted dept=tsi group=aao      documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=16155 id=16155},
+pdf = {./papers/RS_MLSP-16.pdf}
+}
+
+@inproceedings{RS:ICIP-2016,
+  author = {Serizel, Romain and Bisot, Victor and Essid, Slim and Richard, Gael},
+  title = {Machine listening techniques as a complement to video image analysis in forensics},
+  booktitle = {The International Conference on Image Processing (ICIP)},
+  year = 2016,
+  month = oct,
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=16154 id=16154},
+ pdf = {./papers/RS_ICIP-16.pdf}
+}
+
+@inproceedings{Bisot2016,
+  author = {Bisot, Victor and Serizel, Romain and Essid, Slim and Richard, Gael},
+  title = {Acoustic scene classification with matrix factorization for unsupervised feature learning},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  address = {Shanghai, China},
+  year = 2016,
+  month = mar,
+  keywords = {Acoustic scene classification, unsupervised feature learning,   matrix factorization},
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=15948},
+ pdf = {./papers/VB_ICASSP-16.pdf}
+}
+
+@inproceedings{Serizel2016a,
+  author = {Serizel, Romain and Essid, Slim and Richard, Gael},
+  title = {Group nonnegative matrix factorisation with speaker and session variability compensation for speaker identification},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  address = {Shanghai, China},
+  year = 2016,
+  month = mar,
+  keywords = {Nonnegative matrix factorisation, spectrogram factorisation, feature learning, speaker variability, speaker identification},
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=15957 id=15957},
+ pdf = {./papers/RS_ICASSP-16.pdf}
+}
+
+@PHDTHESIS{SE:hdr,
+  author = {Slim Essid},
+  title = {Contributions in Machine Learning for Multimodal Data Analysis: Methods, Algorithms and Systems for Temporally Structured Data},
+  school = {Universit\&eacute; Pierre et Marie Curie},
+  year = 2015,
+  note = {Habilitation Thesis},
+  month = sep
+}
+
+@article{Masurelle2015,
+title={TPT-Dance&Actions : un corpus multimodal d’activites humaines},
+number={4},
+journal={Revue Traitement du Signal},
+author={Masurelle, Aymeric and Sekkat, A. Rida and Essid, Slim and Richard, Gael},
+year={2015},
+pdf = {./papers/AM_TS-15.pdf}
+}
+
+@inproceedings{Bittner2015,
+author = {Bittner, Rachel and Salmon, Justin and Essid, Slim and Bello, J. P. },
+booktitle = {International Conference on Music Information Retrieval (ISMIR)},
+title = {Melody Extraction by Contour Classification},
+address = {Malaga, Spain},
+year = {2015},
+pdf = {./papers/RB_ISMIR-15.pdf}
+}
+
+@inproceedings{Bisot2015,
+author = {Bisot, Victor and Essid, Slim and Richard, Gael},
+booktitle = {European Signal Processing Conference (EUSIPCO)},
+title = {HOG and subband power distribution image features for acoustic scene classification},
+address = {Nice, France},
+year = {2015},
+pdf = {./papers/VB_EUSIPCO-15.pdf}
+}
+
+@inproceedings{TF:ICASSP-15,
+  author = {Thomas Fillon and Cyril Joder and Simon Durand and Slim Essid},
+  title = {A Conditional Random Field System for Beat Tracking},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  address = {Brisbane, Australia},
+  year = 2015,
+  month = apr,
+  pdf = {./papers/TF_ICASSP-15.pdf},
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=15366}
+}
+
+@article{Seichepine_Essid_Fevotte_Cappe_2014,
+title={Soft nonnegative matrix co-factorization}, volume={PP},  url={http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6908018}, DOI={10.1109/TSP.2014.2360141},
+abstractNote={This work introduces a new framework for nonnegative matrix factorization (NMF) in multisensor or multimodal data configurations, where taking into account the mutual dependence that exists between the related parallel streams of data is expected to improve performance. In contrast with previous works that focused on co-factorization methods  where some factors are shared by the different modalities we propose a soft co-factorization scheme which accounts for possible local discrepancies across modalities or channels. This objective is formalized as an optimization problem where concurrent factorizations are jointly performed while being tied by a coupling term that penalizes differences between the related factor matrices associated with different modalities. We provide majorization-minimization (MM) algorithms for three common measures of fit, the squared Euclidean norm, the Kullback-Leibler divergence and the Itakura-Saito divergence, and two possible coupling variants, using either the l1 or the squared Euclidean norm of differences. The approach is shown to achieve promising performance in two audio-related tasks: multimodal speaker diarization using audiovisual data and audio source separation using stereo data.}, number={99}, journal={IEEE Transactions on Signal Processing},
+author={Seichepine, Nicolas and Essid, Slim and Fevotte, Cedric and Cappe, Olivier},
+year={2014},
+pdf = {./papers/NS_TSP-14.pdf}
+}
+
+@inproceedings{NS:ICASSP-14,
+  author = {Nicolas Seichepine and Slim Essid and Cedric Fevotte and Olivier Cappe},
+  title = {Piecewise constant Nonnegative matrix factorization},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  address = {Florence, Italy},
+  year = 2014,
+  month = may,
+  pdf = {./papers/NS_ICASSP-14.pdf}
+}
+
+@inproceedings{AC:ICASSP-14,
+  author = {Anne-Claire Conneau and Slim Essid},
+  title = {Assessment of new spectral features for EEG-based emotion recognition},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  address = {Florence, Italy},
+  year = 2014,
+  month = may,
+  pdf = {./papers/AC_ICASSP-14.pdf}
+}
+
+@inproceedings{AM:ICASSP-14,
+  author = {Aymeric Masurelle and Slim Essid and Gael Richard},
+  title = {Gesture recognition using a NMF-based representation of motion-traces extracted from depth silhouettes},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  address = {Florence, Italy},
+  year = 2014,
+  month = may,
+   pdf = {./papers/AM_ICASSP-14.pdf}
+}
+
+@inproceedings{gretsi-13,
+  author = {Nicolas Seichepine and Slim Essid and Cedric Fevotte and Olivier Cappe},
+  title = {Co-factorisation douce en matrices non-negatives. Application au regroupement multimodal de locuteurs},
+  booktitle = {GRETSI},
+  address = {Brest, France},
+  year = 2013,
+  month = sep,
+  keywords = {NMF, multimodal},
+  annote = {category=inproceedings language=fr audience=1 state=toappear dept=tsi group=aao,sta id=14269}
+}
+
+@inproceedings{CD:MLSP-13,
+  author = {Cecilia Damon and Antoine Liutkus and Alexandre Gramfort and Slim Essid},
+  title = {Nonnegative Tensor Factorization for Single-Channel EEG Artifact Rejection},
+  booktitle = {IEEE International Workshop on Machine Learning for Signal Processing},
+  address = {Southampton, UK},
+  year = 2013,
+  month = sep,
+  keywords = {EEG, NTF, NMF},
+ pdf = {./papers/CD_MLSP-13.pdf}
+}
+
+@inproceedings{RF:Wiamis2013,
+  author = {Remi Foucard and Slim Essid and Gael Richard and Mathieu Lagrange},
+  title = {Exploring new features for music classification},
+  booktitle = {International Workshop on Image and Audio Analysis for Multimedia Interactive Services (WIAMIS)},
+  address = {Paris, France},
+  year = 2013,
+  month = jul,
+   pdf = {./papers/RF_WIAMIS-13.pdf}
+}
+
+@inproceedings{AM:WIAMIS-13,
+  author = {Aymeric Masurelle and Slim Essid and Gael Richard},
+  title = {Multimodal classification of dance movements using body joint trajectories and step sounds},
+  booktitle = {International Workshop on Image and Audio Analysis for Multimedia Interactive Services (WIAMIS)},
+  address = {Paris, France},
+  year = 2013,
+  month = jul,
+  pdf = {./papers/AM_WIAMIS-13.pdf}
+}
+
+@inproceedings{Dremeau2013a,
+  author = {Angelique Dremeau and Slim Essid},
+  title = {Probabilistic dance performance alignment by fusion of multimodal features },
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  address = {Vancouver, Canada},
+  year = 2013,
+  month = may,
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=13252},
+   pdf = {./papers/AD_ICASSP-13.pdf}
+}
+
+@inproceedings{ICASSP-13-SEICHEPINE,
+  author = {Nicolas Seichepine and Slim Essid and Cedric Fevotte and Olivier Cappe},
+  title = {Soft Nonnegative Matrix Co-factorization with Application to Multimodal Speaker Diarization},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  address = {Vancouver},
+  year = 2013,
+  month = may,
+  keywords = {Nonnegative matrix factorization, cofactorization, multimodality, speaker diarization},
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao,sta id=13313},
+   pdf = {./papers/NS_ICASSP-13.pdf}
+}
+
+@inproceedings{CD:ICASSP-13,
+  author = {Cecilia Damon and Antoine Liutkus and Alexandre Gramfort and Slim Essid},
+  title = {Nonnegative Matrix Factorization for Single-Channel EEG Artifact Rejection},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) },
+  address = {Vancouver, Canada},
+  year = 2013,
+month = may,
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=13264},
+  pdf = {./papers/CD_ICASSP-13.pdf}
+}
+
+
+@ARTICLE{FV:TM-12,
+ author={Vallet, F. and Essid, Slim and Carrive, J.},
+ journal={IEEE Transactions on Multimedia},
+ title={A Multimodal Approach to Speaker Diarization on TV Talk-Shows},
+ year={2013},
+ volume={15},
+ number={3},
+ pages={509-520},
+ abstract={In this article, we propose solutions to the problem of speaker diarization of TV talk-shows, a problem for which adapted multimodal approaches, relying on other streams of data than only audio, remain largely under exploited. Hence we propose an original system that leverages prior knowledge on the structure of this type of content, especially the visual information relating to the active speakers, for an improved diarization performance. The architecture of this system can be decomposed into two main stages. First a reliable training set is created, in an unsupervised fashion, for each participant of the TV program being processed. This data is assembled by the association of visual and audio descriptors carefully selected in a clustering cascade. Then, Support Vector Machines are used for the classification of the speech data (of a given TV program). The performance of this new architecture is assessed on two French talk-show collections: Le Grand Échiquier and On na pas tout dit. The results show that our new system outperforms state-of-the-art methods, thus evidencing the effectiveness of kernel-based methods, as well as visual cues, in multimodal approaches to speaker diarization of challenging contents such as TV talk-shows.},
+ keywords={speaker recognition;support vector machines;French talk show collection;TV program;TV talk shows;audio descriptors;clustering cascade;diarization performance;kernel based method;multimodal approach;original system;reliable training set;speaker diarization;speech data;support vector machines;visual descriptors;Cameras;Databases;Microphones;NIST;Speech;TV;Visualization;Fusion;SVM classification;joint audiovisual processing;multimodality;speaker diarization;talk-show;unsupervised learning},
+ doi={10.1109/TMM.2012.2233724},
+ ISSN={1520-9210},
+ pdf = {./papers/FV_TM-13.pdf}
+}
+
+
+@inproceedings{AL:ACM-12,
+  author = {Antoine Liutkus and Angelique Dremeau and D. Alexiadis and Slim Essid and Petros Daras},
+  title = {Analysis of dance movements using Gaussian processes},
+  booktitle = {ACM Multimedia},
+  address = {Nara, Japan},
+  year = 2012,
+  month = nov,
+  url = {http://hal.inria.fr/hal-00718791}
+}
+
+
+@ARTICLE{CJ:TASLP-13,
+ author={Joder, Cyril and Essid, Slim and Richard, Gael},
+ journal={IEEE Transactions on Audio, Speech, and Language Processing},
+ title={Learning Optimal Features for Polyphonic Audio-to-Score Alignment},
+ year={2013},
+ volume={21},
+ number={10},
+ pages={2118-2128},
+ keywords={audio signal processing;maximum likelihood estimation;signal representation;CQT-based representation;audio observations;conditional random fields model;discriminative framework;feature functions design;heuristic mappings;learning optimal features;linear transformation;maximum likelihood criterion;musical recording;polyphonic audio-to-score alignment;polyphonic music;spectrogram;symbolic representation;symmetric Kull-back-Leibler divergence;template construction;template vectors;temporal constraints;Music information retrieval;audio-to-score alignment;conditional random fields;discriminative learning},
+ doi={10.1109/TASL.2013.2266794},
+ ISSN={1558-7916},
+ pdf = {./papers/CJ_TASLP-13.pdf}}
+
+@ARTICLE{SE:TMM-12,
+author={Essid, Slim and Fevotte, Cedric},
+journal={IEEE Transactions on Multimedia}, title={Smooth Nonnegative Matrix Factorization for Unsupervised Audiovisual Document Structuring},
+year={2013},
+volume={15},
+number={2},
+pages={415-425},
+keywords={audio signal processing;document handling;hidden Markov models;matrix decomposition;minimisation;unsupervised learning;video databases;video signal processing;Kullback-Leibler divergence;NMF algorithm;audio modality;audio speaker diarization;cost function;hidden Markov model;histogram-of-count;latent structuring pattern;majorization-minimization technique;person-oriented video structuring task;political debate video database;smooth nonnegative matrix factorization;temporal smoothness constraint;unsupervised audiovisual document structuring;visual modality;Data models;Feature extraction;Histograms;Indexing;Telecommunications;Visualization;Vocabulary;Bag of features;content structuring;indexing;machine learning;matrix factorization;unsupervised classification;videos},
+doi={10.1109/TMM.2012.2228474},
+ISSN={1520-9210},
+pdf = {./papers/SE_TM-12.pdf}}
+
+@inproceedings{SE:ICIP-12,
+  author = {Slim Essid and Cedric Fevotte},
+  title = {Decomposing the Video Editing Structure of a Talk-show using Nonnegative Matrix Factorization},
+  booktitle = {International Conference on Image Processing (ICIP)},
+  address = {Orlando, FL, USA},
+  year = 2012,
+  month = oct,
+  annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=12528}
+}
+
+@INBOOK{SE:DFU-12,
+  author =	{Slim Essid and Gael Richard},
+  chapter =	{Fusion of Multimodal Information in Music Content Analysis},
+  title =	{Multimodal Music Processing},
+  pages =	{37--52},
+  series =	{Dagstuhl Follow-Ups},
+  ISBN =	{978-3-939897-37-8},
+  ISSN =	{1868-8977},
+  year =	{2012},
+  volume =	{3},
+  editor =	{Meinard Muller and Masataka Goto and Markus Schedl},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{http://drops.dagstuhl.de/opus/volltexte/2012/3465},
+  URN =		{urn:nbn:de:0030-drops-34652},
+  doi =		{http://dx.doi.org/10.4230/DFU.Vol3.11041.37},
+  annote =	{Keywords: Multimodal music processing, music signals indexing and transcription, information fusion, audio, video},
+  pdf = {./papers/SE_DFU-12.pdf}
+}
+
+@ARTICLE{SE:ICMI-12,
+  author = {Slim Essid and X. Lin and M. Gowing and G. Kordelas and A. Aksay and P. Kelly and Thomas Fillon and Q. Zhang and A. Dielmann and V. Kitanovski and R. Tournemenne and Aymeric Masurelle and E. Izquierdo and N. E.  OConnor and Petros Daras and Gael Richard},
+  title = {A multi-modal dance corpus for research into interaction between humans in virtual environments},
+  journal = {Journal on Multimodal User Interfaces: Special issue on multimodal corpora},
+  year = {2012},
+  pdf = {./papers/SE_ICMI-12.pdf}
+}
+
+@inproceedings{SE:ICMI-11,
+  author = {Slim Essid and X. Lin and M. Gowing and G. Kordelas and A. Aksay and P. Kelly and Thomas Fillon and Q. Zhang and A. Dielmann and V. Kitanovski and R. Tournemenne and N. E.  OConnor and Petros Daras and Gael Richard},
+  title = {A multimodal dance corpus for research into real-time interaction between humans in online virtual environments },
+  booktitle = {ICMI Workshop On Multimodal Corpora For Machine Learning},
+  address = {Alicante, Spain},
+  year = 2011,
+  month = nov,
+  annote = {category=inproceedings language=en audience=2 state=published project=audiosig dept=tsi group=aao id=12272},
+  pdf = {./papers/SE_ICMI-11.pdf}
+}
+
+@inproceedings{SE:ICASSP-12b,
+  author = {Slim Essid and D. Alexiadis and R. Tournemenne and M. Gowing and P. Kelly and D. Monhagan and Petros Daras and Angelique Dremeau and N. E.  OConnor},
+  title = {An Advanced Virtual Dance Performance Evaluator},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},
+  address = {Kyoto, Japan},
+  year = 2012,
+  month = mar,
+  annote = {category=inproceedings language=en audience=2 state=toappear project=audiosig dept=tsi group=aao id=12271},
+  pdf = {./papers/SE_ICASSP-12.pdf}
+}
+
+@inproceedings{SE:ICASSP-12,
+  author = {Slim Essid},
+  title = {A Single-class SVM Based Algorithm For Computing An Identifiable Nmf},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},
+  address = {Kyoto, Japan},
+  year = 2012,
+  month = mar,
+  annote = {category=inproceedings language=en audience=2 state=toappear project=audiosig dept=tsi group=aao id=12270},
+  pdf = {./papers/SE_ICASSP-12b.pdf}
+}
+
+@inproceedings{RF:ICASSP-12,
+  author = {Remi Foucard and Slim Essid and Mathieu Lagrange and Gael Richard},
+  title = {A Regressive Boosting Approach To Automatic Audio Tagging Based On Soft Annotator Fusion},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  address = {Kyoto, Japan},
+  year = 2012,
+  month = mar,
+  annote = {category=inproceedings language=en audience=2 state=toappear project=audiosig dept=tsi group=aao id=12269},
+  pdf = {./papers/RF_ICASSP-12.pdf}
+}
+
+
+@inproceedings{SE:ACM-MM-GC-2011,
+  author = {Slim Essid and Yves Grenier and Mounira Maazaoui and Gael Richard and R. Tournemenne},
+  title = {An audio-driven virtual dance-teaching assistant},
+  booktitle = {ACM Multimedia},
+  address = {Scottsdale, Arizona, USA},
+  year = 2011,
+  month = nov,
+  pdf = {./papers/SE_ACM-11.pdf},
+  annote = {category=inproceedings language=fr audience=1 state=toappear project= dept=tsi group=aao id=11561}
+}
+
+@inproceedings{CC:ACM-MM-GC-2011,
+  author = {M. Gowing and P. Kelly and N. E.  OConnor and E. Izquierdo and V. Kitanovski and X. Lin and Q. Zhang and C. Concolato and Slim Essid and J. Le Feuvre and R. Tournemenne},
+  title = {Enhanced Visualisation of Dance Performance from Automatically Synchronised Multimodal Recordings},
+  booktitle = {ACM Multimedia},
+  address = {Scottsdale, Arizona, USA},
+  year = 2011,
+  month = nov,
+  pdf = {./papers/CC_ACM-11.pdf},
+  annote = {category=inproceedings language=en audience=2 state=toappear project=m2 dept=tsi group=aao,mm id=11552}
+}
+
+
+@INPROCEEDINGS{SG:ISMIR-11,
+  author = {S. Gulluni and Slim Essid and O. Buisson and Gael Richard},
+  title = {An interactive system for electro-acoustic music analysis},
+  booktitle = {International Conference on Music Information Retrieval (ISMIR)},
+  year = {2011},
+  address = {Miami, U.S.A},
+  month = oct,
+  pdf = {./papers/SG_ISMIR-11.pdf}
+}
+
+@INPROCEEDINGS{RF:ISMIR-11,
+  author = {Foucard, Remi and Essid, Slim and Lagrange, Mathieu and Richard, Gael},
+  title = {Multi-scale temporal fusion by boosting for music classification},
+  booktitle = {International Conference on Music Information Retrieval (ISMIR)},
+  year = {2011},
+  address = {Miami, U.S.A},
+  month = oct,
+  pdf = {./papers/RF_ISMIR-11.pdf}
+}
+
+@INPROCEEDINGS{CJ:WASPAA-11,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {Optimizing the Mapping from a Symbolic to an Audio Representation for Music-to-Score Alignment},
+  booktitle = {IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+  year = {2011},
+  address = {New Paltz, New York, U.S.A},
+  month = oct,
+  pdf = {./papers/CJ_WASPAA-11.pdf}
+}
+
+@techreport{SE:TREP-11,
+  author = {Essid, Slim and Fevotte, Cedric} ,
+  title = {Nonnegative matrix factorization for unsupervised audiovisual document structuring},
+  year = {2011},
+  institution = {HAL},
+  number = {hal-00605886},
+  pdf = {./papers/SE_HAL-11.pdf},
+  url = {http://hal.archives-ouvertes.fr/hal-00605886/en/}
+}
+
+@INBOOK{GA:IFMGBOOK,
+  chapter = {Traitement des modalites "audio" et "parole"},
+  title = {Semantique et multimodalite en analyse de l information},
+  publisher = {Hermes/Lavoisier},
+  year = {2011},
+  editor = {Marine Campedel and Pierre Hoogstel},
+  author = {G. Adda and G. Chollet and Slim Essid and Thomas Fillon and M. Garnier-Rizet
+	and C. Hory and L. Beltaifa-Zouari},
+  owner = {essid},
+  timestamp = {2011.02.28}
+}
+
+@inbook{FV:TVBOOK-11,
+author = {Vallet, F. and Essid, Slim and Carrive, J. and Richard, G.},
+title = {TV Content Analysis: Techniques and Applications},
+editor = {Y. Kompatsiaris, B. Merialdo and S. Lian},
+publisher = {CRC Press, Taylor Francis LLC},
+chapter = {High-level TV talk show structuring centered on speakers interventions},
+year = {2011}
+}
+
+@INPROCEEDINGS{SG:AES-11,
+  author = {S. Gulluni and Slim Essid and O. Buisson and Gael Richard},
+  title = {Interactive Classification of Sound Objects for Polyphonic Electro-Acoustic Music Annotation},
+  booktitle = {AES 42nd International Conference},
+  year = {2011},
+  month = jul,
+  pdf = {./papers/SG_AES-11.pdf},
+  address = {Ilmenau, Germany}
+}
+
+@INPROCEEDINGS{SE:ICIP-08,
+  author = {W. Bailer and E. Dumont and Slim Essid and B. M\&eacute;rialdo},
+  title = {A Collaborative Approach to Automatic Rushes Video Summarization},
+  booktitle = {IEEE ICIP Workshop on Multimedia Information Retrieval: New Trends
+	and Challenges},
+  year = {2008},
+  month = oct,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=8679},
+  file = {SE_ICIP-08.pdf:./papers/SE_ICIP-08.pdf:PDF},
+  pdf = {./papers/SE_ICIP-08.pdf}
+}
+
+@INBOOK{RB:MMABOOK-11,
+  chapter = {Feature Extraction for Multimedia Analysis},
+  title = {Multimedia Semantics: Metadata, Analysis and Interaction},
+  publisher = {Wiley},
+  year = {2011},
+  editor = {R. Troncy, B. Huet and S. Schenk},
+  author = {R. Benmokhtar and B. Huet and Gael Richard and T. Declerck and Slim Essid},
+  owner = {essid},
+  timestamp = {2010.12.20}
+}
+
+@INPROCEEDINGS{RB:DSP-02,
+  author = {R. Boyer and Slim Essid},
+  title = {Transient modeling with a Frequency-Transform Subspace Algorithm
+	and Transient + Sinusoidal scheme},
+  booktitle = {14th IEEE Int. Conf. on Digital Signal Proc.},
+  year = {2002},
+  address = {Santorini (Greece)},
+  month = jul,
+  abstract = {We present an efficient modeling method for strong transient character
+	audio signals. It is shown that the parametric non-stationary exponentially
+	damped sinusoids (EDS) model permits good performance for time domain
+	modeling of quasi-stationary signals or "weak" transients. However,
+	a decay in modeling performance is observed when dealing with highly
+	nonstationary signals as in a variety of musical sounds (various
+	percussions, castanets, triangle,...). The idea is then to process
+	the signal in a well chosen frequency-transform domain in which the
+	transient temporal characteristics are better modeled by EDS. As
+	a result, better representations of the transient signal class are
+	obtained with no pre-echo artifacts (energy before the attack) and
+	a very good signal onset dynamic reproduction. Finally, an original
+	"transient+sinusoidal" modeling scheme is proposed.},
+  annote = {category=inproceedings state=published project= dept=tsi group=cod
+	id=2014},
+  file = {RB_DSP-02.pdf:./papers/RB_DSP-02.pdf:PDF},
+  pdf = {./papers/RB_DSP-02.pdf}
+}
+
+@INPROCEEDINGS{SE:GRETSI-03,
+  author = {R. Boyer and Slim Essid and K. Abed-Meraim and N. Moreau},
+  title = {Mod\&egrave;les sinuso\&iuml;daux \&eacute;tendus pour le codage
+	audio},
+  booktitle = {Dix-neuvi\&egrave;me colloque sur le Traitement du Signal et des
+	Images},
+  year = {2003},
+  address = {Paris, France},
+  month = sep,
+  annote = {category=inproceedings state=published project= dept=tsi group=aao,cod,tsac
+	id=3453},
+  file = {SE_GRETSI-03.pdf:./papers/RB_GRETSI-03.pdf:PDF},
+  pdf = {./papers/RB_GRETSI-03.pdf}
+}
+
+@INPROCEEDINGS{RB:ICM-02,
+  author = {R. Boyer and Slim Essid and N. Moreau},
+  title = {Dynamic temporal segmentation in parametric non-stationary modeling
+	for percussive musical signals},
+  booktitle = {IEEE Int. Conf. on Multimedia and Expo (ICME)},
+  year = {2002},
+  address = {Lausanne, Switzerland},
+  month = aug,
+  abstract = {An audio signal parametric modeling scheme is proposed that permits
+	higher performance for representing strong sound transients. The
+	exponentially damped sinusoids (EDS) model is considered in association
+	with a high resolution parameter estimation approach. Such a technique
+	is well adapted to almost every audio signal but is unfortunately
+	not efficient when dealing with signals presenting strong temporal
+	variations, such as percussive music signals, and causes pre-echo
+	artifacts and weak onset dynamic reproduction which are prejudicial
+	to listening. A system, based on the EDS model, has been developed
+	with a transient detector and dynamic time segmentation and modeling
+	that allows to overcome such artifacts.},
+  annote = {category=inproceedings state=published project= dept=tsi group=cod
+	id=2013},
+  file = {RB_ICM-02.pdf:./papers/RB_ICM-02.pdf:PDF},
+  pdf = {./papers/RB_ICM-02.pdf}
+}
+
+@INPROCEEDINGS{RB:ICS-02,
+  author = {R. Boyer and Slim Essid and N. Moreau},
+  title = {Non-stationary signal parametric modeling techniques with an application
+	to low bitrate audio coding},
+  booktitle = {6th IEEE Int. Conf. Signal Processing},
+  year = {2002},
+  address = {Beijing, China},
+  month = aug,
+  abstract = {Low bit rate audio coding often relies on Fourier representation despite
+	its limitations for transient signal modeling. This study proposes
+	alternative decompositions and expansion strategies that lead to
+	more accurate modeling. Two classes of methods are considered, subspace
+	decomposition methods, and atomic decomposition methods and their
+	performances are compiled to propose an audio modeling scheme amenable
+	to low bit rate coding.},
+  annote = {category=inproceedings state=published project= dept=tsi group=cod
+	id=2012},
+  file = {RB_ICS-02.pdf:./papers/RB_ICS-02.pdf:PDF},
+  pdf = {./papers/RB_ICS-02.pdf}
+}
+
+@INPROCEEDINGS{Boyer_01,
+  author = {R. Boyer and Slim Essid and N. Moreau},
+  title = {Exploration de techniques modernes de mod\&eacute;lisation adapt\&eacute;es
+	\&agrave; du codage audio bas-d\&eacute;bit},
+  booktitle = {7\&egrave;mes Journ\&eacute;es d Etudes et d Echanges : Compression
+	et Repr\&eacute;sentation des Signaux Audiovisuels (CORESA)},
+  year = {2001},
+  address = {Dijon, France},
+  month = oct,
+  annote = {category=inproceedings state=published project= dept=tsi group=cod
+	id=1971},
+  file = {RB_CORESA-01.pdf:./papers/RB_CORESA-01.pdf:PDF},
+  pdf = {./papers/RB_CORESA-01.pdf}
+}
+
+@INPROCEEDINGS{SB:Eusipco10,
+  author = {S. Bozonnet and F. Vallet and N. Evans and Slim Essid and J. Carrive
+	and Gael Richard},
+  title = {A multimodal approach to initialisation for top-down speaker diarization
+	of television shows},
+  booktitle = {European Signal Processing Conference (EUSIPCO)},
+  year = {2010},
+  address = {Allborg, Denmark},
+  month = aug,
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10394},
+  file = {:D\:\\documents\\myPage\\papers\\SB_EUSIPCO-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/SB_EUSIPCO-10.pdf},
+  timestamp = {2010.06.24}
+}
+
+@INPROCEEDINGS{SE:SAMT-08,
+  author = {E. Dumont and B. Merialdo and Slim Essid and W. Bailer and D. Byrne
+	and H. Bredin and N. E.  OConnor and G. J. F. Jones and M. Haller
+	and A. Krutz and T. Sikora and T. Piatrik},
+  title = {A collaborative approach to video summarization},
+  booktitle = {3rd International Conference on Semantic and Digital Media Technologies
+	(SAMT)},
+  year = {2008},
+  address = {Koblenz, Germany},
+  month = dec,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=8680},
+  file = {SE_SAMT-08.pdf:./papers/SE_SAMT-08.pdf:PDF},
+  pdf = {./papers/SE_SAMT-08.pdf}
+}
+
+@INPROCEEDINGS{SE:TRECVID-08,
+  author = {E. Dumont and B. Merialdo and Slim Essid and W. Bailer and H. Rehatschek
+	and D. Byrne and H. Bredin and N. E.  OConnor and G. J. F. Jones
+	and A. F. Smeaton and and M. Haller and A. Krutz and T. Sikora and
+	T. Piatrik},
+  title = {Rushes video summarization using a collaborative approach},
+  booktitle = {TRECVID 2008, ACM International Conference on Multimedia Information
+	Retrieval 2008},
+  year = {2008},
+  address = {Vancouver, BC, Canada},
+  month = nov,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=8681},
+  file = {SE_TRECVID-08.pdf:./papers/SE_ACM-08.pdf:PDF},
+  pdf = {./papers/SE_ACM-08.pdf}
+}
+
+@PHDTHESIS{SE:these,
+  author = {Slim Essid},
+  title = {Classification automatique des signaux audio-fr\&eacute;quences:
+	reconnaissance des instruments de musique},
+  school = {Universit\&eacute; Pierre et Marie Curie},
+  year = {2005},
+  month = dec,
+  annote = {category=phdthesis state=published project=audiosig dept=tsi group=aao
+	id=7638},
+  file = {SE_these.pdf:./papers/SE_PhD-05.pdf:PDF},
+  pdf = {./papers/SE_PhD-05.pdf}
+}
+
+@MASTERSTHESIS{SE:master-02,
+  author = {Essid, Slim},
+  title = {Codeur audio param\&eacute;trique bas d\&eacute;bit bas\&eacute;
+	sur un mod\&egrave;le "Sinuso\&iuml;des Amorties Exponentiellement
+	+ Transitoires + Bruit"},
+  school = {Ecole Nationale Sup\&eacute;rieure des T\&eacute;l\&eacute;communications
+	(ENST)},
+  year = {2002},
+  month = {October},
+  file = {dea.pdf:./papers/SE_MastTh-02.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/SE_MastTh-02.pdf},
+  timestamp = {2009.08.11}
+}
+
+@INBOOK{SE:MMABOOK-11,
+  chapter = {Machine Learning Techniques for Multimedia Analysis},
+  title = {Multimedia Semantics: Metadata, Analysis and Interaction},
+  publisher = {Wiley},
+  year = {2011},
+  editor = {R. Troncy, B. Huet and S. Schenk},
+  author = {Slim Essid and M. Campedel and Gael Richard and T. Piatrik and R. Benmokhtar
+	and B. Huet},
+  owner = {essid},
+  timestamp = {2010.12.20}
+}
+
+@ARTICLE{SE:COD-06,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Instrument recognition in polyphonic music based on automatic taxonomies},
+  journal = {IEEE Transactions on Audio, Speech, and Language Processing},
+  year = {2006},
+  volume = {14},
+  pages = {68-80},
+  number = {1},
+  month = jan,
+  annote = {category=article state=published doi=10.1109/TSA.2005.860351 project=audiosig
+	dept=tsi group=aao id=5909},
+  file = {SE_COD-06.pdf:./papers/SE_TSALP-06b.pdf:PDF},
+  pdf = {./papers/SE_TSALP-06b.pdf}
+}
+
+@ARTICLE{SE:COD-06-2,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Musical instrument recognition by pairwise classification strategies},
+  journal = {IEEE Transactions on Audio, Speech, and Language Processing},
+  year = {2006},
+  volume = {14},
+  pages = {1401- 1412},
+  number = {4},
+  month = jul,
+  annote = {category=article state=published doi=10.1109/TSA.2005.860842 project=audiosig
+	dept=tsi group=aao id=5910},
+  file = {SE_COD-06-2.pdf:./papers/SE_TSALP-06a.pdf:PDF},
+  pdf = {./papers/SE_TSALP-06a.pdf}
+}
+
+@INPROCEEDINGS{SE:ICASSP-06,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Hierarchical Classification of Musical Instruments on Solo Recordings},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing
+	(ICASSP)},
+  year = {2006},
+  address = {Toulouse, France},
+  month = may,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=6672},
+  file = {SE_ICASSP-06.pdf:./papers/SE_ICASSP-06.pdf:PDF},
+  pdf = {./papers/SE_ICASSP-06.pdf}
+}
+
+@INPROCEEDINGS{SE-ICASSP-05,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Instrument recognition in polyphonic music},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing
+	(ICASSP)},
+  year = {2005},
+  address = {Philadelphia, US},
+  month = mar,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=5067},
+  file = {SE-ICASSP-05.pdf:./papers/SE_ICASSP-05.pdf:PDF},
+  pdf = {./papers/SE_ICASSP-05.pdf}
+}
+
+@INPROCEEDINGS{SE:AES-04,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Efficient musical instrument recognition on solo performances using
+	basic features},
+  booktitle = {AES 25th conference},
+  year = {2004},
+  address = {London, UK},
+  month = jun,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao,cod id=3608},
+  file = {SE_AES-04.pdf:./papers/SE_AES-04.pdf:PDF},
+  pdf = {./papers/SE_AES-04.pdf}
+}
+
+@INPROCEEDINGS{SE:Eusipco-04,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Musical instrument recognition on solo performances},
+  booktitle = {European Signal Processing Conference (EUSIPCO)},
+  year = {2004},
+  address = {Vienna, Austria},
+  month = sep,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao,cod documentURL=http://www.enst.fr/~grichard/publications.htm
+	id=4893},
+  file = {:D\:\\documents\\myPage\\papers\\SE_EUSIPCO-04.pdf:PDF},
+  pdf = {./papers/SE_AES-04.pdf},
+  url = {http://www.enst.fr/~grichard/publications.htm}
+}
+
+@INPROCEEDINGS{SE:ISMIR-04,
+  author = {Slim Essid and Gael Richard and Bertrand David},
+  title = {Musical instrument recognition based on class pairwise feature selection},
+  booktitle = {International Conference on Music Information Retrieval (ISMIR)},
+  year = {2004},
+  address = {Barcelona, Spain},
+  month = oct,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao,cod documentURL=http://www.enst.fr/~grichard/publications.htm
+	id=4892},
+  file = {:./papers/SE_ISMIR-04.pdf:PDF},
+  pdf = {./papers/SE_ISMIR-04.pdf},
+  url = {http://www.enst.fr/~grichard/publications.htm}
+}
+
+@ARTICLE{OG:CVST-07,
+  author = {O. Gillet and Slim Essid and Gael Richard},
+  title = {On the Correlation of Automatic Audio and Visual Segmentations of
+	Music Videos},
+  journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+  year = {2007},
+  month = mar,
+  annote = {category=article state=published project=audiosig dept=tsi group=aao
+	id=6864},
+  file = {OG_CVST-07.pdf:./papers/OG_TCSVT-07.pdf:PDF},
+  pdf = {./papers/OG_TCSVT-07.pdf}
+}
+
+@INPROCEEDINGS{SG:MML-09,
+  author = {S. Gulluni and Slim Essid and O. Buisson and E. Favreau and Gael Richard},
+  title = {Interactive Segmentation of Electro-Acoustic Music},
+  booktitle = {2nd International Workshop on Machine Learning and Music (MML - ECML
+	- PKDD)},
+  year = {2009},
+  address = {Bled, Slovenia},
+  month = sep,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=10303},
+  file = {SG_MML-09.pdf:./papers/SG_MML-09.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/SG_MML-09.pdf},
+  timestamp = {2010.03.10}
+}
+
+@ARTICLE{CJ:TSALP-2011,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {A Conditional Random Field Framework for Robust and Scalable Audio-to-Score
+	Matching},
+  journal = {IEEE Transactions on Audio, Speech and Language Processing},
+  volume = {19},
+  pages = {2385 - 2397},
+  number = {8},
+  month = nov,
+  year = {2011},
+  pdf = {./papers/CJ_TSALP-11.pdf},
+  owner = {essid},
+  timestamp = {2011.02.10}
+}
+
+@INPROCEEDINGS{CJ:ACM-2010,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {A Conditional Random Field Viewpoint of Symbolic Audio-to-Score Matching},
+  booktitle = {ACM Multimedia 2010},
+  year = {2010},
+  address = {Florence, Italy},
+  month = oct,
+  owner = {essid},
+  timestamp = {2010.07.06}
+}
+
+@INPROCEEDINGS{CJ:CORESA-2010,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {Approche hi\&eacute;rarchique pour un alignement musique-sur-partition
+	efficace},
+  booktitle = {Compression et Repr\&eacute;sentation des Signaux Audiovisuels (CORESA)},
+  year = {2010},
+  address = {Lyon, France},
+  month = oct,
+  note = {Received Young Researcher Award!},
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10418},
+  file = {:D\:\\documents\\myPage\\papers\\CJ_CORESA-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/CJ_CORESA-2010.pdf},
+  timestamp = {2010.06.24}
+}
+
+@INPROCEEDINGS{CJ:ICASSP-2010,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {A Comparative Study of tonal acoustic Features for a Symbolic Level
+	Music-to-Score Alignment},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing
+	(ICASSP)},
+  year = {2010},
+  address = {Dallas, TX, US},
+  month = mar,
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10174},
+  file = {CJ_ICASSP-2010.pdf:./papers/CJ_ICASSP-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/CJ_ICASSP-10.pdf},
+  timestamp = {2010.03.10}
+}
+
+@INPROCEEDINGS{CJ:ISMIR-2010,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {An Improved Hierarchical Approach for Music-to-Symbolic Score Alignment},
+  booktitle = {International Conference on Music Information Retrieval (ISMIR)},
+  year = {2010},
+  address = {Utrecht, The Netherlands},
+  month = aug,
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10383},
+  file = {:D\:\\documents\\myPage\\papers\\CJ_ISMIR-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/CJ_ISMIR-2010.pdf},
+  timestamp = {2010.06.24}
+}
+
+@INPROCEEDINGS{CJ:GRETSI-09,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {Etude des descripteurs acoustiques pour l alignement temporel audio-sur-partition
+	musicale},
+  booktitle = {GRETSI},
+  year = {2009},
+  address = {Dijon},
+  month = sep,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=9946},
+  file = {CJ_GRETSI-09.pdf:./papers/CJ_GRETSI-09.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/CJ_GRETSI-09.pdf},
+  timestamp = {2010.03.10}
+}
+
+@ARTICLE{CJ:TASLP-08,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {Temporal Integration for Audio Classification with Application to
+	Musical Instrument Classification},
+  journal = {IEEE Transactions on Audio, Speech and Language Processing},
+  year = {2009},
+  volume = {17},
+  pages = {174-186},
+  number = {1},
+  month = jan,
+  annote = {category=article state=published doi=10.1109/TASL.2008.2007613 project=audiosig
+	dept=tsi group=aao documentURL=http://www.tsi.enst.fr/publications/enst/article-2009-8585.pdf
+	id=8585},
+  file = {:./papers/CJ_TASLP-09.pdf:PDF},
+  pdf = {./papers/CJ_TASLP-09.pdf},
+  url = {http://www.tsi.enst.fr/publications/enst/article-2009-8585.pdf}
+}
+
+@INPROCEEDINGS{CJ-EUSIPCO-2008,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {Alignment Kernels for Audio Classification with Application to Music
+	Instrument Recognition},
+  booktitle = {European Signal Processing Conference (EUSIPCO)},
+  year = {2008},
+  address = {Lausanne, Suisse},
+  month = aug,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao documentURL=http://www.tsi.enst.fr/publications/enst/inproceedings-2008-8528.pdf
+	id=8528},
+  file = {:./papers/CJ_EUSIPCO-08.pdf:PDF},
+  pdf = {./papers/CJ_EUSIPCO-08.pdf},
+  url = {http://www.tsi.enst.fr/publications/enst/inproceedings-2008-8528.pdf}
+}
+
+@INPROCEEDINGS{CJ:ICASSP-11,
+  author = {Cyril Joder and Slim Essid and Gael Richard},
+  title = {Hidden Discrete Tempo Model: a Tempo-aware Timing Model for Audio-to-Score
+	Alignment},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing
+	(ICASSP)},
+  year = {2011},
+  address = {Prague, Czech Republic},
+  month = may,
+   pdf = {./papers/CJ_ICASSP-11.pdf},
+  owner = {essid},
+  timestamp = {2011.01.28}
+}
+
+@INPROCEEDINGS{MaxL:ICASSP09,
+  author = {M. Lardeur and Slim Essid and Gael Richard and M. Haller and T. Sikora},
+  title = {Incorporating prior knowledge on the digital media creation process
+	into audio classifiers},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing
+	(ICASSP)},
+  year = {2009},
+  address = {Taipei, Taiwan},
+  month = apr,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=9336},
+  file = {MaxL_ICASSP09.pdf:./papers/ML_ICASSP-09.pdf:PDF},
+  pdf = {./papers/ML_ICASSP-09.pdf}
+}
+
+@INPROCEEDINGS{PL-AES-05,
+  author = {P. Leveau and Slim Essid and Gael Richard and L. Daudet and Bertrand David},
+  title = {On the usefulness of differentiated transient/steady-state processing
+	in machine recognition of musical instruments},
+  booktitle = {AES convention},
+  year = {2005},
+  address = {Barcelona, Spain},
+  month = may,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=5071},
+  file = {PL-AES-05.pdf:./papers/SE_AES-05.pdf:PDF},
+  pdf = {./papers/SE_AES-05.pdf}
+}
+
+@INPROCEEDINGS{BM:ISMIR10,
+  author = {B. Mathieu and Slim Essid and Thomas Fillon and J. Prado and Gael Richard},
+  title = {YAAFE, AN EASY TO USE AND EFFICIENT AUDIO FEATURE EXTRACTION SOFTWARE},
+  booktitle = {International Conference on Music Information Retrieval (ISMIR)},
+  year = {2010},
+  address = {Utrecht, The Netherlands},
+  month = aug,
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10395},
+  file = {:D\:\\documents\\myPage\\papers\\BM_ISMIR-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/BM_ISMIR-10.pdf},
+  timestamp = {2010.06.24}
+}
+
+@TECHREPORT{AO:TREP-09,
+  author = {Alexey Ozerov and Slim Essid and M. Charbit},
+  title = {Reconnaissance des instruments dans la musique polyphonique par d\&eacute;composition
+	NMF et classification SVM},
+  institution = {TELECOM ParisTech},
+  year = {2009},
+  number = {2009D014},
+  file = {AO_TREP-09.pdf:./papers/AO_TREP-09.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/AO_TREP-09.pdf},
+  timestamp = {2009.08.11}
+}
+
+@INPROCEEDINGS{ICA:07,
+  author = {Gael Richard and P. Leveau and L. Daudet and Slim Essid and Bertrand David},
+  title = {Towards polyphonic musical instrument recognition},
+  booktitle = {International Congress on Acoustics (ICA)},
+  year = {2007},
+  address = {Madrid},
+  month = sep,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=7332},
+  file = {ICA_07.pdf:./papers/GR_ICA-07.pdf:PDF},
+  pdf = {./papers/GR_ICA-07.pdf}
+}
+
+@INPROCEEDINGS{GR:Icassp-07,
+  author = {Gael Richard and M. Ramona and Slim Essid},
+  title = {Combined supervised and unsupervised approaches for automatic segmentation
+	of radiophonic audio streams},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing
+	(ICASSP)},
+  year = {2007},
+  address = {Honolulu, Hawai},
+  month = apr,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=6862},
+  file = {GR_Icassp-07.pdf:./papers/GR_ICASSP-07.pdf:PDF},
+  pdf = {./papers/GR_ICASSP-07.pdf}
+}
+
+@INPROCEEDINGS{FV:CORESA-10,
+  author = {F. Vallet and Slim Essid and J. Carrive and Gael Richard},
+  title = {Descripteurs visuels robustes pour l identification de locuteurs
+	dans des emissions televisees de talk-shows},
+  booktitle = {Compression et Repr\&eacute;sentation des Signaux Audiovisuels (CORESA)},
+  year = {2010},
+  address = {Lyon, France},
+  month = oct,
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10393},
+  file = {:D\:\\documents\\myPage\\papers\\FV_CORESA-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/FV_ICIP-10.pdf},
+  timestamp = {2010.06.24}
+}
+
+@INPROCEEDINGS{FV:ICIP10,
+  author = {F. Vallet and Slim Essid and J. Carrive and Gael Richard},
+  title = {ROBUST VISUAL FEATURES FOR THE MULTIMODAL IDENTIFICATION OF UNREGISTERED
+	SPEAKERS IN TV TALK-SHOWS},
+  booktitle = {IEEE International Conference on Image Processing (ICIP)},
+  year = {2010},
+  month = oct,
+  annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
+	id=10393},
+  file = {:./papers/FV_ICIP-10.pdf:PDF},
+  owner = {essid},
+  pdf = {./papers/FV_ICIP-10.pdf},
+  timestamp = {2010.06.24}
+}
+
+@INPROCEEDINGS{SW:EUSIPCO08,
+  author = {S. Wegener and M. Haller and J.-J. Burred and T. Sikora and Slim Essid
+	and Gael Richard},
+  title = {On the Robustness of Audio Features for Musical Instrument Classification},
+  booktitle = {European Signal Processing Conference (EUSIPCO)},
+  year = {2008},
+  address = {Lausanne, Switzerland},
+  month = sep,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao id=8616},
+  file = {SW_EUSIPCO08.pdf:./papers/SW_EUSIPCO08.pdf:PDF},
+  pdf = {./papers/SW_EUSIPCO08.pdf}
+}
+
+@INPROCEEDINGS{SE:TRECVID-07,
+  author = {P. Wilkins and T. Adamek and D. Byrne and G. J. F. Jones and H. Lee and
+	G. Keenan and K. Mc Guinness and N. E.  OConnor and A. F. Smeaton
+	and A. Amin and Z. Obrenovic and R. Benmokhtar and E. Galmar and
+	B. Huet and Slim Essid and R. Landais and F. Vallet and G. T. Papadopoulos
+	and S. Vrochidis and V. Mezaris and I. Kompatsiaris and E. Spyrou
+	and Y. Avrithis and R. Morzinger and P. Schallauer and W. Bailer
+	and T. Piatrik and K. Chandramouli and E. Izquierdo and M. Haller
+	and L. Goldmann and A. Samour and A. Cobet and T. Sikora and P. Praks},
+  title = {K-Space at TRECVid 2007},
+  booktitle = {TRECVID 2007},
+  year = {2007},
+  month = nov,
+  annote = {category=inproceedings state=published project=audiosig dept=tsi
+	group=aao documentURL=http://www.cdvp.dcu.ie/Papers/kspace-tv2007.pdf
+	id=7755},
+  file = {:./papers/SE_TRECVID-07.pdf:PDF},
+  pdf = {./papers/SE_TRECVID-07.pdf},
+  url = {http://www.cdvp.dcu.ie/Papers/kspace-tv2007.pdf}
+}

@@ -1,0 +1,256 @@
+- title: AUDIBLE
+  id: AUDIBLE
+  ongoing: true
+  url: https://projetaudible.fr/
+  logo: ../assets/img/logos/audible_logo.png
+  start_year: 2022
+  end_year: 2025
+  budget: 1.9 M€
+  nb_partners: 5
+  description: >-
+     The AUDIBLE project aims to revolutionise hearable technologies (especially TWS/earbuds) by developing a platform which will enable unprecedented use cases through artificial intelligence (AI) innovations, a highly energy-efficient and powerful DSP and AI processor, and the integration of a miniaturized biometric sensor.
+  description_fr:
+
+
+- title: LISTEN
+  id: LISTEN
+  ongoing: true
+  url: https://listen.telecom-paris.fr/en/
+  logo: 0
+  start_year: 2022
+  end_year:
+  budget:
+  nb_partners: 4
+  description: >-
+      LISTEN is a joint laboratory launched by Télécom Paris with Valeo, Bruitparif and Music      World Media, to develop cutting edge machine listening methodologies and systems. The joint laboratory will focus its research efforts on five fundamental issues, frugal learning based on scarce data, multi-view, multi-task & distributed learning, model-based deep learning, self-supervised learning, and finally (deep) generative models.
+  description_fr: >-
+      Laboratoire commun lancé par Télécom Paris avec Valeo, Bruitparif et Music World Media, LISTEN a pour enjeu d’extraire du signal sonore (quelle qu’en soit la nature, musique, parole, sons courants de l’environnement, etc.) les caractéristiques fondamentales utiles à sa compréhension et ce, en développant des systèmes d’intelligence artificielle adaptés. Le laboratoire commun axera ses travaux de recherche autour de cinq enjeux fondamentaux : l’apprentissage frugal, à partir de peu de données, l’apprentissage multi-vue, multi-tâche et distribué, l’apprentissage profond orienté signal, l’apprentissage faiblement supervisé, et enfin l’apprentissage de modèles génératifs et interprétables.
+
+- title: DSAIDIS
+  id: dsaidis
+  ongoing: true
+  url: "https://datascienceandai.wp.imt.fr/en/home-2/"
+  logo: 0
+  type:
+  start_year: 2019
+  end_year: 2024
+  nb_partners: 7
+  budget:
+  description: >-
+    Data Science & Artificial Intelligence for Digitalized Industry & Services
+    is Télécom Paris’s 15th Chair. Established for a five-year period with the
+    help of the Fondation Mines-Télécom and the support of Airbus Defence &
+    Space,  Engie,  Idemia, Safran and Valeo, it is held by Florence
+    d’Alché-Buc, Full Professor at Télécom Paris in the fields of Computer
+    Science and Applied Mathematics. It is concerned with: 1) developing predictive
+    analytics on time series and data streams; 2) exploiting large scale,
+    heterogeneous, partially labeled data; 3) machine learning for trusted
+    and robust decision; 4) learning through interactions with the environment.
+  description_fr: >-
+    Quinzième chaire de Télécom Paris, elle est établie pour une durée de cinq ans avec l’aide de la Fondation Mines-Télécom et le mécénat d’Airbus Defence & Space, Engie, Idemia, Safran et Valeo. Sa titulaire est la Professeure Florence d’Alché-Buc, enseignante et chercheuse à Télécom Paris en informatique et mathématiques appliquées. La chaire est structurée autour
+    de 4 axes : 1) analyse et prévision de séries temporelles; 2) exploitation à grande échelle de données partiellement étiquetées et hétérogènes; 3) apprentissage statistique au service d’une prise de décision fiable et robuste; 4) apprentissage en interaction avec l’environnement.
+
+- title: AHEAD
+  id: AHEAD
+  ongoing: false
+  url:
+  logo: 0
+  start_year: 2018
+  end_year: 2020
+  budget: 620 k€
+  nb_partners: 2
+  description: >-
+     AHEAD (Augmented HEADphones Experience) was a maturation project whose purpose was to develop an AI powered headphones system and audio infrastructure to offer spectators an immersive sound experience at sports events.
+  description_fr:
+
+- title: StaRel
+  id: starel
+  ongoing: false
+  url: "http://www02.smt.ufrj.br/~starel/"
+  logo: 0
+  type: STIC AmSud network
+  start_year: 2017
+  end_year: 2020
+  nb_partners: 4
+  budget:
+  description: >-
+    StaRel is an interdisciplinary research project which aimed to develop
+    innovative technological and music-analytical methods to gain fresh
+    insight into the understanding and modeling of the rhythmic/metrical
+    structure in audio recordings of expressive music performances.
+    The project brought together researchers from Télécom Paris;
+    L2S, CNRS, France; Universidade Federal do Rio de Janeiro, Brazil; and
+    Universidad de la Republica, Uruguay.
+  description_fr:
+
+- title: Machine Learning For Big Data
+  id: ml_big_data
+  ongoing: false
+  url: http://machinelearningforbigdata.telecom-paristech.fr
+  logo: ../assets/img/logos/ml-chair_logo.jpg
+  type: Research Chair
+  start_year: 2013
+  end_year: 2018
+  nb_partners: 5
+  budget: "1.5 M€"
+  description: >-
+    The Chair Machine Learning for Big data was a Télécom ParisTech
+    Chair held by Stéphan Clémencon. It aimed at developing
+    methodological research addressing the challenges posed by the statistical
+    analysis of big data.
+  description_fr:
+
+- title: LASIE
+  id: lasie
+  ongoing: false
+  url: http://www.lasie-project.eu/
+  logo: ../assets/img/logos/lasie_logo.png
+  type: EU FP7
+  start_year: 2014
+  end_year: 2018
+  nb_partners: 18
+  budget: "420 k€"
+  description: >-
+    LASIE (Large Scale Information Exploitation of Forensic Data) provided a
+    set of tools and processes to support law enforcement agents and
+    investigators or analysts in their everyday work. The proposed system
+    significantly reduces the required investigation time by utilizing
+    automatic processes for analysing multimedia contents, as well as visual
+    analytics from an inference engine able to highlight otherwise hidden
+    information.
+  description_fr:
+
+- title: SeNSE
+  id: sense
+  ongoing: false
+  url: http://sense.isir.upmc.fr/
+  logo: ../assets/img/logos/smart_labex.png
+  type: SMART LABEX
+  start_year: 2013
+  end_year: 2016
+  nb_partners: 4
+  budget: "600 k€"
+  description: >-
+    SeNSE (Signaux Socio Emotionnels) was centered at the analysis of social
+    and emotional signals exchanged during human-virtual agent and human-human
+    interactions.
+  description_fr:
+
+- title: REVERIE
+  id: reverie
+  ongoing: false
+  url:
+  logo: ../assets/img/logos/reverie-logo.png
+  type: EU FP7
+  start_year: 2011
+  end_year: 2015
+  nb_partners: 13
+  budget: 604 k€
+  description: >-
+    The ultimate goal of REVERIE was to provide the means for building a mixed
+    reality space in which real and virtual worlds engage and seamlessly
+    interact in real-time, generating compelling and highly realistic
+    immersive environments.
+  description_fr:
+
+- title: MEEGAPERF
+  id: meegaperf
+  ongoing: false
+  url:
+  logo: 0
+  type: DGA - RAPID
+  start_year: 2011
+  end_year: 2015
+  nb_partners: 4
+  budget:
+  description: >-
+    MEEGAPERF (Monitoring EEG pour l'Anticipation des PERFormances) was a
+    French DGA-funded project that focuses on realtime human performance
+    monitoring through EEG analysis.
+  description_fr: Monitoring de signaux EEG.
+
+- title: VERVE
+  id: verve
+  ongoing: false
+  url:
+  logo: ../assets/img/logos/verve-logo.png
+  type: EU FP7
+  start_year: 2011
+  end_year: 2014
+  nb_partners: 8
+  budget: 300 k€
+  description: >-
+    VERVE : Vanquishing fear and apathy through E-inclusion: Personalised
+    and populated Realistic Virtual Environments for clinical, home and mobile
+    platforms, will develop ICT tools to support the treatment of people who
+    are at risk of social exclusion due to fear and/or apathy associated with
+    a disability. These tools will be in the form of personalised Virtual
+    Reality (VR) scenarios and serious games specifically designed for
+    therapeutic targets and made broadly available via a novel integration
+    of interactive 3D environments directly into Web browsers. The project
+    will perform cutting edge research into rendering and simulating
+    personalised and populated VR environments, 3D web graphics, and serious
+    games. These technical efforts will be underpinned by clinical/laboratory
+    and industry partners and in liaison with the stakeholders (i.e.,
+    participants, carers/family, and health professionals).
+  description_fr: >-
+    Environnements virtuels personnalisés pour l’analyse de certains états émotionnels.
+
+- title: 3DLife
+  id: 3dlife
+  ongoing: false
+  url:
+  logo: ../assets/img/logos/logo_3dlife.png
+  type: FP7 NoE
+  start_year: 2010
+  end_year: 2013
+  nb_partners: 7
+  budget: 415 k€
+  description: >-
+    "Bringing the Media Internet to Life" - or simply, 3DLife - was a European
+    Union funded project that aimed to integrate research conducted within
+    Europe in the field of Media Internet. 3DLife's ultimate target was to lay
+    the foundations of a European Competence Centre under the name "Excellence
+    in Media Computing and Communication" or simply EMC2.
+  description_fr:
+
+- title: Quaero
+  id: quaero
+  ongoing: false
+  url: http://www.quaero.org/
+  logo: ../assets/img/logos/logo_quaero.jpg
+  type: OSEO
+  start_year: 2008
+  end_year: 2013
+  nb_partners: 26
+  budget: 800 k€
+  description: >-
+    Quaero was a collaborative research and development program, centered at
+    developing multimedia and multilingual indexing and management tools for
+    professional and general public applications such as the automatic
+    analysis, classification, extraction and exploitation of information.
+    The research aimed to facilitate the extraction of information in
+    unlimited quantities of multimedia and multilingual documents, including
+    written texts, speech and music audio files, and images and videos.
+    Quaero was created to respond to new needs for the general public and
+    professional use, and new challenges in multimedia content analysis
+    resulting from the explosion of various information types and sources in
+    digital form, available to everyone via personal computers, television and
+    handheld terminals.
+  description_fr:
+
+- title: TANGERINE
+  id: tangerine
+  ongoing: false
+  url: https://www.irit.fr/~Cedric.Fevotte/
+  logo: ../assets/img/logos/logo_tangerine.jpg
+  type: ANR JC
+  start_year: 2009
+  end_year: 2012
+  nb_partners: 2
+  budget:
+  description: >-
+    TANGERINE: Theory and applications of nonnegative matrix factorization,
+    was a "young researcher" project funded by the French agency for
+    research (ANR) and coordinated by Cédric Févotte.
+  description_fr:

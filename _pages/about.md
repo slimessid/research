@@ -1,26 +1,57 @@
 ---
 layout: about
-title: about
+title: ABOUT
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://adasp.telecom-paris.fr/'>ADASP reseach group </a> | <a href='https://www.telecom-paris.fr/en/research/laboratories/information-processing-and-communication-laboratory-ltci/research-teams/signal-statistics-learning'>S²A team</a> | <a href='https://www.telecom-paris.fr/fr/recherche/laboratoires/laboratoire-traitement-et-communication-de-linformation-ltci'>LTCI lab</a> | <a href='https://www.telecom-paris.fr/'>T&eacute;l&eacute;com Paris</a> | <a href='https://www.ip-paris.fr/en'>Institut Polytechnique de Paris</a>
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+ align: right
+ image: me.jpg
+ image_circular: true # crops the image to make it circular
+#  address: >
+#    <p>T&eacute;l&eacute;com Paris - Room 5C</p>
+#    <p>19 place Marguerite Perey</p>
+#    <p>91120 Palaiseau - FRANCE</p>
 
-news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+### Research interests
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Machine learning and artificial intelligence for temporal data analysis, especially:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- multimodal and multiview deep learning;
+- representation learning, especially self-supervised learning;
+- structured prediction;
+
+with applications to:
+
+- machine listening, music content analysis (MIR) and speech processing;
+- multimedia content analysis, especially joint audiovisual data analysis;
+- multimodal perception: human behaviour analysis and affective
+computing, including EEG data analysis.
+
+For more information about my research activities check the [publications](), [research software](), [demos](), or [educational material]() I have contributed to. You can also read about the [research projects]() I have been involved in, including those of the [PhD students]() and [post-docs]() I have advised.
+
+### Short bio
+
+Slim Essid is Full Professor of Télécom Paris and the coordinator of the [Audio Data Analysis and Signal Processing (ADASP)](https://adasp.telecom-paris.fr) group. He received the state engineering degree from the École Nationale d’Ingénieurs de Tunis in 2001; the M.Sc. (D.E.A.) degree in digital communication systems from the École Nationale Supérieure des Télécommunications, Paris, France, in 2002; the Ph.D. degree from the Université Pierre et Marie Curie ([UPMC](http://www.upmc.fr/en/)), in 2005; and the habilitation (HDR) degree from UPMC in 2015.
+
+He has been involved in various French and European research projects among which are Quaero, EU Networks of Excellence FP6-Kspace and FP7-3DLife, and collaborative projects FP7-REVERIE and FP7-LASIE.
+
+Over the past 15 years, he has collaborated with 14 post-docs and has graduated 15 PhD students; he is currently co-advising 10 others.
+
+He has published over 150 peer-reviewed conference and journal papers with more than 100 distinct co-authors.
+
+On a regular basis he serves as a reviewer for various machine learning, signal processing, audio and multimedia conferences and journals, for instance various IEEE transactions, and as an expert for research funding agencies.
+
+<!-- Check our [initial demo](projects/1_project) and visit back soon for more impressive demos! -->
+
+### Contact
+
+Télécom Paris - Room 5C \
+19, place Marguerite Perey  91120 Palaiseau - FRANCE
+
+Indications on how to get there can be found <a href="https://www.telecom-paris.fr/en/campus/campus-life/maps-directions" target="_blank"> here</a>.
