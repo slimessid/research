@@ -59,9 +59,9 @@ On a regular basis he serves as a reviewer for various machine learning, signal 
   {% include selected_papers.liquid %}
 {% endif %}
 
-### Contact
-
-Télécom Paris - Room 5C \
-19, place Marguerite Perey  91120 Palaiseau - FRANCE
-
-Indications on how to get there can be found <a href="https://www.telecom-paris.fr/en/campus/campus-life/maps-directions" target="_blank"> here</a>.
+<h3 style="margin-left: 16%"> Contact </h3>
+<p style="margin-left: 16%;">
+  Télécom Paris - Room 5C <br/>
+  19, place Marguerite Perey  91120 Palaiseau - FRANCE <br/>
+  Indications on how to get there can be found <a href="https://www.telecom-paris.fr/en/campus/campus-life/maps-directions" target="_blank"> here</a>.
+</p>
