@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 Machine learning and artificial intelligence for temporal data analysis, especially:
 
 - multimodal and multiview deep learning;
-- representation learning, especially self-supervised learning;
+- representation learning, in particular self-supervised learning;
 - structured prediction;
 
 with applications to:
@@ -51,7 +51,13 @@ He has published over 150 peer-reviewed conference and journal papers with more 
 
 On a regular basis he serves as a reviewer for various machine learning, signal processing, audio and multimedia conferences and journals, for instance various IEEE transactions, and as an expert for research funding agencies.
 
-<!-- Check our [initial demo](projects/1_project) and visit back soon for more impressive demos! -->
+<!-- Selected papers -->
+{% if page.selected_papers %}
+  <h3>
+    <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected recent publications</a>
+  </h3>
+  {% include selected_papers.liquid %}
+{% endif %}
 
 ### Contact
 
