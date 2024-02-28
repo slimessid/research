@@ -1,0 +1,108 @@
+  audio_scene_analysis:
+    en: audio scene analysis
+    fr: analyse de scène audio
+    size: 10
+
+  bayesian_methods:
+    en: Bayesian methods
+    fr: méthodes Bayesiennes
+    size: 8
+
+  classification:
+    en: classification
+    fr: classification
+    size: 20
+
+  data_decomposition:
+    en: data decomposition
+    fr: décomposition de données
+    size: 20
+
+  deep_learning:
+    en: deep learning
+    fr: apprentissage profond
+    size: 18
+
+  denoising:
+    en: denoising
+    fr: débruitage
+    size: 8
+
+  eeg:
+    en: EEG
+    fr: EEG
+    size: 5
+
+  human_centered_signal_processing:
+    en: human centered signal processing
+    fr: traitement des signaux de l'humain
+    size: 5
+
+  machine_learning:
+    en: machine learning
+    fr: apprentissage machine
+    size: 30
+
+  machine_listening:
+    en: machine listening
+    fr: audition par ordinateur
+    size: 28
+
+  mir:
+    en: MIR
+    fr: MIR
+    size: 30
+
+  music_transcription:
+    en: music transcription
+    fr: transcription musicale
+    size: 18
+
+  multimodal:
+    en: multimodal processing
+    fr: traitement multimodal
+    size: 8
+
+  multiview_learning:
+    en: multiview learning
+    fr: apprentissage multi-vues
+    size: 8
+
+  parametric_modelling:
+    en: parametric modelling
+    fr: modélisation paramétrique
+    size: 8
+
+  representation_learning:
+    en: representation learning
+    fr: apprentissage de représentations
+    size: 10
+
+  signal_models:
+    en: signal models
+    fr: modèles de signaux
+    size: 12
+
+  signal_transformation:
+    en: signal transformation
+    fr: transformation du signal
+    size: 8
+
+  source_separation:
+    en: source separation
+    fr: séparation de sources
+    size: 28
+
+  sparse_representations:
+    en: sparse representations
+    fr: représentations parcimonieuses
+    size: 13
+
+  speech_processing:
+    en: speech processing
+    fr: traitement de la parole
+    size: 8
+
+
+
+

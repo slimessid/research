@@ -1,0 +1,124 @@
+---
+layout: page
+permalink: /people/
+title: PEOPLE
+description: PhD students, post-docs and research engineers I have (co-)advised.
+nav: true
+nav_order: 2
+toc:
+  sidebar: right
+positions: ['PhD Student', 'Postdoc', 'Research Engineer']
+alumni_positions: ['PhD Student', 'Postdoc', 'Research Engineer']
+custom_css: people
+---
+
+<!-- Create list string of image files -->
+{% capture image_files %}
+{% for file in site.static_files %}
+  {% if file.path contains 'assets/img/pictures' %}{{file.path}}{% endif %}
+  {% if forloop.last == false %}::{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<h2 id="Ongoing">Ongoing</h2>
+{% for position in page.positions %}
+<h3 id="{{ position }}">{{ position | append: "s"}}</h3>
+  <div class="row">
+    {% for member in site.data.advisee %}
+      {% if member.position == position %}
+        <div class="col-lg-6 my-3">
+        <div class="row">
+          <div class="col-4">
+            {% if member.picture and image_files contains member.picture %}
+              <img src="../assets/img/pictures/{{ member.picture }}" class="img-fluid" alt="{{ member.name }}">
+            {% else %}
+              <img src="../assets/img/pictures/alias.png" class="img-fluid" alt="{{ member.name }}">
+            {% endif %}
+            <div>
+              <a target="_blank" href="mailto:{{ member.email }}"><i class="fas fa-envelope"></i></a>
+              {% if member.homepage %}<a target="_blank" href="{{ member.homepage }}"><i class="fas fa-globe-europe"></i></a>{% endif %}
+              {% if member.github_page %}<a target="_blank" href="{{ member.github_page }}"><i class="fab fa-github"></i></a>{% endif %}
+              {% if member.linkedin_page %}<a target="_blank" href="{{ member.linkedin_page }}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+              {% if member.twitter_page %}<a target="_blank" href="{{ member.twitter_page }}"><i class="fab fa-twitter"></i></a>{% endif %}
+              {% if member.google_scholar_page %}<a target="_blank" href="{{ member.google_scholar_page }}"><i class="ai ai-google-scholar"></i></a>{% endif %}
+              {% if member.researchgate_page %}<a target="_blank" href="{{ member.researchgate_page }}"><i class="ai ai-researchgate"></i></a>{% endif %}
+              {% if member.hal_cv_page %}<a target="_blank" href="{{ member.hal_cv_page }}"><i class="ai ai-hal"></i></a>{% endif %}
+            </div>
+          </div>
+          <div class="col-8">
+            <h6 style="margin-top: 0px;">{{ member.first_name }} {% if member.middle_name %}{{ member.middle_name }}{% endif %} {{ member.last_name }}</h6>
+            <div style="font-size: 0.8em;">
+              {% capture member_tags %}
+                {% for tag in member.site_tags %}
+                {{ site.data.tags[tag].en }}{% if forloop.last == false %}, {% endif %}
+                {% endfor %}
+              {% endcapture %}
+              {{member_tags}}{% if member.additional_keywords.size > 0 %}<br/> {{ member.additional_keywords | join: ', ' }}{% endif %}
+            </div>
+          </div>
+        </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+
+    {% endfor %}
+
+  <h2 id="Alumni">Alumni</h2>
+  {% for position in page.alumni_positions %}
+  <h3 id="Alumni-{{ position }}">Former {{ position | append: "s"}}</h3>
+    <div class="row">
+      {% for member in site.data.alumni %}
+        {% if member.position == position %}
+          <div class="col-lg-6 my-3">
+            <div class="row">
+              <div class="col-4">
+                {% if member.picture and image_files contains member.picture %}
+                  <img src="../assets/img/pictures/{{ member.picture }}" class="img-fluid" alt="{{ member.name }}">
+                {% else %}
+                  <img src="../assets/img/pictures/alias.png" class="img-fluid" alt="{{ member.name }}">
+                {% endif %}
+                <div>
+                  {% if member.email %} <a target="_blank" href="mailto:{{ member.email }}"><i class="fas fa-envelope"></i></a>{% endif %}
+                  {% if member.homepage %}<a target="_blank" href="{{ member.homepage }}"><i class="fas fa-globe-europe"></i></a>{% endif %}
+                  {% if member.github_page %}<a target="_blank" href="{{ member.github_page }}"><i class="fab fa-github"></i></a>{% endif %}
+                  {% if member.linkedin_page %}<a target="_blank" href="{{ member.linkedin_page }}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+                  {% if member.twitter_page %}<a target="_blank" href="{{ member.twitter_page }}"><i class="fab fa-twitter"></i></a>{% endif %}
+                  {% if member.google_scholar_page %}<a target="_blank" href="{{ member.google_scholar_page }}"><i class="ai ai-google-scholar"></i></a>{% endif %}
+                  {% if member.researchgate_page %}<a target="_blank" href="{{ member.researchgate_page }}"><i class="ai ai-researchgate"></i></a>{% endif %}
+                  {% if member.hal_cv_page %}<a target="_blank" href="{{ member.hal_cv_page }}"><i class="ai ai-hal"></i></a>{% endif %}
+                </div>
+              </div>
+              <div class="col-8">
+                <h6 style="margin-top: -5px;">
+                  {{ member.first_name }} {% if member.middle_name %}{{ member.middle_name }}{% endif %} {{ member.last_name }} &nbsp;
+                  <span style="font-size: 75%">{{ member.start_year }}-{{ member.end_year }}{% if member.second_period %} | {{ member.second_period }} {% endif %}
+                  </span>
+                </h6>
+                <div style="font-size: 0.9em;">
+                  {% if member.new_position %}Now {{member.new_position}} {% if member.new_employer.size > 0 %}with {{member.new_employer}} {% endif %}{% endif %}
+                </div>
+                <div style="font-size: 0.8em;">
+                  {% if position == 'PhD Student' %}
+                    {% if member.phd_dissertation_url %}
+                      Thesis: <a href="{{ member.phd_dissertation_url }}" target="_blank">{{ member.phd_title }}</a>
+                    {% else %}
+                      Thesis: {{ member.phd_title }}
+                    {% endif %}
+                  {% else %}
+                    {% capture member_tags %}
+                      {% for tag in member.site_tags %}
+                      {{ site.data.tags[tag].en }}{% if forloop.last == false %}, {% endif %}
+                      {% endfor %}
+                    {% endcapture %}
+                    {{member_tags}}{% if member.additional_keywords.size > 0 %}<br/> {{ member.additional_keywords | join: ', ' }}{% endif %}
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}

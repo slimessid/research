@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: TEACHING
-description: A selection of pedagogical materials.
+description: A selection of pedagogical materials I have (co-)created.
 nav: true
 nav_order: 5
 ---
@@ -14,9 +14,9 @@ nav_order: 5
 <ul>
   <li><a href="https://ismir2019.ewi.tudelft.nl/?q=node/38" target="_blank">A tutorial on Audiovisual Music Processing</a> - presented at <a href="https://ismir2019.ewi.tudelft.nl" target="_blank">ISMIR 2019</a> </li>
 
-  <li><a href="./teach/NMF_tutorial_ICME-2014.pdf" target="_blank">A tutorial on Nonnegative Matrix Factorisation with applications to audiovisual content analysis</a> - presented at <a href="http://www.icme2014.org/" target="_blank">ICME 2014</a> </li>
+  <li><a href="../assets/teaching/NMF_tutorial_ICME-2014.pdf" target="_blank">A tutorial on Nonnegative Matrix Factorisation with applications to audiovisual content analysis</a> - presented at <a href="http://www.icme2014.org/" target="_blank">ICME 2014</a> </li>
 
-  <li><a href="./teach/CRF_tutorial_ISMIR-2013.pdf" target="_blank">A tutorial on Conditional Random Fields with applications to music analysis</a> - presented at <a href="http://www.ppgia.pucpr.br/ismir2013/" target="_blank">ISMIR 2013</a> </li>
+  <li><a href="../assets/teaching/CRF_tutorial_ISMIR-2013.pdf" target="_blank">A tutorial on Conditional Random Fields with applications to music analysis</a> - presented at <a href="http://www.ppgia.pucpr.br/ismir2013/" target="_blank">ISMIR 2013</a> </li>
 </ul>
 
 ### Class materials
@@ -30,5 +30,5 @@ The following are mostly in French.
 - <a href="https://sitepedago.telecom-paristech.fr/front/frontoffice.php?SP_ID=2707#R2722" target="_blank">PESTO Web</a> - Machine learning
 - <a href="https://sitepedago.telecom-paristech.fr/front/frontoffice.php?SP_ID=2617#R2210" target="_blank">MDI343</a> - Apprentissage statistique et fouille de données
 - <a href="https://sitepedago.telecom-paristech.fr/front/frontoffice.php?SP_ID=2063#R1407" target="_blank">MDI224</a> - Méthodes d'optimisation continue et applications
-- <a href="http://www.tsi.enst.fr/%7Eessid/teach/indexation-audio.zip"> Cours indexation audio</a>, M2 ENIT-Paris V
-- <a href="http://www.tsi.enst.fr/~essid/teach/cours-int06.pdf">Cours codage audio</a>, INT
+- <a href="../assets/teaching/indexation-audio.zip"> Cours indexation audio</a>, M2 ENIT-Paris V
+- <a href="../assets/teaching/cours-int06.pdf">Cours codage audio</a>, INT

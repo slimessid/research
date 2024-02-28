@@ -30,16 +30,20 @@ with applications to:
 
 - machine listening, music content analysis (MIR) and speech processing;
 - multimedia content analysis, especially joint audiovisual data analysis;
-- multimodal perception: human behaviour analysis and affective
+- multimodal perception, human behaviour analysis and affective
 computing, including EEG data analysis.
 
-For more information about my research activities check the [publications](), [research software](), [demos](), or [educational material]() I have contributed to. You can also read about the [research projects]() I have been involved in, including those of the [PhD students]() and [post-docs]() I have advised.
+For more information about my research activities check my [publications](publications).
+<!-- [research software](), [demos](), or [educational material]() I have contributed to.  -->
+You can also read about the [research projects](projects) I have been involved in, including those of the [PhD students](people) and [post-docs](people#) I have advised.
 
 ### Short bio
 
 Slim Essid is Full Professor of Télécom Paris and the coordinator of the [Audio Data Analysis and Signal Processing (ADASP)](https://adasp.telecom-paris.fr) group. He received the state engineering degree from the École Nationale d’Ingénieurs de Tunis in 2001; the M.Sc. (D.E.A.) degree in digital communication systems from the École Nationale Supérieure des Télécommunications, Paris, France, in 2002; the Ph.D. degree from the Université Pierre et Marie Curie ([UPMC](http://www.upmc.fr/en/)), in 2005; and the habilitation (HDR) degree from UPMC in 2015.
 
-He has been involved in various French and European research projects among which are Quaero, EU Networks of Excellence FP6-Kspace and FP7-3DLife, and collaborative projects FP7-REVERIE and FP7-LASIE.
+He has been involved in various French and European research projects, securing more than 4.5M€ in total as PI.
+
+<!-- among which are Quaero, EU Networks of Excellence FP6-Kspace and FP7-3DLife, and collaborative projects FP7-REVERIE and FP7-LASIE. -->
 
 Over the past 15 years, he has collaborated with 14 post-docs and has graduated 15 PhD students; he is currently co-advising 10 others.
 
