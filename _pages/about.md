@@ -41,15 +41,11 @@ You can also read about the [research projects](projects) I have been involved i
 
 Slim Essid is Full Professor of Télécom Paris and the coordinator of the [Audio Data Analysis and Signal Processing (ADASP)](https://adasp.telecom-paris.fr) group. He received the state engineering degree from the École Nationale d’Ingénieurs de Tunis in 2001; the M.Sc. (D.E.A.) degree in digital communication systems from the École Nationale Supérieure des Télécommunications, Paris, France, in 2002; the Ph.D. degree from the Université Pierre et Marie Curie ([UPMC](http://www.upmc.fr/en/)), in 2005; and the habilitation (HDR) degree from UPMC in 2015.
 
-He has been involved in various French and European research projects, securing more than 4.5M€ in total as PI.
+He has been involved in various French and European research projects, securing more than 4.5M€ in total funding as PI. Over the past 15 years, he has collaborated with 14 post-docs and has graduated 15 PhD students; he is currently co-advising 10 others.
+He has published over 150 peer-reviewed conference and journal papers with more than 100 distinct co-authors. On a regular basis he serves as a reviewer for various machine learning, signal processing, audio and multimedia conferences and journals, for instance various IEEE transactions, and as an expert for research funding agencies.
+
 
 <!-- among which are Quaero, EU Networks of Excellence FP6-Kspace and FP7-3DLife, and collaborative projects FP7-REVERIE and FP7-LASIE. -->
-
-Over the past 15 years, he has collaborated with 14 post-docs and has graduated 15 PhD students; he is currently co-advising 10 others.
-
-He has published over 150 peer-reviewed conference and journal papers with more than 100 distinct co-authors.
-
-On a regular basis he serves as a reviewer for various machine learning, signal processing, audio and multimedia conferences and journals, for instance various IEEE transactions, and as an expert for research funding agencies.
 
 <!-- Selected papers -->
 {% if page.selected_papers %}
