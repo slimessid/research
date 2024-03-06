@@ -1,3 +1,37 @@
+@inproceedings{benigmim2023collaborating,
+  title={Collaborating Foundation models for Domain Generalized Semantic Segmentation},
+  author={Yasser Benigmim and Subhankar Roy and Slim Essid and Vicky Kalogeiton and Stéphane Lathuilière},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)},
+  year={2024},
+  eprint={2312.09788},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  note = {Accepted},
+  selected = {true},
+  abstract = {
+    Domain Generalized Semantic Segmentation (DGSS) deals with training a model on a labeled source domain with the aim of generalizing to unseen domains during inference. Existing DGSS methods typically effectuate robust features by means of Domain Randomization (DR). Such an approach is often limited as it can only account for style diversification and not content. In this work, we take an orthogonal approach to DGSS and propose to use an assembly of CoLlaborative FOUndation models for Domain Generalized Semantic Segmentation (CLOUDS). In detail, CLOUDS is a framework that integrates FMs of various kinds: (i) CLIP backbone for its robust feature representation, (ii) generative models to diversify the content, thereby covering various modes of the possible target distribution, and (iii) Segment Anything Model (SAM) for iteratively refining the predictions of the segmentation model. Extensive experiments show that our CLOUDS excels in adapting from synthetic to real DGSS benchmarks and under varying weather conditions, notably outperforming prior methods by 5.6% and 6.7% on averaged miou, respectively.
+  },
+  preview = {benigmim_cvpr-24.png},
+  pdf = {https://arxiv.org/pdf/2312.09788.pdf}
+}
+
+@article{buisson:hal-04485065,
+  TITLE = {{Self-Supervised Learning of Multi-level Audio Representations for Music Segmentation}},
+  AUTHOR = {Buisson, Morgan and Mcfee, Brian and Essid, Slim and Crayencour, Helene-Camille},
+  JOURNAL = {IEEE/ACM Transactions on Audio, Speech and Language Processing},
+  URL = {https://hal.science/hal-04485065},
+  NOTE = {Accepted},
+  YEAR = {2024},
+  MONTH = Mar,
+  KEYWORDS = {Music structure analysis ; structural segmentation ; representation learning},
+  PDF = {https://hal.science/hal-04485065/file/Buisson.pdf},
+  HAL_VERSION = {v1},
+  selected = {true},
+  abstract = {
+    The task of music structure analysis refers to automatically identifying the location and the nature of musical sections within a song. In the supervised scenario, structural annotations generally result from exhaustive data collection processes, which represents one of the main challenges of this task. Moreover, both the subjectivity of music structure and the hierarchical characteristics it exhibits make the obtained structural annotations not fully reliable, in the sense that they do not convey a "universal ground-truth" unlike other tasks in music information retrieval. On the other hand, the quickly growing quantity of available music data has enabled weakly supervised and self-supervised approaches to achieve impressive results on a wide range of music-related problems. In this work, a self-supervised learning method is proposed to learn robust multi-level music representations prior to structural segmentation using contrastive learning. To this end, sets of frames sampled at different levels of detail are used to train a deep neural network in a disentangled manner. The proposed method is evaluated on both flat and multi-level segmentation. We show that each distinct sub-region of the output embeddings can efficiently account for structural similarity at their own targeted level of detail, which ultimately improves performance of downstream flat and multi-level segmentation. Finally, complementary experiments are carried out to study how the obtained representations can be further adapted to specific datasets using a supervised fine-tuning objective in order to facilitate structure retrieval in domains where human annotations remain scarce.
+  },
+  preview={buisson_taslp-24.png}
+}
 
 @inproceedings{quelennec:hal-04360221,
   TITLE = {{On the Choice of the Optimal Temporal Support for Audio Classification with Pre-trained Embeddings}},
@@ -62,7 +96,8 @@
   ABSTRACT = {
     We introduce Resilient Multiple Choice Learning (rMCL), an extension of the MCL approach for conditional distribution estimation in regression settings where multiple targets may be sampled for each training input. Multiple Choice Learning is a simple framework to tackle multimodal density estimation, using the Winner-Takes-All (WTA) loss for a set of hypotheses. In regression settings, the existing MCL variants focus on merging the hypotheses, thereby eventually sacrificing the diversity of the predictions. In contrast, our method relies on a novel learned scoring scheme underpinned by a mathematical framework based on Voronoi tessellations of the output space, from which we can derive a probabilistic interpretation. After empirically validating rMCL with experiments on synthetic data, we further assess its merits on the sound source localization problem, demonstrating its practical usefulness and the relevance of its interpretation.
   },
-  PDF = {https://hal.science/hal-04216055/file/neurips_2023.pdf}
+  PDF = {https://hal.science/hal-04216055/file/neurips_2023.pdf},
+  preview={letzelter_neurips-23.png}
 }
 
 @inproceedings{zaiem:interspeech23,
@@ -173,7 +208,8 @@
   abstract = {
     Through solving pretext tasks, self-supervised learning leverages unlabeled data to extract useful latent representations replacing traditional input features in the downstream task. In audio/speech signal processing, a wide range of features where engineered through decades of research efforts. As it turns out, learning to predict such features (a.k.a pseudo-labels) has proven to be a particularly relevant pretext task, leading to useful self-supervised representations which prove to be effective for downstream tasks. However, methods and common practices for combining such pretext tasks for better performance on the downstream task have not been explored and understood properly. In fact, the process relies almost exclusively on a computationally heavy experimental procedure, which becomes intractable with the increase of the number of pretext tasks. This paper introduces a method to select a group of pretext tasks among a set of candidates. The method we propose estimates calibrated weights for the partial losses corresponding to the considered pretext tasks during the self-supervised training process. The experiments conducted on automatic speech recognition, speaker and emotion recognition validate our approach, as the groups selected and weighted with our method perform better than classic baselines, thus facilitating the selection and combination of relevant pseudo-labels for self-supervised representation learning.
   },
-  PDF = {https://hal.science/hal-03601330/file/2107.00594.pdf}
+  PDF = {https://hal.science/hal-03601330/file/2107.00594.pdf},
+  preview = {zaiem_jstsp-23.png}
 }
 
 
@@ -262,7 +298,8 @@
   selected = {true},
   ABSTRACT = {
     Deep neural network (DNN)-based speech enhancement algorithms in microphone arrays have now proven to be efficient solutions to speech understanding and speech recognition in noisy environments. However, in the context of ad-hoc microphone arrays, many challenges remain and raise the need for distributed processing. In this paper, we propose to extend a previously introduced distributed DNN-based time-frequency mask estimation scheme that can efficiently use spatial information in form of so-called compressed signals which are pre-filtered target estimations. We study the performance of this algorithm named Tango under realistic acoustic conditions and investigate practical aspects of its optimal application. We show that the nodes in the microphone array cooperate by taking profit of their spatial coverage in the room. We also propose to use the compressed signals not only to convey the target estimation but also the noise estimation in order to exploit the acoustic diversity recorded throughout the microphone array.
-  }
+  },
+  preview = {furnon_taslp-21.png}
 }
 
 @inproceedings{cantisani:hal-03219350,
@@ -349,7 +386,8 @@
     abstract = {
       Audiovisual (AV) representation learning is an important task from the perspective of designing machines with the ability to understand complex events. To this end, we propose a novel multimodal framework that instantiates multiple instance learning. Specifically, we develop methods that identify events and localize corresponding AV cues in unconstrained videos. Importantly, this is done using weak labels where only video-level event labels are known without any information about their location in time. We show that the learnt representations are useful for performing several tasks such as event/object classification, audio event detection, audio source separation and visual object localization. An important feature of our method is its capacity to learn from unsynchronized audiovisual events. We also demonstrate our framework's ability to separate out the audio source of interest through a novel use of nonnegative matrix factorization. State-of-the-art classification results, with a F1-score of 65.0, are achieved on DCASE 2017 smart cars challenge data with promising generalization to diverse object types such as musical instruments. Visualizations of localized visual regions and audio segments substantiate our system's efficacy, especially when dealing with noisy situations where modality-specific cues appear asynchronously.
     },
-    PDF = {https://telecom-paris.hal.science/hal-02399993/file/2019-IEEE_TASLP_Parekh.pdf}
+    PDF = {https://telecom-paris.hal.science/hal-02399993/file/2019-IEEE_TASLP_Parekh.pdf},
+    preview = {parekh_taslp-19.png}
   }
 
 @inproceedings{furnon:hal-02389159,
