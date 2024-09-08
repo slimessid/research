@@ -1,3 +1,61 @@
+@inproceedings{MO:DCASE-24,
+  TITLE = {{A Sound Description: Exploring Prompt Templates and Class Descriptions to Enhance Zero-Shot Audio Classification}},
+  AUTHOR = {Olvera, Michel and Stamatiadias, Paraskevas and Essid, Slim},
+  BOOKTITLE = {{International workshop on Detection and Classiffication of Acoustic Scenes and Events (DCASE)}},
+  ADDRESS = {Tokyo, Japan},
+  YEAR = {2024},
+  MONTH = Nov,
+  ABSTRACT = {
+    Audio-text models trained via contrastive learning offer a practical approach to perform audio classification through natural language prompts, such as ``this is a sound of'' followed by category names. In this work, we explore alternative prompt templates for zero-shot audio classification, demonstrating the existence of higher-performing options. First, we find that the formatting of the prompts significantly affects performance so that simply prompting the models with properly formatted class labels performs competitively with optimized prompt templates and even prompt ensembling. Moreover, we look into complementing class labels by audio-centric descriptions. By leveraging large language models, we generate textual descriptions that prioritize acoustic features of sound events to disambiguate between classes, without extensive prompt engineering. We show that prompting with class descriptions leads to state-of-the-art results in zero-shot audio classification across major ambient sound datasets. Remarkably, this method requires no additional training and remains fully zero-shot.
+  },
+  NOTE = {Accepted}
+}
+
+@inproceedings{PS:DCASE-24,
+  TITLE = {{SALT: Standardized Audio Event Label Taxonomy}},
+  AUTHOR = {Stamatiadias, Paraskevas and Olvera, Michel and Essid, Slim},
+  BOOKTITLE = {{International workshop on Detection and Classiffication of Acoustic Scenes and Events (DCASE)}},
+  ADDRESS = {Tokyo, Japan},
+  YEAR = {2024},
+  MONTH = Nov,
+  ABSTRACT = {
+    Machine listening systems often rely on fixed taxonomies to organize and label audio data, key for training and evaluating deep neural networks (DNNs) and other supervised algorithms. However, such taxonomies face significant constraints: they are composed of application-dependent predefined categories, which hinders the integration of new or varied sounds, and exhibits limited cross-dataset compatibility due to inconsistent labeling standards. To overcome these limitations, we introduce SALT: Standardized Audio event Label Taxonomy. Building upon the hierarchical structure of AudioSet's ontology, our taxonomy extends and standardizes labels across 24 publicly available environmental sound datasets, allowing the mapping of class labels from diverse datasets to a unified system. Our proposal comes with a new Python package designed for navigating and utilizing this taxonomy, easing cross-dataset label searching and hierarchical exploration. Notably, our package allows effortless data aggregation from diverse sources, hence easy experimentation with combined datasets.
+  },
+  NOTE = {Accepted}
+}
+
+
+@inproceedings{perera:hal-03782827,
+  TITLE = {{Latent and Adversarial Data Augmentation for Sound Event Detection and Classification}},
+  AUTHOR = {Perera, David and Essid, Slim and Richard, Ga{\"e}l},
+  URL = {https://hal.science/hal-03782827},
+  BOOKTITLE = {{International workshop on Detection and Classiffication of Acoustic Scenes and Events (DCASE)}},
+  ADDRESS = {Nancy, France},
+  YEAR = {2022},
+  MONTH = Nov,
+  KEYWORDS = {sound event detection ; data augmentation ; adversarial learning},
+  PDF = {https://hal.science/hal-03782827/file/dcase.pdf},
+  HAL_ID = {hal-03782827},
+  HAL_VERSION = {v1},
+  ABSTRACT = {
+    Invariance-based learning is a promising approach in deep learning. Among other benefits, it can mitigate the lack of diversity of available datasets and increase the interpretability of trained models. To this end, practitioners often use a consistency cost penalizing the sensitivity of a model to a set of carefully selected data augmentations. However, there is no consensus about how these augmentations should be selected. In this paper, we study the behavior of several augmentation strategies. We consider the task of sound event detection and classification for our experiments. In particular, we show that transformations operating on the internal layers of a deep neural network are beneficial for this task.
+  }
+}
+
+@article{ZAIEM2025101695,
+  title = {Speech self-supervised representations benchmarking: A case for larger probing heads},
+  journal = {Computer Speech & Language},
+  volume = {89},
+  pages = {101695},
+  year = {2025},
+  issn = {0885-2308},
+  doi = {https://doi.org/10.1016/j.csl.2024.101695},
+  url = {https://www.sciencedirect.com/science/article/pii/S0885230824000780},
+  author = {Salah Zaiem and Youcef Kemiche and Titouan Parcollet and Slim Essid and Mirco Ravanelli},
+  keywords = {Self-supervised learning, Speech processing, Representation learning},
+  abstract = {Self-supervised learning (SSL) leverages large datasets of unlabeled speech to reach impressive performance with reduced amounts of annotated data. The high number of proposed approaches fostered the emergence of comprehensive benchmarks that evaluate their performance on a set of downstream tasks exploring various aspects of the speech signal. However, while the number of considered tasks has been growing, most proposals rely upon a single downstream architecture that maps the frozen SSL representations to the task labels. This study examines how benchmarking results are affected by changes in the probing head architecture. Interestingly, we found that altering the downstream architecture structure leads to significant fluctuations in the performance ranking of the evaluated models. Against common practices in speech SSL benchmarking, we evaluate larger-capacity probing heads, showing their impact on performance, inference costs, generalization, and multi-level feature exploitation.}
+}
+
 @inproceedings{Gagneré_Essid_Peeters_2024,
  address={San Francisco, USA},
   title={A Contrastive Self-Supervised Learning Scheme for Beat Tracking Amenable to Few-Shot Learning},
@@ -25,8 +83,7 @@
    booktitle={European signal processing conference (EUSIPCO 2024)},
    author={Perera, David and Essid, Slim and Richard, Gael},
    year={2024},
-   month=aug,
-   note={Accepted}
+   month=aug
 }
 
 @inproceedings{Letzelter_Perera_Rommel_Fontaine_Essid_Richard_Pérez_2024,
@@ -35,7 +92,6 @@
  booktitle={International Conference on Machine Learning (ICML 2024)},
  author={Letzelter, Victor and Perera, David and Rommel, Cédric and Fontaine, Mathieu and Essid, Slim and Richard, Gael and Pérez, Patrick},
  address={Vienna, Austria},
- note = {Accepted},
  selected = {true},
  preview = {letzelter_icml-24.png},
  month = Jul,
@@ -65,7 +121,6 @@
   eprint={2312.09788},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
-  note = {Accepted},
   selected = {true},
   abstract = {
     Domain Generalized Semantic Segmentation (DGSS) deals with training a model on a labeled source domain with the aim of generalizing to unseen domains during inference. Existing DGSS methods typically effectuate robust features by means of Domain Randomization (DR). Such an approach is often limited as it can only account for style diversification and not content. In this work, we take an orthogonal approach to DGSS and propose to use an assembly of CoLlaborative FOUndation models for Domain Generalized Semantic Segmentation (CLOUDS). In detail, CLOUDS is a framework that integrates FMs of various kinds: (i) CLIP backbone for its robust feature representation, (ii) generative models to diversify the content, thereby covering various modes of the possible target distribution, and (iii) Segment Anything Model (SAM) for iteratively refining the predictions of the segmentation model. Extensive experiments show that our CLOUDS excels in adapting from synthetic to real DGSS benchmarks and under varying weather conditions, notably outperforming prior methods by 5.6% and 6.7% on averaged miou, respectively.
