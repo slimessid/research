@@ -20,18 +20,18 @@ social: true  # includes social icons at the bottom of the page
 
 ### Research interests
 
-Machine learning and artificial intelligence for temporal data analysis, especially:
+Machine Learning, Artificial Intelligence and Signal Processing, especially:
 
-- multimodal and multiview deep learning;
+- multimodal and multiview learning;
 - representation learning, in particular self-supervised learning;
 - structured prediction;
 
 with applications to:
 
-- machine listening, music content analysis (MIR) and speech processing;
-- multimedia content analysis, especially joint audiovisual data analysis;
-- multimodal perception, human behaviour analysis and affective
-computing, including EEG data analysis.
+- multimodal language models, especially audio-vision language models;
+- speech processing, machine listening, music content analysis (MIR);
+- multimodal perception, social and affective computing;
+- physiological, especially EEG, data analysis.
 
 For more information about my research activities check my [publications](publications).
 <!-- [research software](), [demos](), or [educational material]() I have contributed to.  -->
