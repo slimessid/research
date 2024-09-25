@@ -1,3 +1,36 @@
+@inproceedings{DP:NeurIPS-24,
+  TITLE = {Annealed Multiple Choice Learning: Overcoming Limitations of Winner-Takes-All with Annealing},
+  AUTHOR = {Perera, David and Letzelter, Victor and Mariotte, Theo and Cortes, Adrien and Richard, Gael and Essid, Slim and Chen, Mickael},
+  BOOKTITLE = {Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024)},
+  ADDRESS = {Vancouver, Canada},
+  YEAR = {2024},
+  MONTH = Dec,
+  selected = {true},
+  ABSTRACT = {
+    We introduce Annealed Multiple Choice Learning (aMCL) which combines simulated annealing with MCL. MCL is a learning framework handling ambiguous tasks by predicting a small set of plausible hypotheses. These hypotheses are trained using the Winner-takes-all (WTA) scheme, which promotes the diversity of the predictions. However, this scheme may converge toward an arbitrarily suboptimal local minimum, due to the greedy nature of WTA. We overcome this limitation using annealing, which enhances the exploration of the hypothesis space during training. We leverage insights from statistical physics and information theory to provide a detailed description of the model training trajectory. Additionally, we validate our algorithm by extensive experiments on synthetic datasets on the standard UCI benchmark, and on speech separation.
+  },
+  preview = {perera_neurips-24.png},
+  note = {Accepted}
+}
+
+@inproceedings{HM:NeurIPS-24,
+  TITLE = {An Eye for an Ear: Zero-Shot Audio Description Leveraging an Image Captioner with Audio-Visual Token Distribution Matching},
+  AUTHOR = {Malard, Hugo and Olvera, Michel and Lathuilière, Stéphane and Essid, Slim},
+  BOOKTITLE = {Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024)},
+  ADDRESS = {Vancouver, Canada},
+  YEAR = {2024},
+  MONTH = Dec,
+  selected = {true},
+  ABSTRACT = {
+    Multimodal large language models have fueled progress in image captioning. These models, fine-tuned on vast image datasets, exhibit a deep understanding of semantic concepts.
+    In this work, we show that this ability can be re-purposed for audio captioning, where the joint image-language decoder can be leveraged to describe auditory content associated with image sequences within videos featuring audiovisual content. This can be achieved via multimodal alignment.
+    Yet, this multimodal alignment task is non-trivial due to the inherent disparity between audible and visible elements in real-world videos. Moreover, multimodal representation learning often relies on contrastive learning, facing the challenge of the so-called modality gap which hinders smooth integration between modalities. In this work, we introduce a novel methodology for bridging the audiovisual modality gap by matching the distributions of tokens produced by an audio backbone and those of an image captioner. Our approach aligns the audio token distribution with that of the image tokens, enabling the model to perform zero-shot audio captioning in an unsupervised fashion. This alignment allows for the use of either audio or audiovisual input by combining or substituting the image encoder with the aligned audio encoder. Our method achieves significantly improved performances in zero-shot audio captioning, compared to existing approaches.
+  },
+  preview = {malard_neurips-24.png},
+  note = {Accepted}
+}
+
+
 @inproceedings{MO:DCASE-24,
   TITLE = {{A Sound Description: Exploring Prompt Templates and Class Descriptions to Enhance Zero-Shot Audio Classification}},
   AUTHOR = {Olvera, Michel and Stamatiadias, Paraskevas and Essid, Slim},
@@ -141,12 +174,17 @@
   KEYWORDS = {Music structure analysis ; structural segmentation ; representation learning},
   PDF = {https://hal.science/hal-04485065/file/Buisson.pdf},
   HAL_VERSION = {v1},
+  volume={32},
+  pages={2141-2152},
   selected = {true},
+  doi={10.1109/TASLP.2024.3379894},
+  keywords={Music;Annotations;Task analysis;Training;Feature extraction;Self-supervised learning;Artificial neural networks;Music structure analysis;structural segmentation;representation learning},
   abstract = {
     The task of music structure analysis refers to automatically identifying the location and the nature of musical sections within a song. In the supervised scenario, structural annotations generally result from exhaustive data collection processes, which represents one of the main challenges of this task. Moreover, both the subjectivity of music structure and the hierarchical characteristics it exhibits make the obtained structural annotations not fully reliable, in the sense that they do not convey a "universal ground-truth" unlike other tasks in music information retrieval. On the other hand, the quickly growing quantity of available music data has enabled weakly supervised and self-supervised approaches to achieve impressive results on a wide range of music-related problems. In this work, a self-supervised learning method is proposed to learn robust multi-level music representations prior to structural segmentation using contrastive learning. To this end, sets of frames sampled at different levels of detail are used to train a deep neural network in a disentangled manner. The proposed method is evaluated on both flat and multi-level segmentation. We show that each distinct sub-region of the output embeddings can efficiently account for structural similarity at their own targeted level of detail, which ultimately improves performance of downstream flat and multi-level segmentation. Finally, complementary experiments are carried out to study how the obtained representations can be further adapted to specific datasets using a supervised fine-tuning objective in order to facilitate structure retrieval in domains where human annotations remain scarce.
   },
   preview={buisson_taslp-24.png}
 }
+
 
 @inproceedings{quelennec:hal-04360221,
   TITLE = {{On the Choice of the Optimal Temporal Support for Audio Classification with Pre-trained Embeddings}},
@@ -358,7 +396,7 @@
   year = 2016,
   month = nov,
   journal = {Patent Application},
-  PDF = {./papers/FR3059191A1.pdf},
+  PDF = {./FR3059191A1.pdf},
   number = {1661324}
 }
 
@@ -368,7 +406,7 @@
   year = 2018,
   month = mar,
   journal = {Patent Application},
-  PDF = {./papers/FR3079706B1.pdf},
+  PDF = {./FR3079706B1.pdf},
   number = {1852774}
 }
 
@@ -378,7 +416,7 @@
   year = 2020,
   month = sep,
   journal = {Patent Application},
-  PDF = {./papers/US20210014627A1.pdf},
+  PDF = {./US20210014627A1.pdf},
   number = {US 2021/0014627 A1}
 }
 
@@ -791,7 +829,7 @@ year = 2018
   year = 2017,
   month = aug,
   annote = {category=invite language=en audience=1 state=published dept=ids group=s2a id=18054},
-  pdf = {./papers/SE_ICML-17.pdf}
+  pdf = {./SE_ICML-17.pdf}
 
 }
 
@@ -815,7 +853,7 @@ year = 2018
   month = nov,
   keywords = {Feature learning;Nonnegative Matrix Factorization;Deep Neural Networks},
   annote = {category=inproceedings language=en audience=2 state=published dept=ids group=s2a documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=17481 id=17481},
-  pdf = {./papers/VB_DCASE-17.pdf}
+  pdf = {./VB_DCASE-17.pdf}
 }
 
 @article{SP:brevet17a,
@@ -853,7 +891,7 @@ year = 2018
 	year = 2017,
 	month = nov,
 	address = {Glasgow, Scotland},
-  pdf = {./papers/AB_ICMI-17.pdf}
+  pdf = {./AB_ICMI-17.pdf}
 }
 
 @inproceedings{Bisot2017c,
@@ -863,7 +901,7 @@ year = 2018
 	year = 2017,
 	month = sep,
 	address = {Tokyo, Japan},
-  pdf = {./papers/VB_MLSP-17.pdf}
+  pdf = {./VB_MLSP-17.pdf}
 }
 
 @inproceedings{Parekh2017b,
@@ -873,7 +911,7 @@ year = 2018
 	address = {New Paltz, New York, U.S.A},
 	month = oct,
 	title = {Guiding Audio Source Separation by Video Object Information},
-  pdf = {./papers/SP_WASPAA-17.pdf},
+  pdf = {./SP_WASPAA-17.pdf},
 	year = 2017
 }
 
@@ -882,7 +920,7 @@ year = 2018
 	author = {Conneau, Anne-Claire and Hajlaoui, Ayoub and Chetouani, Mohamed and Essid, Slim},
 	booktitle = {The European Signal Processing Conference (EUSIPCO)},
 	title = {EMOEEG: a New Multimodal Dataset for Dynamic EEG-based Emotion Recognition with Audiovisual Elicitation},
-  pdf = {./papers/AC_EUSIPCO-17.pdf},
+  pdf = {./AC_EUSIPCO-17.pdf},
 	year = {2017}
 }
 
@@ -892,7 +930,7 @@ year = 2018
 	booktitle = {Interspeech},
 	title = {Opinion Dynamics Modeling for Movie Review Transcripts},
 	year = {2017},
-  pdf = {./papers/VB_INTERSPEECH-17.pdf}
+  pdf = {./VB_INTERSPEECH-17.pdf}
 }
 
 
@@ -902,7 +940,7 @@ author = {Bisot, Victor and Essid, Slim and Richard, Gael},
 booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
 title = {Overlapping Sound Event Detection with Supervised Nonnegative Matrix Factorization},
 year = {2017},
-pdf = {./papers/VB_ICASSP-17.pdf}
+pdf = {./VB_ICASSP-17.pdf}
 }
 
 @article{Bisot2017,
@@ -910,7 +948,7 @@ author = {Bisot, Victor and Serizel, Romain and Essid, Slim and Richard, Gael},
 journal = {IEEE Transactions on Audio, Speech, and Language Processing (TASLP)},
 title = {Feature Learning with Matrix Factorization Applied to Acoustic Scene Classification},
 year = {2017},
-pdf = {./papers/VB_TASLP-17.pdf}
+pdf = {./VB_TASLP-17.pdf}
 }
 
 
@@ -922,7 +960,7 @@ booktitle = {IEEE international evaluation campaign on detection and classificat
 month = {sep},
 title = {Supervised nonnegative matrix factorization for acoustic scene classification},
 year = {2016},
-pdf = {./papers/VB_DCASE-16.pdf}
+pdf = {./VB_DCASE-16.pdf}
 }
 
 @inproceedings{Serizel2017,
@@ -931,7 +969,7 @@ author = {Serizel, Romain and Bisot, Victor and Essid, Slim and Richard, Gael},
 booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
 title = {Supervised Group Nonnegative Matrix Factorisation with Similarity Constraints and Applications to Speaker Identification},
 year = {2017},
-pdf = {./papers/RS_ICASSP-17.pdf}
+pdf = {./RS_ICASSP-17.pdf}
 }
 @inproceedings{Parekh2017,
 address = {New Orleans, USA},
@@ -939,7 +977,7 @@ author = {Parekh, Sanjeel and Essid, Slim and Ozerov, Alexey and Duong, Quang-Kh
 booktitle = {IEEE International Conference on Acoustics Speech and Signal Processing (ICASSP)},
 title = {Motion Informed Audio Source Separation},
 year = {2017},
-pdf = {./papers/SP_ICASSP-17.pdf}
+pdf = {./SP_ICASSP-17.pdf}
 }
 
 
@@ -950,7 +988,7 @@ pdf = {./papers/SP_ICASSP-17.pdf}
   month = aug,
   year = 2016,
   address = {New York City, USA},
- pdf = {./papers/SD_ISMIR-16.pdf}
+ pdf = {./SD_ISMIR-16.pdf}
 
 }
 
@@ -962,7 +1000,7 @@ pdf = {./papers/SP_ICASSP-17.pdf}
   month = sep,
   keywords = {Nonnegative matrix factorisation, GPGPU, multiplicative rules, online learning},
   annote = {category=inproceedings language=en audience=2 state=submitted dept=tsi group=aao      documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=16155 id=16155},
-pdf = {./papers/RS_MLSP-16.pdf}
+pdf = {./RS_MLSP-16.pdf}
 }
 
 @inproceedings{RS:ICIP-2016,
@@ -972,7 +1010,7 @@ pdf = {./papers/RS_MLSP-16.pdf}
   year = 2016,
   month = oct,
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=16154 id=16154},
- pdf = {./papers/RS_ICIP-16.pdf}
+ pdf = {./RS_ICIP-16.pdf}
 }
 
 @inproceedings{Bisot2016,
@@ -984,7 +1022,7 @@ pdf = {./papers/RS_MLSP-16.pdf}
   month = mar,
   keywords = {Acoustic scene classification, unsupervised feature learning,   matrix factorization},
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=15948},
- pdf = {./papers/VB_ICASSP-16.pdf}
+ pdf = {./VB_ICASSP-16.pdf}
 }
 
 @inproceedings{Serizel2016a,
@@ -996,7 +1034,7 @@ pdf = {./papers/RS_MLSP-16.pdf}
   month = mar,
   keywords = {Nonnegative matrix factorisation, spectrogram factorisation, feature learning, speaker variability, speaker identification},
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao documentURL=http://biblio.telecom-paristech.fr/cgi-bin/download.cgi?id=15957 id=15957},
- pdf = {./papers/RS_ICASSP-16.pdf}
+ pdf = {./RS_ICASSP-16.pdf}
 }
 
 @PHDTHESIS{SE:hdr,
@@ -1014,7 +1052,7 @@ number={4},
 journal={Revue Traitement du Signal},
 author={Masurelle, Aymeric and Sekkat, A. Rida and Essid, Slim and Richard, Gael},
 year={2015},
-pdf = {./papers/AM_TS-15.pdf}
+pdf = {./AM_TS-15.pdf}
 }
 
 @inproceedings{Bittner2015,
@@ -1023,7 +1061,7 @@ booktitle = {International Conference on Music Information Retrieval (ISMIR)},
 title = {Melody Extraction by Contour Classification},
 address = {Malaga, Spain},
 year = {2015},
-pdf = {./papers/RB_ISMIR-15.pdf}
+pdf = {./RB_ISMIR-15.pdf}
 }
 
 @inproceedings{Bisot2015,
@@ -1032,7 +1070,7 @@ booktitle = {European Signal Processing Conference (EUSIPCO)},
 title = {HOG and subband power distribution image features for acoustic scene classification},
 address = {Nice, France},
 year = {2015},
-pdf = {./papers/VB_EUSIPCO-15.pdf}
+pdf = {./VB_EUSIPCO-15.pdf}
 }
 
 @inproceedings{TF:ICASSP-15,
@@ -1042,7 +1080,7 @@ pdf = {./papers/VB_EUSIPCO-15.pdf}
   address = {Brisbane, Australia},
   year = 2015,
   month = apr,
-  pdf = {./papers/TF_ICASSP-15.pdf},
+  pdf = {./TF_ICASSP-15.pdf},
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=15366}
 }
 
@@ -1051,7 +1089,7 @@ title={Soft nonnegative matrix co-factorization}, volume={PP},  url={http://ieee
 abstractNote={This work introduces a new framework for nonnegative matrix factorization (NMF) in multisensor or multimodal data configurations, where taking into account the mutual dependence that exists between the related parallel streams of data is expected to improve performance. In contrast with previous works that focused on co-factorization methods  where some factors are shared by the different modalities we propose a soft co-factorization scheme which accounts for possible local discrepancies across modalities or channels. This objective is formalized as an optimization problem where concurrent factorizations are jointly performed while being tied by a coupling term that penalizes differences between the related factor matrices associated with different modalities. We provide majorization-minimization (MM) algorithms for three common measures of fit, the squared Euclidean norm, the Kullback-Leibler divergence and the Itakura-Saito divergence, and two possible coupling variants, using either the l1 or the squared Euclidean norm of differences. The approach is shown to achieve promising performance in two audio-related tasks: multimodal speaker diarization using audiovisual data and audio source separation using stereo data.}, number={99}, journal={IEEE Transactions on Signal Processing},
 author={Seichepine, Nicolas and Essid, Slim and Fevotte, Cedric and Cappe, Olivier},
 year={2014},
-pdf = {./papers/NS_TSP-14.pdf}
+pdf = {./NS_TSP-14.pdf}
 }
 
 @inproceedings{NS:ICASSP-14,
@@ -1061,7 +1099,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   address = {Florence, Italy},
   year = 2014,
   month = may,
-  pdf = {./papers/NS_ICASSP-14.pdf}
+  pdf = {./NS_ICASSP-14.pdf}
 }
 
 @inproceedings{AC:ICASSP-14,
@@ -1071,7 +1109,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   address = {Florence, Italy},
   year = 2014,
   month = may,
-  pdf = {./papers/AC_ICASSP-14.pdf}
+  pdf = {./AC_ICASSP-14.pdf}
 }
 
 @inproceedings{AM:ICASSP-14,
@@ -1081,7 +1119,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   address = {Florence, Italy},
   year = 2014,
   month = may,
-   pdf = {./papers/AM_ICASSP-14.pdf}
+   pdf = {./AM_ICASSP-14.pdf}
 }
 
 @inproceedings{gretsi-13,
@@ -1103,7 +1141,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   year = 2013,
   month = sep,
   keywords = {EEG, NTF, NMF},
- pdf = {./papers/CD_MLSP-13.pdf}
+ pdf = {./CD_MLSP-13.pdf}
 }
 
 @inproceedings{RF:Wiamis2013,
@@ -1113,7 +1151,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   address = {Paris, France},
   year = 2013,
   month = jul,
-   pdf = {./papers/RF_WIAMIS-13.pdf}
+   pdf = {./RF_WIAMIS-13.pdf}
 }
 
 @inproceedings{AM:WIAMIS-13,
@@ -1123,7 +1161,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   address = {Paris, France},
   year = 2013,
   month = jul,
-  pdf = {./papers/AM_WIAMIS-13.pdf}
+  pdf = {./AM_WIAMIS-13.pdf}
 }
 
 @inproceedings{Dremeau2013a,
@@ -1134,7 +1172,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   year = 2013,
   month = may,
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=13252},
-   pdf = {./papers/AD_ICASSP-13.pdf}
+   pdf = {./AD_ICASSP-13.pdf}
 }
 
 @inproceedings{ICASSP-13-SEICHEPINE,
@@ -1146,7 +1184,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   month = may,
   keywords = {Nonnegative matrix factorization, cofactorization, multimodality, speaker diarization},
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao,sta id=13313},
-   pdf = {./papers/NS_ICASSP-13.pdf}
+   pdf = {./NS_ICASSP-13.pdf}
 }
 
 @inproceedings{CD:ICASSP-13,
@@ -1157,7 +1195,7 @@ pdf = {./papers/NS_TSP-14.pdf}
   year = 2013,
 month = may,
   annote = {category=inproceedings language=en audience=2 state=toappear dept=tsi group=aao id=13264},
-  pdf = {./papers/CD_ICASSP-13.pdf}
+  pdf = {./CD_ICASSP-13.pdf}
 }
 
 
@@ -1173,7 +1211,7 @@ month = may,
  keywords={speaker recognition;support vector machines;French talk show collection;TV program;TV talk shows;audio descriptors;clustering cascade;diarization performance;kernel based method;multimodal approach;original system;reliable training set;speaker diarization;speech data;support vector machines;visual descriptors;Cameras;Databases;Microphones;NIST;Speech;TV;Visualization;Fusion;SVM classification;joint audiovisual processing;multimodality;speaker diarization;talk-show;unsupervised learning},
  doi={10.1109/TMM.2012.2233724},
  ISSN={1520-9210},
- pdf = {./papers/FV_TM-13.pdf}
+ pdf = {./FV_TM-13.pdf}
 }
 
 
@@ -1199,7 +1237,7 @@ month = may,
  keywords={audio signal processing;maximum likelihood estimation;signal representation;CQT-based representation;audio observations;conditional random fields model;discriminative framework;feature functions design;heuristic mappings;learning optimal features;linear transformation;maximum likelihood criterion;musical recording;polyphonic audio-to-score alignment;polyphonic music;spectrogram;symbolic representation;symmetric Kull-back-Leibler divergence;template construction;template vectors;temporal constraints;Music information retrieval;audio-to-score alignment;conditional random fields;discriminative learning},
  doi={10.1109/TASL.2013.2266794},
  ISSN={1558-7916},
- pdf = {./papers/CJ_TASLP-13.pdf}}
+ pdf = {./CJ_TASLP-13.pdf}}
 
 @ARTICLE{SE:TMM-12,
 author={Essid, Slim and Fevotte, Cedric},
@@ -1211,7 +1249,7 @@ pages={415-425},
 keywords={audio signal processing;document handling;hidden Markov models;matrix decomposition;minimisation;unsupervised learning;video databases;video signal processing;Kullback-Leibler divergence;NMF algorithm;audio modality;audio speaker diarization;cost function;hidden Markov model;histogram-of-count;latent structuring pattern;majorization-minimization technique;person-oriented video structuring task;political debate video database;smooth nonnegative matrix factorization;temporal smoothness constraint;unsupervised audiovisual document structuring;visual modality;Data models;Feature extraction;Histograms;Indexing;Telecommunications;Visualization;Vocabulary;Bag of features;content structuring;indexing;machine learning;matrix factorization;unsupervised classification;videos},
 doi={10.1109/TMM.2012.2228474},
 ISSN={1520-9210},
-pdf = {./papers/SE_TM-12.pdf}}
+pdf = {./SE_TM-12.pdf}}
 
 @inproceedings{SE:ICIP-12,
   author = {Slim Essid and Cedric Fevotte},
@@ -1240,7 +1278,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   URN =		{urn:nbn:de:0030-drops-34652},
   doi =		{http://dx.doi.org/10.4230/DFU.Vol3.11041.37},
   annote =	{Keywords: Multimodal music processing, music signals indexing and transcription, information fusion, audio, video},
-  pdf = {./papers/SE_DFU-12.pdf}
+  pdf = {./SE_DFU-12.pdf}
 }
 
 @ARTICLE{SE:ICMI-12,
@@ -1248,7 +1286,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   title = {A multi-modal dance corpus for research into interaction between humans in virtual environments},
   journal = {Journal on Multimodal User Interfaces: Special issue on multimodal corpora},
   year = {2012},
-  pdf = {./papers/SE_ICMI-12.pdf}
+  pdf = {./SE_ICMI-12.pdf}
 }
 
 @inproceedings{SE:ICMI-11,
@@ -1259,7 +1297,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = 2011,
   month = nov,
   annote = {category=inproceedings language=en audience=2 state=published project=audiosig dept=tsi group=aao id=12272},
-  pdf = {./papers/SE_ICMI-11.pdf}
+  pdf = {./SE_ICMI-11.pdf}
 }
 
 @inproceedings{SE:ICASSP-12b,
@@ -1270,7 +1308,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = 2012,
   month = mar,
   annote = {category=inproceedings language=en audience=2 state=toappear project=audiosig dept=tsi group=aao id=12271},
-  pdf = {./papers/SE_ICASSP-12.pdf}
+  pdf = {./SE_ICASSP-12.pdf}
 }
 
 @inproceedings{SE:ICASSP-12,
@@ -1281,7 +1319,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = 2012,
   month = mar,
   annote = {category=inproceedings language=en audience=2 state=toappear project=audiosig dept=tsi group=aao id=12270},
-  pdf = {./papers/SE_ICASSP-12b.pdf}
+  pdf = {./SE_ICASSP-12b.pdf}
 }
 
 @inproceedings{RF:ICASSP-12,
@@ -1292,7 +1330,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = 2012,
   month = mar,
   annote = {category=inproceedings language=en audience=2 state=toappear project=audiosig dept=tsi group=aao id=12269},
-  pdf = {./papers/RF_ICASSP-12.pdf}
+  pdf = {./RF_ICASSP-12.pdf}
 }
 
 
@@ -1303,7 +1341,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   address = {Scottsdale, Arizona, USA},
   year = 2011,
   month = nov,
-  pdf = {./papers/SE_ACM-11.pdf},
+  pdf = {./SE_ACM-11.pdf},
   annote = {category=inproceedings language=fr audience=1 state=toappear project= dept=tsi group=aao id=11561}
 }
 
@@ -1314,7 +1352,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   address = {Scottsdale, Arizona, USA},
   year = 2011,
   month = nov,
-  pdf = {./papers/CC_ACM-11.pdf},
+  pdf = {./CC_ACM-11.pdf},
   annote = {category=inproceedings language=en audience=2 state=toappear project=m2 dept=tsi group=aao,mm id=11552}
 }
 
@@ -1326,7 +1364,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = {2011},
   address = {Miami, U.S.A},
   month = oct,
-  pdf = {./papers/SG_ISMIR-11.pdf}
+  pdf = {./SG_ISMIR-11.pdf}
 }
 
 @INPROCEEDINGS{RF:ISMIR-11,
@@ -1336,7 +1374,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = {2011},
   address = {Miami, U.S.A},
   month = oct,
-  pdf = {./papers/RF_ISMIR-11.pdf}
+  pdf = {./RF_ISMIR-11.pdf}
 }
 
 @INPROCEEDINGS{CJ:WASPAA-11,
@@ -1346,7 +1384,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = {2011},
   address = {New Paltz, New York, U.S.A},
   month = oct,
-  pdf = {./papers/CJ_WASPAA-11.pdf}
+  pdf = {./CJ_WASPAA-11.pdf}
 }
 
 @techreport{SE:TREP-11,
@@ -1355,7 +1393,7 @@ pdf = {./papers/SE_TM-12.pdf}}
   year = {2011},
   institution = {HAL},
   number = {hal-00605886},
-  pdf = {./papers/SE_HAL-11.pdf},
+  pdf = {./SE_HAL-11.pdf},
   url = {http://hal.archives-ouvertes.fr/hal-00605886/en/}
 }
 
@@ -1386,7 +1424,7 @@ year = {2011}
   booktitle = {AES 42nd International Conference},
   year = {2011},
   month = jul,
-  pdf = {./papers/SG_AES-11.pdf},
+  pdf = {./SG_AES-11.pdf},
   address = {Ilmenau, Germany}
 }
 
@@ -1399,8 +1437,8 @@ year = {2011}
   month = oct,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=8679},
-  file = {SE_ICIP-08.pdf:./papers/SE_ICIP-08.pdf:PDF},
-  pdf = {./papers/SE_ICIP-08.pdf}
+  file = {SE_ICIP-08.pdf:./SE_ICIP-08.pdf:PDF},
+  pdf = {./SE_ICIP-08.pdf}
 }
 
 @INBOOK{RB:MMABOOK-11,
@@ -1437,8 +1475,8 @@ year = {2011}
 	"transient+sinusoidal" modeling scheme is proposed.},
   annote = {category=inproceedings state=published project= dept=tsi group=cod
 	id=2014},
-  file = {RB_DSP-02.pdf:./papers/RB_DSP-02.pdf:PDF},
-  pdf = {./papers/RB_DSP-02.pdf}
+  file = {RB_DSP-02.pdf:./RB_DSP-02.pdf:PDF},
+  pdf = {./RB_DSP-02.pdf}
 }
 
 @INPROCEEDINGS{SE:GRETSI-03,
@@ -1452,8 +1490,8 @@ year = {2011}
   month = sep,
   annote = {category=inproceedings state=published project= dept=tsi group=aao,cod,tsac
 	id=3453},
-  file = {SE_GRETSI-03.pdf:./papers/RB_GRETSI-03.pdf:PDF},
-  pdf = {./papers/RB_GRETSI-03.pdf}
+  file = {SE_GRETSI-03.pdf:./RB_GRETSI-03.pdf:PDF},
+  pdf = {./RB_GRETSI-03.pdf}
 }
 
 @INPROCEEDINGS{RB:ICM-02,
@@ -1477,8 +1515,8 @@ year = {2011}
 	that allows to overcome such artifacts.},
   annote = {category=inproceedings state=published project= dept=tsi group=cod
 	id=2013},
-  file = {RB_ICM-02.pdf:./papers/RB_ICM-02.pdf:PDF},
-  pdf = {./papers/RB_ICM-02.pdf}
+  file = {RB_ICM-02.pdf:./RB_ICM-02.pdf:PDF},
+  pdf = {./RB_ICM-02.pdf}
 }
 
 @INPROCEEDINGS{RB:ICS-02,
@@ -1498,8 +1536,8 @@ year = {2011}
 	to low bit rate coding.},
   annote = {category=inproceedings state=published project= dept=tsi group=cod
 	id=2012},
-  file = {RB_ICS-02.pdf:./papers/RB_ICS-02.pdf:PDF},
-  pdf = {./papers/RB_ICS-02.pdf}
+  file = {RB_ICS-02.pdf:./RB_ICS-02.pdf:PDF},
+  pdf = {./RB_ICS-02.pdf}
 }
 
 @INPROCEEDINGS{Boyer_01,
@@ -1513,8 +1551,8 @@ year = {2011}
   month = oct,
   annote = {category=inproceedings state=published project= dept=tsi group=cod
 	id=1971},
-  file = {RB_CORESA-01.pdf:./papers/RB_CORESA-01.pdf:PDF},
-  pdf = {./papers/RB_CORESA-01.pdf}
+  file = {RB_CORESA-01.pdf:./RB_CORESA-01.pdf:PDF},
+  pdf = {./RB_CORESA-01.pdf}
 }
 
 @INPROCEEDINGS{SB:Eusipco10,
@@ -1530,7 +1568,7 @@ year = {2011}
 	id=10394},
   file = {:D\:\\documents\\myPage\\papers\\SB_EUSIPCO-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/SB_EUSIPCO-10.pdf},
+  pdf = {./SB_EUSIPCO-10.pdf},
   timestamp = {2010.06.24}
 }
 
@@ -1546,8 +1584,8 @@ year = {2011}
   month = dec,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=8680},
-  file = {SE_SAMT-08.pdf:./papers/SE_SAMT-08.pdf:PDF},
-  pdf = {./papers/SE_SAMT-08.pdf}
+  file = {SE_SAMT-08.pdf:./SE_SAMT-08.pdf:PDF},
+  pdf = {./SE_SAMT-08.pdf}
 }
 
 @INPROCEEDINGS{SE:TRECVID-08,
@@ -1563,8 +1601,8 @@ year = {2011}
   month = nov,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=8681},
-  file = {SE_TRECVID-08.pdf:./papers/SE_ACM-08.pdf:PDF},
-  pdf = {./papers/SE_ACM-08.pdf}
+  file = {SE_TRECVID-08.pdf:./SE_ACM-08.pdf:PDF},
+  pdf = {./SE_ACM-08.pdf}
 }
 
 @PHDTHESIS{SE:these,
@@ -1576,8 +1614,8 @@ year = {2011}
   month = dec,
   annote = {category=phdthesis state=published project=audiosig dept=tsi group=aao
 	id=7638},
-  file = {SE_these.pdf:./papers/SE_PhD-05.pdf:PDF},
-  pdf = {./papers/SE_PhD-05.pdf}
+  file = {SE_these.pdf:./SE_PhD-05.pdf:PDF},
+  pdf = {./SE_PhD-05.pdf}
 }
 
 @MASTERSTHESIS{SE:master-02,
@@ -1589,9 +1627,9 @@ year = {2011}
 	(ENST)},
   year = {2002},
   month = {October},
-  file = {dea.pdf:./papers/SE_MastTh-02.pdf:PDF},
+  file = {dea.pdf:./SE_MastTh-02.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/SE_MastTh-02.pdf},
+  pdf = {./SE_MastTh-02.pdf},
   timestamp = {2009.08.11}
 }
 
@@ -1618,8 +1656,8 @@ year = {2011}
   month = jan,
   annote = {category=article state=published doi=10.1109/TSA.2005.860351 project=audiosig
 	dept=tsi group=aao id=5909},
-  file = {SE_COD-06.pdf:./papers/SE_TSALP-06b.pdf:PDF},
-  pdf = {./papers/SE_TSALP-06b.pdf}
+  file = {SE_COD-06.pdf:./SE_TSALP-06b.pdf:PDF},
+  pdf = {./SE_TSALP-06b.pdf}
 }
 
 @ARTICLE{SE:COD-06-2,
@@ -1633,8 +1671,8 @@ year = {2011}
   month = jul,
   annote = {category=article state=published doi=10.1109/TSA.2005.860842 project=audiosig
 	dept=tsi group=aao id=5910},
-  file = {SE_COD-06-2.pdf:./papers/SE_TSALP-06a.pdf:PDF},
-  pdf = {./papers/SE_TSALP-06a.pdf}
+  file = {SE_COD-06-2.pdf:./SE_TSALP-06a.pdf:PDF},
+  pdf = {./SE_TSALP-06a.pdf}
 }
 
 @INPROCEEDINGS{SE:ICASSP-06,
@@ -1647,8 +1685,8 @@ year = {2011}
   month = may,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=6672},
-  file = {SE_ICASSP-06.pdf:./papers/SE_ICASSP-06.pdf:PDF},
-  pdf = {./papers/SE_ICASSP-06.pdf}
+  file = {SE_ICASSP-06.pdf:./SE_ICASSP-06.pdf:PDF},
+  pdf = {./SE_ICASSP-06.pdf}
 }
 
 @INPROCEEDINGS{SE-ICASSP-05,
@@ -1661,8 +1699,8 @@ year = {2011}
   month = mar,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=5067},
-  file = {SE-ICASSP-05.pdf:./papers/SE_ICASSP-05.pdf:PDF},
-  pdf = {./papers/SE_ICASSP-05.pdf}
+  file = {SE-ICASSP-05.pdf:./SE_ICASSP-05.pdf:PDF},
+  pdf = {./SE_ICASSP-05.pdf}
 }
 
 @INPROCEEDINGS{SE:AES-04,
@@ -1675,8 +1713,8 @@ year = {2011}
   month = jun,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao,cod id=3608},
-  file = {SE_AES-04.pdf:./papers/SE_AES-04.pdf:PDF},
-  pdf = {./papers/SE_AES-04.pdf}
+  file = {SE_AES-04.pdf:./SE_AES-04.pdf:PDF},
+  pdf = {./SE_AES-04.pdf}
 }
 
 @INPROCEEDINGS{SE:Eusipco-04,
@@ -1690,7 +1728,7 @@ year = {2011}
 	group=aao,cod documentURL=http://www.enst.fr/~grichard/publications.htm
 	id=4893},
   file = {:D\:\\documents\\myPage\\papers\\SE_EUSIPCO-04.pdf:PDF},
-  pdf = {./papers/SE_AES-04.pdf},
+  pdf = {./SE_AES-04.pdf},
   url = {http://www.enst.fr/~grichard/publications.htm}
 }
 
@@ -1704,8 +1742,8 @@ year = {2011}
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao,cod documentURL=http://www.enst.fr/~grichard/publications.htm
 	id=4892},
-  file = {:./papers/SE_ISMIR-04.pdf:PDF},
-  pdf = {./papers/SE_ISMIR-04.pdf},
+  file = {:./SE_ISMIR-04.pdf:PDF},
+  pdf = {./SE_ISMIR-04.pdf},
   url = {http://www.enst.fr/~grichard/publications.htm}
 }
 
@@ -1718,8 +1756,8 @@ year = {2011}
   month = mar,
   annote = {category=article state=published project=audiosig dept=tsi group=aao
 	id=6864},
-  file = {OG_CVST-07.pdf:./papers/OG_TCSVT-07.pdf:PDF},
-  pdf = {./papers/OG_TCSVT-07.pdf}
+  file = {OG_CVST-07.pdf:./OG_TCSVT-07.pdf:PDF},
+  pdf = {./OG_TCSVT-07.pdf}
 }
 
 @INPROCEEDINGS{SG:MML-09,
@@ -1732,9 +1770,9 @@ year = {2011}
   month = sep,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=10303},
-  file = {SG_MML-09.pdf:./papers/SG_MML-09.pdf:PDF},
+  file = {SG_MML-09.pdf:./SG_MML-09.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/SG_MML-09.pdf},
+  pdf = {./SG_MML-09.pdf},
   timestamp = {2010.03.10}
 }
 
@@ -1748,7 +1786,7 @@ year = {2011}
   number = {8},
   month = nov,
   year = {2011},
-  pdf = {./papers/CJ_TSALP-11.pdf},
+  pdf = {./CJ_TSALP-11.pdf},
   owner = {essid},
   timestamp = {2011.02.10}
 }
@@ -1777,7 +1815,7 @@ year = {2011}
 	id=10418},
   file = {:D\:\\documents\\myPage\\papers\\CJ_CORESA-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/CJ_CORESA-2010.pdf},
+  pdf = {./CJ_CORESA-2010.pdf},
   timestamp = {2010.06.24}
 }
 
@@ -1792,9 +1830,9 @@ year = {2011}
   month = mar,
   annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
 	id=10174},
-  file = {CJ_ICASSP-2010.pdf:./papers/CJ_ICASSP-10.pdf:PDF},
+  file = {CJ_ICASSP-2010.pdf:./CJ_ICASSP-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/CJ_ICASSP-10.pdf},
+  pdf = {./CJ_ICASSP-10.pdf},
   timestamp = {2010.03.10}
 }
 
@@ -1809,7 +1847,7 @@ year = {2011}
 	id=10383},
   file = {:D\:\\documents\\myPage\\papers\\CJ_ISMIR-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/CJ_ISMIR-2010.pdf},
+  pdf = {./CJ_ISMIR-2010.pdf},
   timestamp = {2010.06.24}
 }
 
@@ -1823,9 +1861,9 @@ year = {2011}
   month = sep,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=9946},
-  file = {CJ_GRETSI-09.pdf:./papers/CJ_GRETSI-09.pdf:PDF},
+  file = {CJ_GRETSI-09.pdf:./CJ_GRETSI-09.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/CJ_GRETSI-09.pdf},
+  pdf = {./CJ_GRETSI-09.pdf},
   timestamp = {2010.03.10}
 }
 
@@ -1842,8 +1880,8 @@ year = {2011}
   annote = {category=article state=published doi=10.1109/TASL.2008.2007613 project=audiosig
 	dept=tsi group=aao documentURL=http://www.tsi.enst.fr/publications/enst/article-2009-8585.pdf
 	id=8585},
-  file = {:./papers/CJ_TASLP-09.pdf:PDF},
-  pdf = {./papers/CJ_TASLP-09.pdf},
+  file = {:./CJ_TASLP-09.pdf:PDF},
+  pdf = {./CJ_TASLP-09.pdf},
   url = {http://www.tsi.enst.fr/publications/enst/article-2009-8585.pdf}
 }
 
@@ -1858,8 +1896,8 @@ year = {2011}
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao documentURL=http://www.tsi.enst.fr/publications/enst/inproceedings-2008-8528.pdf
 	id=8528},
-  file = {:./papers/CJ_EUSIPCO-08.pdf:PDF},
-  pdf = {./papers/CJ_EUSIPCO-08.pdf},
+  file = {:./CJ_EUSIPCO-08.pdf:PDF},
+  pdf = {./CJ_EUSIPCO-08.pdf},
   url = {http://www.tsi.enst.fr/publications/enst/inproceedings-2008-8528.pdf}
 }
 
@@ -1872,7 +1910,7 @@ year = {2011}
   year = {2011},
   address = {Prague, Czech Republic},
   month = may,
-   pdf = {./papers/CJ_ICASSP-11.pdf},
+   pdf = {./CJ_ICASSP-11.pdf},
   owner = {essid},
   timestamp = {2011.01.28}
 }
@@ -1888,8 +1926,8 @@ year = {2011}
   month = apr,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=9336},
-  file = {MaxL_ICASSP09.pdf:./papers/ML_ICASSP-09.pdf:PDF},
-  pdf = {./papers/ML_ICASSP-09.pdf}
+  file = {MaxL_ICASSP09.pdf:./ML_ICASSP-09.pdf:PDF},
+  pdf = {./ML_ICASSP-09.pdf}
 }
 
 @INPROCEEDINGS{PL-AES-05,
@@ -1902,8 +1940,8 @@ year = {2011}
   month = may,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=5071},
-  file = {PL-AES-05.pdf:./papers/SE_AES-05.pdf:PDF},
-  pdf = {./papers/SE_AES-05.pdf}
+  file = {PL-AES-05.pdf:./SE_AES-05.pdf:PDF},
+  pdf = {./SE_AES-05.pdf}
 }
 
 @INPROCEEDINGS{BM:ISMIR10,
@@ -1917,7 +1955,7 @@ year = {2011}
 	id=10395},
   file = {:D\:\\documents\\myPage\\papers\\BM_ISMIR-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/BM_ISMIR-10.pdf},
+  pdf = {./BM_ISMIR-10.pdf},
   timestamp = {2010.06.24}
 }
 
@@ -1928,9 +1966,9 @@ year = {2011}
   institution = {TELECOM ParisTech},
   year = {2009},
   number = {2009D014},
-  file = {AO_TREP-09.pdf:./papers/AO_TREP-09.pdf:PDF},
+  file = {AO_TREP-09.pdf:./AO_TREP-09.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/AO_TREP-09.pdf},
+  pdf = {./AO_TREP-09.pdf},
   timestamp = {2009.08.11}
 }
 
@@ -1943,8 +1981,8 @@ year = {2011}
   month = sep,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=7332},
-  file = {ICA_07.pdf:./papers/GR_ICA-07.pdf:PDF},
-  pdf = {./papers/GR_ICA-07.pdf}
+  file = {ICA_07.pdf:./GR_ICA-07.pdf:PDF},
+  pdf = {./GR_ICA-07.pdf}
 }
 
 @INPROCEEDINGS{GR:Icassp-07,
@@ -1958,8 +1996,8 @@ year = {2011}
   month = apr,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=6862},
-  file = {GR_Icassp-07.pdf:./papers/GR_ICASSP-07.pdf:PDF},
-  pdf = {./papers/GR_ICASSP-07.pdf}
+  file = {GR_Icassp-07.pdf:./GR_ICASSP-07.pdf:PDF},
+  pdf = {./GR_ICASSP-07.pdf}
 }
 
 @INPROCEEDINGS{FV:CORESA-10,
@@ -1974,7 +2012,7 @@ year = {2011}
 	id=10393},
   file = {:D\:\\documents\\myPage\\papers\\FV_CORESA-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/FV_ICIP-10.pdf},
+  pdf = {./FV_ICIP-10.pdf},
   timestamp = {2010.06.24}
 }
 
@@ -1987,9 +2025,9 @@ year = {2011}
   month = oct,
   annote = {category=inproceedings state=toappear project=audiosig dept=tsi group=aao
 	id=10393},
-  file = {:./papers/FV_ICIP-10.pdf:PDF},
+  file = {:./FV_ICIP-10.pdf:PDF},
   owner = {essid},
-  pdf = {./papers/FV_ICIP-10.pdf},
+  pdf = {./FV_ICIP-10.pdf},
   timestamp = {2010.06.24}
 }
 
@@ -2003,8 +2041,8 @@ year = {2011}
   month = sep,
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao id=8616},
-  file = {SW_EUSIPCO08.pdf:./papers/SW_EUSIPCO08.pdf:PDF},
-  pdf = {./papers/SW_EUSIPCO08.pdf}
+  file = {SW_EUSIPCO08.pdf:./SW_EUSIPCO08.pdf:PDF},
+  pdf = {./SW_EUSIPCO08.pdf}
 }
 
 @INPROCEEDINGS{SE:TRECVID-07,
@@ -2023,7 +2061,7 @@ year = {2011}
   annote = {category=inproceedings state=published project=audiosig dept=tsi
 	group=aao documentURL=http://www.cdvp.dcu.ie/Papers/kspace-tv2007.pdf
 	id=7755},
-  file = {:./papers/SE_TRECVID-07.pdf:PDF},
-  pdf = {./papers/SE_TRECVID-07.pdf},
+  file = {:./SE_TRECVID-07.pdf:PDF},
+  pdf = {./SE_TRECVID-07.pdf},
   url = {http://www.cdvp.dcu.ie/Papers/kspace-tv2007.pdf}
 }
