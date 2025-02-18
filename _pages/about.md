@@ -37,13 +37,19 @@ For more information about my research activities check my [publications](public
 <!-- [research software](), [demos](), or [educational material]() I have contributed to.  -->
 You can also read about the [research projects](projects) I have been involved in, including those of the [PhD students](people) and [post-docs](people#) I have advised.
 
+### News
+
+- <strong>Feb. 2nd 2025</strong>: Our PhD student [David Perera](https://scholar.google.com/citations?user=eyL65OAAAAAJ&hl=fr) successfully defended his thesis.
+- **Dec. 12th 2024**: 5 [papers](publications) accepted at ICASSP 2025.
+- **Nov. 6th 2024**: Our PhD student [Morgan Buisson](https://morgan76.github.io/) successfully defended his thesis.
+- **Sep. 25th 2024**: 2 [papers](publications) accepted at NeurIPS 2024.
+
 ### Short bio
 
 Slim Essid is Full Professor of Télécom Paris and the coordinator of the [Audio Data Analysis and Signal Processing (ADASP)](https://adasp.telecom-paris.fr) group. He received the state engineering degree from the École Nationale d’Ingénieurs de Tunis in 2001; the M.Sc. (D.E.A.) degree in digital communication systems from the École Nationale Supérieure des Télécommunications, Paris, France, in 2002; the Ph.D. degree from the Université Pierre et Marie Curie ([UPMC](http://www.upmc.fr/en/)), in 2005; and the habilitation (HDR) degree from UPMC in 2015.
 
 Over the past 15 years, he has been involved in various French and European research projects. He has collaborated with 14 post-docs and has graduated 15 PhD students; he is currently co-advising 10 others.
 He has published over 150 peer-reviewed conference and journal papers with more than 100 distinct co-authors. On a regular basis he serves as a reviewer for various machine learning, signal processing, audio and multimedia conferences and journals, for instance various IEEE transactions, and as an expert for research funding agencies.
-
 
 <!-- among which are Quaero, EU Networks of Excellence FP6-Kspace and FP7-3DLife, and collaborative projects FP7-REVERIE and FP7-LASIE. -->
 

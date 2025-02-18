@@ -1,7 +1,128 @@
+@misc{malard2025tacotrainingfreesoundprompted,
+      title={TACO: Training-free Sound Prompted Segmentation via Semantically Constrained Audio-visual CO-factorization},
+      author={Hugo Malard and Michel Olvera and Stephane Lathuiliere and Slim Essid},
+      year={2025},
+      selected = {true},
+      eprint={2412.01488},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      PDF={https://arxiv.org/abs/2412.01488},
+      preview = {taco-overview.png},
+      ABSTRACT = {
+        Large-scale pre-trained audio and image models demonstrate an unprecedented degree of generalization, making them suitable for a wide range of applications. Here, we tackle the specific task of sound-prompted segmentation, aiming to segment image regions corresponding to objects heard in an audio signal. Most existing approaches tackle this problem by fine-tuning pre-trained models or by training additional modules specifically for the task. We adopt a different strategy: we introduce a training-free approach that leverages Non-negative Matrix Factorization (NMF) to co-factorize audio and visual features from pre-trained models so as to reveal shared interpretable concepts. These concepts are passed on to an open-vocabulary segmentation model for precise segmentation maps. By using frozen pre-trained models, our method achieves high generalization and establishes state-of-the-art performance in unsupervised sound-prompted segmentation, significantly surpassing previous unsupervised methods.
+      },
+      NOTE = {Pre-print}
+}
+
+@inproceedings{quelennec:hal-04921274,
+  TITLE = {{Masked Latent Prediction and Classification for Self-Supervised Audio Representation Learning}},
+  AUTHOR = {Quelennec, Aurian and Chouteau, Pierre and Peeters, Geoffroy and Essid, Slim},
+  BOOKTITLE = {ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Hyderabad, India},
+  PDF = {https://hal.science/hal-04921274},
+  NOTE = {Accepted},
+  YEAR = {2025},
+  MONTH = Apr,
+  KEYWORDS = {self-supervised audio representation learning audio spectrogram transformers ; self-supervised ; audio representation learning ; audio spectrogram transformers},
+  PDF = {https://hal.science/hal-04921274v1/file/Icassp_2025___Camera_ready.pdf},
+  HAL_ID = {hal-04921274},
+  HAL_VERSION = {v1},
+  ABSTRACT = {
+    Recently, self-supervised learning methods based on masked latent prediction have proven to encode input data into powerful representations. However, during training, the learned latent space can be further transformed to extract higher-level information that could be more suited for downstream classification tasks. Therefore, we propose a new method: MAsked latenT Prediction And Classification (MATPAC), which is trained with two pretext tasks solved jointly. As in previous work, the first pretext task is a masked latent prediction task, ensuring a robust input representation in the latent space. The second one is unsupervised classification, which utilises the latent representations of the first pretext task to match probability distributions between a teacher and a student. We validate the MATPAC method by comparing it to other state-of-the-art proposals and conducting ablations studies. MATPAC reaches state-of-the-art self-supervised learning results on reference audio classification datasets such as OpenMIC, GTZAN, ESC-50 and US8K and outperforms comparable supervised methods results for musical auto-tagging on Magna-tag-a-tune.
+  }
+}
+
+@inproceedings{EG-ICASSP-25,
+  TITLE = {{O-EENC-SD: Efficient Online End-to-End Neural Clustering
+  for Speaker Diarization}},
+  AUTHOR = {Gruttadauria, Elio and Fontaine, Mathieu and {Le Roux}, Jonathan and Essid, Slim},
+  BOOKTITLE = {ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Hyderabad, India},
+  NOTE = {Accepted},
+  YEAR = {2025},
+  MONTH = Apr,
+  ABSTRACT = {
+    We introduce O-EENC-SD: an end-to-end online speaker diarization system based on EEND-EDA, featuring a novel RNN-based stitching mechanism for online prediction. In particular, we develop a novel centroid refinement decoder whose usefulness is assessed through a rigorous ablation study.
+    Our system provides key advantages over existing methods: a hyperparameter-free solution compared to unsupervised clustering approaches, and a more efficient alternative to current online end-to-end methods, which are computationally costly.
+    We demonstrate that O-EENC-SD is competitive with the state of the art in the two-speaker conversational telephone speech domain, as tested on the CallHome dataset.
+    Our results show that O-EENC-SD provides a great trade-off between DER and complexity, even when working on independent chunks with no overlap, making the system extremely efficient.
+  }
+}
+
+@inproceedings{CB-ICASSP-25,
+  TITLE = {{Deep Perceptual Noise Masking with Music Envelope Shaping (DPNMM)}},
+  AUTHOR = {Berger, Clémentine and Badeau, Roland and Essid, Slim},
+  BOOKTITLE = {ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Hyderabad, India},
+  NOTE = {Accepted},
+  YEAR = {2025},
+  MONTH = Apr,
+  ABSTRACT = {
+    People often listen to music in noisy environments, seeking to isolate themselves from ambient sounds. Indeed, a music signal can mask some of the noise's frequency components due to the effect of simultaneous masking. In this article, we propose a neural network based on a psychoacoustic masking model, designed to enhance the music's ability to mask ambient noise by reshaping its spectral envelope with predicted filter frequency responses. The model is trained with a perceptual loss function that balances two constraints: effectively masking the noise while preserving the original music mix and the user's chosen listening level. We evaluate our approach on simulated data replicating a user's experience of listening to music with headphones in a noisy environment. The results, based on defined objective metrics, demonstrate that our system improves the state of the art.
+  }
+}
+
+@inproceedings{TS-ICASSP-25,
+  TITLE = {{Contrastive Knowledge Distillation for Embedding Refinement in Personalized Speech Enhancement}},
+  AUTHOR = {Serre, Thomas and Fontaine, Mathieu and Benhaim, Eric and Essid, Slim},
+  BOOKTITLE = {ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Hyderabad, India},
+  NOTE = {Accepted},
+  YEAR = {2025},
+  MONTH = Apr,
+  ABSTRACT = {
+    Personalized speech enhancement (PSE) has shown
+    convincing results when it comes to extracting a known target
+    voice among interfering ones. The corresponding systems usually
+    incorporate a representation of the target voice within the
+    enhancement system, which is extracted from an enrollment
+    clip of the target voice with upstream models. Those models
+    are generally heavy as the speaker embedding’s quality directly
+    affects PSE performances. Yet, embeddings generated beforehand
+    cannot account for the variations of the target voice during
+    inference time. In this paper, we propose to perform on-the-
+    fly refinement of the speaker embedding using a tiny speaker
+    encoder. We first introduce a novel contrastive knowledge distil-
+    lation methodology in order to train a 150k-parameter encoder
+    from complex embeddings. We then use this encoder within the
+    enhancement system during inference and show that the proposed
+    method greatly improves PSE performances while maintaining a
+    low computational load.
+  }
+}
+
+@inproceedings{DP-ICASSP-25,
+  TITLE = {{Multiple Choice Learning for Efficient Speech Separation with Many Speakers}},
+  AUTHOR = {Perera, David and Derrida, Francois and Mariotte, Théo and Richard, Ga{\"e}l and Essid, Slim},
+  BOOKTITLE = {ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Hyderabad, India},
+  PDF = {https://arxiv.org/abs/2411.18497},
+  NOTE = {Accepted},
+  YEAR = {2025},
+  MONTH = Apr,
+  ABSTRACT = {
+    Training speech separation models in the supervised
+    setting raises a permutation problem: finding the best assignation
+    between the model predictions and the ground truth separated
+    signals. This inherently ambiguous task is customarily solved
+    using Permutation Invariant Training (PIT). In this article, we
+    instead consider using the Multiple Choice Learning (MCL)
+    framework, which was originally introduced to tackle ambiguous
+    tasks. We demonstrate experimentally on the popular WSJ0-mix
+    and LibriMix benchmarks that MCL matches the performances
+    of PIT, while being computationally advantageous. This opens the
+    door to a promising research direction, as MCL can be naturally
+    extended to handle a variable number of speakers, or to tackle
+    speech separation in the unsupervised setting
+  }
+}
+
+
 @inproceedings{DP:NeurIPS-24,
   TITLE = {Annealed Multiple Choice Learning: Overcoming Limitations of Winner-Takes-All with Annealing},
   AUTHOR = {Perera, David and Letzelter, Victor and Mariotte, Theo and Cortes, Adrien and Richard, Gael and Essid, Slim and Chen, Mickael},
   BOOKTITLE = {Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024)},
+  PDF = {https://arxiv.org/abs/2407.15580},
   ADDRESS = {Vancouver, Canada},
   YEAR = {2024},
   MONTH = Dec,
@@ -10,7 +131,6 @@
     We introduce Annealed Multiple Choice Learning (aMCL) which combines simulated annealing with MCL. MCL is a learning framework handling ambiguous tasks by predicting a small set of plausible hypotheses. These hypotheses are trained using the Winner-takes-all (WTA) scheme, which promotes the diversity of the predictions. However, this scheme may converge toward an arbitrarily suboptimal local minimum, due to the greedy nature of WTA. We overcome this limitation using annealing, which enhances the exploration of the hypothesis space during training. We leverage insights from statistical physics and information theory to provide a detailed description of the model training trajectory. Additionally, we validate our algorithm by extensive experiments on synthetic datasets on the standard UCI benchmark, and on speech separation.
   },
   preview = {perera_neurips-24.png},
-  note = {Accepted}
 }
 
 @inproceedings{HM:NeurIPS-24,
@@ -20,6 +140,7 @@
   ADDRESS = {Vancouver, Canada},
   YEAR = {2024},
   MONTH = Dec,
+  PDF = {https://arxiv.org/abs/2410.05997},
   selected = {true},
   ABSTRACT = {
     Multimodal large language models have fueled progress in image captioning. These models, fine-tuned on vast image datasets, exhibit a deep understanding of semantic concepts.
@@ -27,7 +148,6 @@
     Yet, this multimodal alignment task is non-trivial due to the inherent disparity between audible and visible elements in real-world videos. Moreover, multimodal representation learning often relies on contrastive learning, facing the challenge of the so-called modality gap which hinders smooth integration between modalities. In this work, we introduce a novel methodology for bridging the audiovisual modality gap by matching the distributions of tokens produced by an audio backbone and those of an image captioner. Our approach aligns the audio token distribution with that of the image tokens, enabling the model to perform zero-shot audio captioning in an unsupervised fashion. This alignment allows for the use of either audio or audiovisual input by combining or substituting the image encoder with the aligned audio encoder. Our method achieves significantly improved performances in zero-shot audio captioning, compared to existing approaches.
   },
   preview = {malard_neurips-24.png},
-  note = {Accepted}
 }
 
 
@@ -40,8 +160,7 @@
   MONTH = Nov,
   ABSTRACT = {
     Audio-text models trained via contrastive learning offer a practical approach to perform audio classification through natural language prompts, such as ``this is a sound of'' followed by category names. In this work, we explore alternative prompt templates for zero-shot audio classification, demonstrating the existence of higher-performing options. First, we find that the formatting of the prompts significantly affects performance so that simply prompting the models with properly formatted class labels performs competitively with optimized prompt templates and even prompt ensembling. Moreover, we look into complementing class labels by audio-centric descriptions. By leveraging large language models, we generate textual descriptions that prioritize acoustic features of sound events to disambiguate between classes, without extensive prompt engineering. We show that prompting with class descriptions leads to state-of-the-art results in zero-shot audio classification across major ambient sound datasets. Remarkably, this method requires no additional training and remains fully zero-shot.
-  },
-  NOTE = {Accepted}
+  }
 }
 
 @inproceedings{PS:DCASE-24,

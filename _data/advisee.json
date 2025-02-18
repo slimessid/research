@@ -45,29 +45,6 @@
   },
 
   {
-    "first_name": "Morgan",
-    "middle_name": null,
-    "last_name": "Buisson",
-    "hal_id": "morganbuisson",
-    "orcid_id": "0000-0001-8541-3071",
-    "picture": "morgan_buisson.jpg",
-    "position": "PhD Student",
-    "start_year": 2021,
-    "end_year": 2024,
-    "email": "morgan.buisson@telecom-paris.fr",
-    "homepage": null,
-    "hal_cv_page": null,
-    "google_scholar_page": null,
-    "gitlab_page": null,
-    "github_page": null,
-    "linkedin_page": "https://www.linkedin.com/in/morgan-buisson/",
-    "researchgate_page": null,
-    "twitter_page": null,
-    "site_tags": ["mir","deep_learning", "representation_learning"],
-    "additional_keywords":null,
-    "additional_keywords_fr": null
-  },
-  {
     "first_name": "Elio",
     "middle_name": null,
     "last_name": "Gruttadauria",
@@ -183,29 +160,6 @@
   },
 
   {
-    "first_name": "David",
-    "middle_name": null,
-    "last_name": "Perera",
-    "hal_id": null,
-    "picture": "david_perera.jpg",
-    "position": "PhD Student",
-    "start_year": 2021,
-    "end_year": 2024,
-    "email": "david.perera@telecom-paris.fr",
-    "homepage": null,
-    "hal_cv_page": null,
-    "google_scholar_page": null,
-    "gitlab_page": null,
-    "github_page": "https://github.com/daperera",
-    "linkedin_page": "https://www.linkedin.com/in/david-perera-5b499812b",
-    "researchgate_page": null,
-    "twitter_page": null,
-    "site_tags": ["deep_learning", "machine_listening", "representation_learning"],
-    "additional_keywords": ["few-shot learning", "dcase"],
-    "additional_keywords_fr": []
-  },
-
-  {
     "first_name": "Victor",
     "middle_name": null,
     "last_name": "Letzelter",
@@ -260,7 +214,7 @@
     "middle_name": null,
     "last_name": "Serre",
     "hal_id": null,
-    "picture": null,
+    "picture": "Thomas_SERRE.jpg",
     "position": "PhD Student",
     "start_year": 2023,
     "end_year": 2026,
@@ -401,30 +355,5 @@
     "site_tags": ["speech_processing", "signal_processing"],
     "additional_keywords": [],
     "additional_keywords_fr": []
-  },
-
-  {
-    "first_name": "Salah",
-    "middle_name": null,
-    "last_name": "Zaiem",
-    "hal_id": null,
-    "orcid_id": "",
-    "picture": "salah_zaiem.jpg",
-    "position": "PhD Student",
-    "start_year": 2020,
-    "end_year": 2023,
-    "email": "zaiemsalah@gmail.com",
-    "homepage": null,
-    "hal_cv_page": null,
-    "google_scholar_page": "https://scholar.google.com/citations?hl=fr&user=hVXGK5wAAAAJ",
-    "gitlab_page": null,
-    "github_page": "https://github.com/salah-zaiem",
-    "linkedin_page": "https://fr.linkedin.com/in/salah-zaiem",
-    "researchgate_page": null,
-    "twitter_page": "https://twitter.com/salah_zaiem",
-    "site_tags": ["speech_processing","representation_learning", "machine_learning", "deep_learning"],
-    "additional_keywords": [],
-    "additional_keywords_fr": []
   }
-
 ]
