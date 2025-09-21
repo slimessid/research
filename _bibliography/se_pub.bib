@@ -5,22 +5,36 @@
       eprint={2508.12709},
       archivePrefix={arXiv},
       primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2508.12709}, 
 	  selected={true},
 	  PDF={https://arxiv.org/abs/2508.12709},
       ABSTRACT={
-		Masked latent prediction has emerged as a leading paradigm in self-supervised learning (SSL), especially for general audio and music representation learning. While recent methods have demonstrated strong performance, the role of the predictor module used at the output of such SSL systems remains mainly overlooked, despite being crucial for solving the pretext task at hand. In particular, this module should be able to deal with the ambiguity inherent in audio content, especially when it is composed of multiple sound sources. This work proposes a novel enhancement: integrating Multiple Choice Learning (MCL) to explicitly model prediction ambiguity and improve representation quality. We build on top of the recently proposed MATPAC system, improving its prediction and unsupervised classification pretext tasks with MCL. We extensively evaluate our method, MATPAC++, through both linear probing across multiple downstream tasks and fine-tuning on AudioSet, employing a unified protocol that enables rigorous and fair comparisons with state-of-the-art SSL approaches. Results show that our proposal achieves state-of-the-art when fine-tuned on AudioSet and overall state-of-the-art scores on downstream tasks. Additionally, we examine domain specialisation by training exclusively on music data, where our model achieves state-of-the-art performance with significantly improved efficiency.
+		Masked latent prediction has emerged as a leading paradigm in self-supervised learning (SSL), especially for general audio and music representation learning.
+        While recent methods have demonstrated strong performance, the role of the predictor module used at the output of such SSL systems remains mainly overlooked, 
+        despite being crucial for solving the pretext task at hand. In particular, this module should be able to deal with the ambiguity inherent in audio content, 
+        especially when it is composed of multiple sound sources. This work proposes a novel enhancement: integrating Multiple Choice Learning (MCL) to explicitly model
+        prediction ambiguity and improve representation quality. We build on top of the recently proposed MATPAC system, improving its prediction and unsupervised classification
+        pretext tasks with MCL. We extensively evaluate our method, MATPAC++, through both linear probing across multiple downstream tasks and fine-tuning on AudioSet, employing
+        a unified protocol that enables rigorous and fair comparisons with state-of-the-art SSL approaches. Results show that our proposal achieves state-of-the-art when 
+        fine-tuned on AudioSet and overall state-of-the-art scores on downstream tasks. Additionally, we examine domain specialisation by training exclusively on music data, 
+        where our model achieves state-of-the-art performance with significantly improved efficiency.
 	 }
 }
 
 @inproceedings{olvera2025iknowaudio,
 	title={iKnow-audio: Integrating Knowledge Graphs with Audio-Language Models},
-	author={Michel Olvera and Changhong Wang and Paraskevas Stamatiadis and Ga{\"e}l Richard and Slim Essid},
+	author={Michel Olvera and Changhong Wang and Paraskevas Stamatiadis and Gael Richard and Slim Essid},
 	booktitle={The 2025 Conference on Empirical Methods in Natural Language Processing},
 	year={2025},
 	PDF={https://openreview.net/pdf?id=pbooxdGnQI},
 	ABSTRACT={
-	 Contrastive Language–Audio Pretraining (CLAP) models learn by aligning audio and text in a shared embedding space, enabling powerful zero-shot recognition. However, their performance is highly sensitive to prompt formulation and language nuances, and they often inherit semantic ambiguities and spurious correlations from noisy pretraining data. While prior work has explored prompt engineering, adapters, and prefix tuning to address these limitations, the use of structured prior knowledge remains largely unexplored. We present \texttt{iKnow-audio}, a framework that integrates knowledge graphs with audio-language models to provide robust semantic grounding. \texttt{iKnow-audio} builds on the Audio-centric Knowledge Graph (AKG), which encodes ontological relations comprising semantic, causal, and taxonomic connections reflective of everyday sound scenes and events. By training knowlege graph embedding models on the AKG and refining CLAP predictions through this structured knowledge, iKnow-audio improves disambiguation of acoustically similar sounds and reduces reliance on prompt engineering. Comprehensive zero-shot evaluations across six benchmark datasets demonstrate consistent gains over baseline CLAP, supported by embedding-space analyses that highlight improved relational grounding.
+	 Contrastive Language–Audio Pretraining (CLAP) models learn by aligning audio and text in a shared embedding space, enabling powerful zero-shot recognition.
+     However, their performance is highly sensitive to prompt formulation and language nuances, and they often inherit semantic ambiguities and spurious correlations
+     from noisy pretraining data. While prior work has explored prompt engineering, adapters, and prefix tuning to address these limitations, the use of structured prior
+     knowledge remains largely unexplored. We present \texttt{iKnow-audio}, a framework that integrates knowledge graphs with audio-language models to provide robust semantic
+     grounding. iKnow-audio builds on the Audio-centric Knowledge Graph (AKG), which encodes ontological relations comprising semantic, causal, and taxonomic connections
+     reflective of everyday sound scenes and events. By training knowlege graph embedding models on the AKG and refining CLAP predictions through this structured knowledge,
+    iKnow-audio improves disambiguation of acoustically similar sounds and reduces reliance on prompt engineering. Comprehensive zero-shot evaluations across six benchmark
+    datasets demonstrate consistent gains over baseline CLAP, supported by embedding-space analyses that highlight improved relational grounding.
 	}
 }
 
@@ -2236,6 +2250,7 @@ year = {2011}
   pdf = {./SE_TRECVID-07.pdf},
   url = {http://www.cdvp.dcu.ie/Papers/kspace-tv2007.pdf}
 }
+
 
 
 
