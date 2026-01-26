@@ -39,13 +39,15 @@ You can also read about the [research projects](projects) I have been involved i
 
 ### News
 
-- **August 20th 2025**: 1 [paper](publications) accepted at EMNLP 2025.
-- **July 7th 2025**: 1 [paper](publications) accepted at WASPAA 2025.
-- **June 1st 2025**: 1 [paper](publications) accepted at Interspeech 2025.
+- **January 17th 2026**: [2 new papers](publications) accepted at ICASSP 2026.
+- **December 12th 2025**: Our PhD student [Yasser Benigmim](https://yasserben.github.io/) successfully defended his thesis.
+- **August 20th 2025**: [1 paper](publications) accepted at EMNLP 2025.
+- **July 7th 2025**: [1 paper](publications) accepted at WASPAA 2025.
+- **June 1st 2025**: [1 paper](publications) accepted at Interspeech 2025.
 - <strong>Feb. 2nd 2025</strong>: Our PhD student [David Perera](https://scholar.google.com/citations?user=eyL65OAAAAAJ&hl=fr) successfully defended his thesis.
-- **Dec. 12th 2024**: 5 [papers](publications) accepted at ICASSP 2025.
+- **Dec. 12th 2024**: [5 papers](publications) accepted at ICASSP 2025.
 - **Nov. 6th 2024**: Our PhD student [Morgan Buisson](https://morgan76.github.io/) successfully defended his thesis.
-- **Sep. 25th 2024**: 2 [papers](publications) accepted at NeurIPS 2024.
+- **Sep. 25th 2024**: [2 papers](publications) accepted at NeurIPS 2024.
 
 ### Short bio
 
