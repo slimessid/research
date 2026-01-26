@@ -1,3 +1,69 @@
+@inproceedings{MA-ICASSP-26,
+  TITLE = {{TINYMU: A Compact Audio-Language Model for Music Understanding}},
+  AUTHOR = {Li, Xiquan and Quelennec, Aurian and Essid, Slim},
+  BOOKTITLE = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Barcelona, Spain},
+  YEAR = {2026},
+  MONTH = May,
+  ABSTRACT = {
+	Music understanding and reasoning are central challenges in the Music Information Research field, with applications ranging from retrieval and recommendation to music agents and virtual assistants. 
+	Recent Large Audio-Language Models (LALMs) have shown remarkable progress in answering music-related questions by following user instructions. 
+	However, their massive scale, often billions of parameters, results in expensive training, slow inference, and limited deployability on edge devices.
+
+	In this work, we present TinyMU, a lightweight (229M) Music-Language Model (MLM) that achieves performance comparable to much larger LALMs while remaining efficient and compact. 
+	To train TinyMU, we introduce MusicSkills-3.5M, a carefully curated, music-grounded question-answering dataset with 3.5M samples. Spanning multiple-choice, binary, and open-ended formats, this dataset provides fine-grained supervision across diverse musical concepts. 
+	For its architecture, TinyMU leverages MATPAC++, the SOTA self-supervised audio encoder for fine-grained feature extraction. 
+	Paired with a lightweight linear projector, it efficiently aligns audio embeddings with the language model. 
+	Through extensive evaluation, we show that TinyMU performs strongly in both basic music understanding and complex reasoning. 
+	Notably, on the MuChoMusic benchmark, it achieves 82\% of SOTA LALM's performance despite being 35× smaller, highlighting the potential of small MLMs under constrained computational budgets.
+  },
+  NOTE = {Accepted}
+}
+
+@inproceedings{MA-ICASSP-26,
+  TITLE = {{S-SONDO: Self-Supervised Knowledge Distillation for General Audio Foundation Models}},
+  AUTHOR = {El Adlouni, Mohammed Ali and Quelennec, Aurian and Chouteau, Pierre and Peeters, Geoffroy and Essid, Slim},
+  BOOKTITLE = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  ADDRESS = {Barcelona, Spain},
+  YEAR = {2026},
+  MONTH = May,
+  ABSTRACT = {
+	General audio foundation models have recently achieved remarkable progress, enabling strong performance across diverse tasks. However, state-of-the-art models remain extremely large, often with hundreds of millions of parameters, leading to high inference costs and limited deployability on edge devices. Knowledge distillation is a proven strategy for model compression, but prior work in audio has mostly focused on supervised settings, relying on class logits, intermediate features, or architecture-specific techniques. Such assumptions exclude models that output only embeddings, such as self-supervised or metric-learning models.
+	We introduce S-SONDO (\textbf{S}elf-\textbf{S}upervised Kn\textbf{O}wledge Distillatio\textbf{N} for General Au\textbf{D}io F\textbf{O}undation Models), the first framework to distill general audio models using only their output embeddings. By avoiding the need for logits or layer-level alignment, S-SONDO is architecture-agnostic and broadly applicable to embedding-based teachers. We demonstrate its effectiveness by distilling two audio foundation models into three efficient students that are up to 61x smaller while retaining up to 96% of teacher performance. We also provide practical insights on loss choice and clustering-based balanced data sampling.
+  },
+  NOTE = {Accepted}
+}
+
+@misc{gagnere2025controllingcontrastiveselfsupervisedlearning,
+      title={Controlling Contrastive Self-Supervised Learning with Knowledge-Driven Multiple Hypotheses: Application to Beat Tracking}, 
+      author={Antonin Gagnere and Slim Essid and Geoffroy Peeters},
+      year={2025},
+      eprint={2510.25560},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2510.25560}, 
+}
+
+@misc{letzelter2025multiplechoicelearninglow,
+      title={Multiple Choice Learning of Low Rank Adapters for Language Modeling}, 
+      author={Victor Letzelter and Hugo Malard and Mathieu Fontaine and Gaël Richard and Slim Essid and Andrei Bursuc and Patrick Pérez},
+      year={2025},
+      eprint={2507.10419},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+	  selected={true},
+      PDF={https://arxiv.org/abs/2507.10419}, 
+	  ABSTRACT={
+		We propose LoRA-MCL, a training scheme that extends next-token prediction in language models with a method designed 
+        to decode diverse, plausible sentence continuations at inference time. Traditional language modeling is an 
+        intrinsically ill-posed problem: given a context, multiple futures may be equally plausible. Our approach leverages 
+        Multiple Choice Learning (MCL) and the Winner-Takes-All (WTA) loss to efficiently handle ambiguity through
+        Low-Rank Adaptation (LoRA). We provide a theoretical interpretation of applying Multiple Choice Learning to 
+        Language Modeling, assuming the data is generated from a mixture of distributions. To illustrate the proposed approach, we use data sampled from mixtures of Markov chains. We then demonstrate with extensive experiments on real-world visual and audio captioning tasks that our method achieves high diversity and relevance in generated outputs.
+	  },
+     NOTE = {Pre-print}
+}
+
 @misc{quelennec2025matpacenhancedmaskedlatent,
       title={MATPAC++: Enhanced Masked Latent Prediction for Self-Supervised Audio Representation Learning}, 
       author={Aurian Quelennec and Pierre Chouteau and Geoffroy Peeters and Slim Essid},
@@ -2252,6 +2318,7 @@ year = {2011}
   pdf = {./SE_TRECVID-07.pdf},
   url = {http://www.cdvp.dcu.ie/Papers/kspace-tv2007.pdf}
 }
+
 
 
 
