@@ -38,18 +38,17 @@ For more information about my research activities check my [publications](public
 You can also read about the [research projects](projects) I have been involved in, including those of the [PhD students](people) and [post-docs](people#) I have advised.
 
 ### News
-- **Mar. 9th 2026**: Our PhD student [Elio Gruttadauria](https://www.linkedin.com/in/elio-gruttadauria/) successfully defended his thesis :tada: :tada:.
+- **Mar. 9th 2026**: Our PhD student [Elio Gruttadauria](https://www.linkedin.com/in/elio-gruttadauria/) successfully defended his thesis :tada::tada:
 - **Feb. 20th 2026**: [Our paper](publications) on Training-free Sound Prompted Segmentation was accepted for publication in TMLR.
-- **Feb. 13th 2026**: Our PhD student [Aurian Quelennec](https://scholar.google.com/citations?user=-ailI-kAAAAJ&hl=fr) successfully defended his thesis :tada: :tada:.
+- **Feb. 13th 2026**: Our PhD student [Aurian Quelennec](https://scholar.google.com/citations?user=-ailI-kAAAAJ&hl=fr) successfully defended his thesis :tada::tada:
 - **Jan. 17th 2026**: [2 new papers](publications) accepted at ICASSP 2026.
-- **Dec. 12th 2025**: Our PhD student [Yasser Benigmim](https://yasserben.github.io/) successfully defended his thesis :tada: :tada:.
+- **Dec. 12th 2025**: Our PhD student [Yasser Benigmim](https://yasserben.github.io/) successfully defended his thesis :tada::tada:
 - **Aug. 20th 2025**: [1 paper](publications) accepted at EMNLP 2025.
 - **Jul. 7th 2025**: [1 paper](publications) accepted at WASPAA 2025.
 - **Jun. 1st 2025**: [1 paper](publications) accepted at Interspeech 2025.
-- <strong>Feb. 2nd 2025</strong>: Our PhD student [David Perera](https://scholar.google.com/citations?user=eyL65OAAAAAJ&hl=fr) successfully defended his thesis.
--  :tada: :tada:.
+- <strong>Feb. 2nd 2025</strong>: Our PhD student [David Perera](https://scholar.google.com/citations?user=eyL65OAAAAAJ&hl=fr) successfully defended his thesis :tada::tada:
 - **Dec. 12th 2024**: [5 papers](publications) accepted at ICASSP 2025.
-- **Nov. 6th 2024**: Our PhD student [Morgan Buisson](https://morgan76.github.io/) successfully defended his thesis :tada: :tada:.
+- **Nov. 6th 2024**: Our PhD student [Morgan Buisson](https://morgan76.github.io/) successfully defended his thesis :tada::tada:
 - **Sep. 25th 2024**: [2 papers](publications) accepted at NeurIPS 2024.
 
 ### Short bio
