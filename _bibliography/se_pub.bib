@@ -1,3 +1,14 @@
+@inproceedings{
+	VL:ICML-26,
+	title={Multiple Choice Learning of Low-Rank Adapters for Language Modeling},
+	author={Victor Letzelter and Hugo Malard and Mathieu Fontaine and Gaël Richard and Slim Essid and Andrei Bursuc and Patrick Pérez},
+	booktitle={Forty-third International Conference on Machine Learning},
+	year={2026},
+	selected={true},
+	preview = {mcl-lora.png},
+	url={https://openreview.net/forum?id=CCO35e4DCO}
+}
+
 @article{HM:TMLR:2026,
   title = {TACO: Training-free Sound Prompted Segmentation via Semantically Constrained Audio-visual CO-factorization},
   journal = {Transactions on Machine Learning Research},
@@ -5,8 +16,7 @@
   author = {Hugo Malard and Michel Olvera and Stephane Lathuiliere and Slim Essid},
   selected = {true},
   preview = {taco-overview.png},
-  abstract = {Large-scale pre-trained audio and image models demonstrate an unprecedented degree of generalization, making them suitable for a wide range of applications. Here, we tackle the specific task of sound-prompted segmentation, aiming to segment image regions corresponding to objects heard in an audio signal. Most existing approaches tackle this problem by fine-tuning pre-trained models or by training additional modules specifically for the task. We adopt a different strategy: we introduce a training-free approach that leverages Non-negative Matrix Factorization (NMF) to co-factorize audio and visual features from pre-trained models so as to reveal shared interpretable concepts. These concepts are passed on to an open-vocabulary segmentation model for precise segmentation maps. By using frozen pre-trained models, our method achieves high generalization and establishes state-of-the-art performance in unsupervised sound-prompted segmentation, significantly surpassing previous unsupervised methods.},
-  note = {Accepted}
+  abstract = {Large-scale pre-trained audio and image models demonstrate an unprecedented degree of generalization, making them suitable for a wide range of applications. Here, we tackle the specific task of sound-prompted segmentation, aiming to segment image regions corresponding to objects heard in an audio signal. Most existing approaches tackle this problem by fine-tuning pre-trained models or by training additional modules specifically for the task. We adopt a different strategy: we introduce a training-free approach that leverages Non-negative Matrix Factorization (NMF) to co-factorize audio and visual features from pre-trained models so as to reveal shared interpretable concepts. These concepts are passed on to an open-vocabulary segmentation model for precise segmentation maps. By using frozen pre-trained models, our method achieves high generalization and establishes state-of-the-art performance in unsupervised sound-prompted segmentation, significantly surpassing previous unsupervised methods.}
 }
 
 @inproceedings{MA-ICASSP-26,
@@ -15,6 +25,7 @@
   BOOKTITLE = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   ADDRESS = {Barcelona, Spain},
   YEAR = {2026},
+  selected = {true},
   MONTH = May,
   ABSTRACT = {
 	Music understanding and reasoning are central challenges in the Music Information Research field, with applications ranging from retrieval and recommendation to music agents and virtual assistants. 
@@ -27,8 +38,7 @@
 	Paired with a lightweight linear projector, it efficiently aligns audio embeddings with the language model. 
 	Through extensive evaluation, we show that TinyMU performs strongly in both basic music understanding and complex reasoning. 
 	Notably, on the MuChoMusic benchmark, it achieves 82\% of SOTA LALM's performance despite being 35× smaller, highlighting the potential of small MLMs under constrained computational budgets.
-  },
-  NOTE = {Accepted}
+  }
 }
 
 @inproceedings{MA-ICASSP-26,
@@ -41,8 +51,7 @@
   ABSTRACT = {
 	General audio foundation models have recently achieved remarkable progress, enabling strong performance across diverse tasks. However, state-of-the-art models remain extremely large, often with hundreds of millions of parameters, leading to high inference costs and limited deployability on edge devices. Knowledge distillation is a proven strategy for model compression, but prior work in audio has mostly focused on supervised settings, relying on class logits, intermediate features, or architecture-specific techniques. Such assumptions exclude models that output only embeddings, such as self-supervised or metric-learning models.
 	We introduce S-SONDO (\textbf{S}elf-\textbf{S}upervised Kn\textbf{O}wledge Distillatio\textbf{N} for General Au\textbf{D}io F\textbf{O}undation Models), the first framework to distill general audio models using only their output embeddings. By avoiding the need for logits or layer-level alignment, S-SONDO is architecture-agnostic and broadly applicable to embedding-based teachers. We demonstrate its effectiveness by distilling two audio foundation models into three efficient students that are up to 61x smaller while retaining up to 96% of teacher performance. We also provide practical insights on loss choice and clustering-based balanced data sampling.
-  },
-  NOTE = {Accepted}
+  }
 }
 
 @misc{gagnere2025controllingcontrastiveselfsupervisedlearning,
@@ -62,7 +71,6 @@
       eprint={2507.10419},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-	  selected={true},
       PDF={https://arxiv.org/abs/2507.10419}, 
 	  ABSTRACT={
 		We propose LoRA-MCL, a training scheme that extends next-token prediction in language models with a method designed 
