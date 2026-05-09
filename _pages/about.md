@@ -38,6 +38,7 @@ For more information about my research activities check my [publications](public
 You can also read about the [research projects](projects) I have been involved in, including those of the [PhD students](people) and [post-docs](people#) I have advised.
 
 ### News
+- **Apr. 30th 2026**: [Our paper](publications) on Multiple Choice Learning of Low-Rank Adapters was accepted at ICML 2026.
 - **Mar. 9th 2026**: Our PhD student [Elio Gruttadauria](https://www.linkedin.com/in/elio-gruttadauria/) successfully defended his thesis :tada::tada:
 - **Feb. 20th 2026**: [Our paper](publications) on Training-free Sound Prompted Segmentation was accepted for publication in TMLR.
 - **Feb. 13th 2026**: Our PhD student [Aurian Quelennec](https://scholar.google.com/citations?user=-ailI-kAAAAJ&hl=fr) successfully defended his thesis :tada::tada:
