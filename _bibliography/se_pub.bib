@@ -7,6 +7,7 @@
 	selected={true},
 	preview = {mcl-lora.png},
 	url = {https://openreview.net/forum?id=CCO35e4DCO},
+    pdf = {https://arxiv.org/pdf/2507.10419},
 	abstract = {We propose LoRA-MCL, a training scheme that extends next-token prediction in language models with a method designed to decode diverse, plausible sentence continuations at inference time. Traditional language modeling is an intrinsically ill-posed problem: given a context, multiple ``futures'' may be equally plausible. Our approach leverages Multiple Choice Learning (MCL) and the Winner-Takes-All loss to efficiently handle ambiguity through Low-Rank Adaptation. We provide a theoretical interpretation of applying MCL to language modeling, assuming the data is generated from a mixture of distributions. We illustrate the proposed approach using mixtures of Markov chains. We then demonstrate with experiments on visual and audio captioning, as well as machine translation, that our method achieves high diversity and relevance in generated outputs.}
 }
 
@@ -17,6 +18,7 @@
   author = {Hugo Malard and Michel Olvera and Stephane Lathuiliere and Slim Essid},
   selected = {true},
   preview = {taco-overview.png},
+  pdf = {https://openreview.net/pdf/bbcda1cbb97c78742eb077e2709451b8b89f6507.pdf},
   abstract = {Large-scale pre-trained audio and image models demonstrate an unprecedented degree of generalization, making them suitable for a wide range of applications. Here, we tackle the specific task of sound-prompted segmentation, aiming to segment image regions corresponding to objects heard in an audio signal. Most existing approaches tackle this problem by fine-tuning pre-trained models or by training additional modules specifically for the task. We adopt a different strategy: we introduce a training-free approach that leverages Non-negative Matrix Factorization (NMF) to co-factorize audio and visual features from pre-trained models so as to reveal shared interpretable concepts. These concepts are passed on to an open-vocabulary segmentation model for precise segmentation maps. By using frozen pre-trained models, our method achieves high generalization and establishes state-of-the-art performance in unsupervised sound-prompted segmentation, significantly surpassing previous unsupervised methods.}
 }
 
